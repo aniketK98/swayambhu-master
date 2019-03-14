@@ -97,12 +97,12 @@ public class IT_EVENTS_MAIN extends AppCompatActivity {
                 }
                 if(position == 2)
                 {
-                    Intent in = new Intent(getApplicationContext(),LanGaming_IT.class);
+                    Intent in = new Intent(getApplicationContext(), Codingo2_CSE.class);
                     startActivity(in);
                 }
                 if(position == 3)
                 {
-                    Intent in = new Intent(getApplicationContext(),Codinggo_IT.class);
+                    Intent in = new Intent(getApplicationContext(), Codingo2_CSE.class);
                     startActivity(in);
                 }
                 if (position == 4) {

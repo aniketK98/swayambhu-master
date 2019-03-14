@@ -83,15 +83,15 @@ public class CHEMICAL_EVENTS_MAIN extends AppCompatActivity {
         coverFlow_CHEMICAL.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                if (position == 0)
+                if (position == 2)
                 {
-                    Intent in = new Intent(getApplicationContext(),Dshriti_Chem.class);
+                    Intent in = new Intent(getApplicationContext(), ModelMaking_chem.class);
                     startActivity(in);
 
                 }
                 if(position == 1)
                 {
-                    Intent in = new Intent(getApplicationContext(),Tech_Talk.class);
+                    Intent in = new Intent(getApplicationContext(), chem_carnival.class);
                     startActivity(in);
                 }
 

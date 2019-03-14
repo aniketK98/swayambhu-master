@@ -13,7 +13,19 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".CircuitDebugiging_ECT"></activity>
+        <activity android:name=".Khoj2k19_EEP"></activity>
+        <activity android:name=".CrossTheStairs_EEP" />
+        <activity android:name=".Techno_Ace_EEP" />
+        <activity android:name=".ElectromaniaWork_ECT" />
+        <activity android:name=".Sports_Data_ECT" />
+        <activity android:name=".Micron_ECT" />
+        <activity android:name=".Code_Wizard_MCA" />
+        <activity android:name=".Codingo2_CSE" />
+        <activity android:name=".FastFurious_IT" />
+        <activity android:name=".chem_carnival" />
+        <activity android:name=".ModelMaking_chem" />
+        <activity android:name=".adalat_mech" />
+        <activity android:name=".CircuitDebugiging_ECT" />
         <activity
             android:name=".CSE_EVENTS_MAIN"
             android:screenOrientation="portrait" />

@@ -1,9 +1,10 @@
 package com.ashay.swayambhu_1;
 
-import android.os.Bundle;
+import android.app.Dialog;
 import android.os.StrictMode;
 import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
+import android.os.Bundle;
 import android.support.v7.widget.CardView;
 import android.view.View;
 import android.view.animation.Animation;
@@ -28,49 +29,58 @@ import java.net.URL;
 import java.util.HashMap;
 import java.util.Map;
 
-public class C_Ladder_CSE extends AppCompatActivity {
+public class CrossTheStairs_EEP extends AppCompatActivity {
 
-    private Button mbtn;
-    private int count = 0;int kcount=0;
+    Dialog mydialog;
+    Button mbook;
+    private FirebaseAuth mAuth;
+    private DatabaseReference mDatabase;
+    private FirebaseUser user;
+    private int count = 0;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_cladder_cse);
+        setContentView(R.layout.activity_cross_the_stairs__eep);
 
-        Animation a = AnimationUtils.loadAnimation(this,R.anim.viewanim);
-        CardView v1 = (CardView)findViewById(R.id.c1_cse);
-        CardView v2 = (CardView)findViewById(R.id.c2_cse);
-        CardView v3 = (CardView)findViewById(R.id.c3_cse);
-        CardView v4 = (CardView)findViewById(R.id.c4_cse);
+
+        Animation a = AnimationUtils.loadAnimation(this, R.anim.viewanim);
+        CardView v1 = (CardView) findViewById(R.id.c1_ECT);
+        CardView v2 = (CardView) findViewById(R.id.c2_ECT);
+        CardView v3 = (CardView) findViewById(R.id.c3_ECT);
+        CardView v4 = (CardView) findViewById(R.id.c4_ECT);
+        CardView v5 = (CardView) findViewById(R.id.c5_ECT);
+
 
         v1.startAnimation(a);
         v2.startAnimation(a);
         v3.startAnimation(a);
         v4.startAnimation(a);
+        v5.startAnimation(a);
 
-        mbtn = (Button) findViewById(R.id.button_event_2_cse);
+        mAuth = FirebaseAuth.getInstance();
 
-        mbtn.setOnClickListener(new View.OnClickListener() {
+        mbook = (Button) findViewById(R.id.button_circuit);
+
+        mbook.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
-                Toast.makeText(getApplication(),"Clicked",Toast.LENGTH_LONG).show();
+                Toast.makeText(getApplication(), "Clicked", Toast.LENGTH_SHORT).show();
                 Datacheck();
-
+                //smsApiCall();
             }
         });
 
-        StrictMode.ThreadPolicy policy=new StrictMode.ThreadPolicy.Builder().permitAll().build();
+        StrictMode.ThreadPolicy policy = new StrictMode.ThreadPolicy.Builder().permitAll().build();
         StrictMode.setThreadPolicy(policy);
     }
 
-
-    private void Datacheck()
-    {
-        FirebaseUser user=FirebaseAuth.getInstance().getCurrentUser();
-        String email=user.getEmail();
-        String uid=user.getUid();
-        DatabaseReference dr = FirebaseDatabase.getInstance().getReference().child("CSE").child("C Over Snake").child(uid);
+    private void Datacheck() {
+        FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
+        String email = user.getEmail();
+        String uid = user.getUid();
+        DatabaseReference dr = FirebaseDatabase.getInstance().getReference().child("EEP").child("Cross the Stairs").child(uid);
 
 
         dr.addValueEventListener(new ValueEventListener() {
@@ -80,15 +90,15 @@ public class C_Ladder_CSE extends AppCompatActivity {
                 try {
                     //Toast.makeText(getApplicationContext(), "in data", Toast.LENGTH_LONG).show();
                     String email = dataSnapshot.child("Email").getValue().toString();
-                    if(count >= 1) {
+                    if (count >= 1) {
                         Toast.makeText(getApplicationContext(), "Already Registered with this " + email, Toast.LENGTH_SHORT).show();
                     }
                     count++;
-                }
-                catch (Exception e)
-                {
+                    //mProLogin.dismiss()
+                } catch (Exception e) {
                     //Toast.makeText(getApplicationContext(),"in catch ",Toast.LENGTH_LONG).show();
                     DataEntry();
+
                 }
             }
 
@@ -98,58 +108,54 @@ public class C_Ladder_CSE extends AppCompatActivity {
             }
         });
 
-
     }
 
 
     private void DataEntry() {
-        FirebaseUser user=FirebaseAuth.getInstance().getCurrentUser();
-        String email=user.getEmail();
-        String uid=user.getUid();
+        FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
+        String email = user.getEmail();
+        String uid = user.getUid();
 
         //Toast.makeText(getApplicationContext(),""+email, Toast.LENGTH_SHORT).show();
 
 
-        DatabaseReference mDatabase = FirebaseDatabase.getInstance().getReference().child("CSE").child("C Over Snake").child(uid);
+        DatabaseReference mDatabase = FirebaseDatabase.getInstance().getReference().child("EEP").child("Cross the Stairs").child(uid);
 
-        Map<String, String> data=new HashMap<String,String>();
-        data.put("Email",email);
-        data.put("Contact",StudentInfo.getContact());
+        Map<String, String> data = new HashMap<String, String>();
+        data.put("Email", email);
+        data.put("Contact", StudentInfo.getContact());
         mDatabase.setValue(data).addOnCompleteListener(new OnCompleteListener<Void>() {
             @Override
             public void onComplete(@NonNull Task<Void> task) {
 
-                if(task.isSuccessful())
-                {
+                if (task.isSuccessful()) {
                     Toast.makeText(getApplicationContext(), "Registered ", Toast.LENGTH_SHORT).show();
+
                     smsApiCall();
 
-                    String email=StudentInfo.getEmail();
-                    String subject="Greetings from JNEC-SWAYAMBHU";
-                    String message = "Thank you " + StudentInfo.getname() + " for registering in C Over Snake. Kindly show this message/email on payment desk to confirm your booking. This email is valid until bookings are full.";
+                    String email = StudentInfo.getEmail();
+                    String subject = "Greetings from JNEC-SWAYAMBHU";
+                    String message = "Thank you " + StudentInfo.getname() + " for registering in Cross the Stairs. Kindly show this message/email on payment desk to confirm your booking. This email is valid until bookings are full.";
 
                     //Toast.makeText(getApplicationContext(),email+" ",Toast.LENGTH_LONG).show();
 
-                    SendMail sm = new SendMail(C_Ladder_CSE.this, email, subject, message);
+                    SendMail sm = new SendMail(CrossTheStairs_EEP.this, email, subject, message);
 
                     //Executing sendmail to send email
                     sm.execute();
-                }
-                else
-                {
-                    Toast.makeText(getApplicationContext(),"Error ",Toast.LENGTH_LONG).show();
+                } else {
+                    Toast.makeText(getApplicationContext(), "Error ", Toast.LENGTH_LONG).show();
                 }
             }
         });
     }
 
 
-    public void smsApiCall()
-    {
+    public void smsApiCall() {
         try {
             // Construct data
             String apiKey = "apikey=" + "PfSxPJ45xcg-L8TsFC7O5t3neTPGlscwlgetIMSf4L";
-            String message = "&message=" + "Thank you " + StudentInfo.getname() + " for registering in C Over Snake. Kindly show this message/email on payment desk to confirm your booking.";
+            String message = "&message=" + "Thank you " + StudentInfo.getname() + " for registering in Cross the Stairs. Kindly show this message/email on payment desk to confirm your booking.";
             String sender = "&sender=" + "";//mtxtsender.getText().toString();
             String numbers = "&numbers=" + StudentInfo.getContact();
 
@@ -168,7 +174,7 @@ public class C_Ladder_CSE extends AppCompatActivity {
             String line;
             while ((line = rd.readLine()) != null) {
                 //stringBuffer.append(line);
-                //Toast.makeText(getApplicationContext(),"The Message is: "+line,Toast.LENGTH_LONG).show();
+                // Toast.makeText(getApplicationContext(),"The Message is: "+line,Toast.LENGTH_LONG).show();
             }
 
             rd.close();
@@ -177,9 +183,8 @@ public class C_Ladder_CSE extends AppCompatActivity {
         } catch (Exception e) {
             //System.out.println("Error SMS "+e);
             //return "Error "+e;
-            Toast.makeText(getApplicationContext(),"The Error Message is: "+e,Toast.LENGTH_LONG).show();
+            Toast.makeText(getApplicationContext(), "The Error Message is: " + e, Toast.LENGTH_LONG).show();
 
         }
     }
-
 }

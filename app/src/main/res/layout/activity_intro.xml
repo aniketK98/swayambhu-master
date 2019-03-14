@@ -34,7 +34,7 @@
             android:layout_gravity="center"
             android:layout_marginTop="5dp"
             android:fontFamily="monospace"
-            android:text="Techninical Student Convention"
+            android:text="Technical Student Convention"
             android:textColor="@color/white"
             android:textSize="15dp"
             android:textStyle="bold" />

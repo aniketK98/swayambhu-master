@@ -87,25 +87,30 @@ public class CSE_EVENTS_MAIN extends AppCompatActivity {
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 if (position == 0)
                 {
-                    Intent in = new Intent(getApplicationContext(),CodeRelay_CSE.class);
+                    Intent in = new Intent(getApplicationContext(), C_Ladder_CSE.class);
                     startActivity(in);
 
                 }
                 if(position == 1)
                 {
-                    Intent in = new Intent(getApplicationContext(),C_Ladder_CSE.class);
+                    Intent in = new Intent(getApplicationContext(), Web_War_IT.class);
                     startActivity(in);
                 }
 
                 if(position == 2)
                 {
-                    Intent in = new Intent(getApplicationContext(),CodeHolix_CSE.class);
+                    Intent in = new Intent(getApplicationContext(), Code_Wizard_MCA.class);
                     startActivity(in);
                 }
 
                 if(position == 3)
                 {
-                    Intent in = new Intent(getApplicationContext(),Web_War_IT.class);
+                    Intent in = new Intent(getApplicationContext(), Codingo2_CSE.class);
+                    startActivity(in);
+                }
+
+                if (position == 4) {
+                    Intent in = new Intent(getApplicationContext(), FastFurious_IT.class);
                     startActivity(in);
                 }
 
@@ -124,11 +129,11 @@ public class CSE_EVENTS_MAIN extends AppCompatActivity {
     {
 
 
-        CSEEvent1List.add(new CSE_Event_1("Codingo","https://image.freepik.com/free-vector/web-design-background_1300-72.jpg"));
-        CSEEvent1List.add(new CSE_Event_1("C-Ladder","https://res.cloudinary.com/teepublic/image/private/s--91AeMXfq--/t_Preview/b_rgb:262c3a,c_limit,f_auto,h_313,q_90,w_313/v1496756374/production/designs/1649485_1"));
-        CSEEvent1List.add(new CSE_Event_1("Code-O-Holix","https://www.gyanblog.com/sites/default/files/2017-08/xcode.jpg.pagespeed.ic.X2ydhSo24r.jpg"));
+        CSEEvent1List.add(new CSE_Event_1("C over Snakes", "https://www.gyanblog.com/sites/default/files/2017-08/xcode.jpg.pagespeed.ic.X2ydhSo24r.jpg"));
         CSEEvent1List.add(new CSE_Event_1("Web War","https://image.freepik.com/free-vector/web-programming-background_1300-188.jpg"));
-
+        CSEEvent1List.add(new CSE_Event_1("Code Wizards", "https://image.freepik.com/free-vector/web-programming-background_1300-188.jpg"));
+        CSEEvent1List.add(new CSE_Event_1("Codingo2.0", "https://image.freepik.com/free-vector/web-design-background_1300-72.jpg"));
+        CSEEvent1List.add(new CSE_Event_1("Fast and Furious", "https://res.cloudinary.com/teepublic/image/private/s--91AeMXfq--/t_Preview/b_rgb:262c3a,c_limit,f_auto,h_313,q_90,w_313/v1496756374/production/designs/1649485_1"));
     }
 
 

@@ -40,6 +40,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="match_parent">
 
+
                         <ImageView
                             android:id="@+id/imageView"
                             android:layout_width="30dp"
@@ -156,16 +157,17 @@
                         android:layout_height="2dp"
                         android:background="@color/back"
                         ></View>
-                    <TextView
-                        android:padding="15dp"
 
+                    <TextView
                         android:layout_width="wrap_content"
+
                         android:layout_height="wrap_content"
-                        android:textSize="18dp"
-                        android:textColor="@color/back"
                         android:fontFamily="sans-serif"
                         android:gravity="left"
-                        android:text="​Participants will have to find/search maximum number of algorithms placed at different places in the campus with the help of QR codes or Google Maps. The participants/teams which will report in the shortest span of time will be selected for the next round."></TextView>
+                        android:padding="15dp"
+                        android:text="​Participants will have to find/search maximum number of algorithms placed at different places in the campus with the help of QR codes or Google Maps. The participants/teams which will report in the shortest span of time will be selected for the next round."
+                        android:textColor="@color/back"
+                        android:textSize="18dp"></TextView>
 
                 </LinearLayout>
 

@@ -1,65 +1,66 @@
 <?xml version="1.0" encoding="utf-8"?>
-
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.jnec.techfest.swayambhu.Web_War_IT"
+    android:background="@color/back"
     android:orientation="vertical"
-    android:background="@color/back">
+    tools:context="com.jnec.techfest.swayambhu.ElectromaniaWork_ECT">
+
 
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="match_parent">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_margin="25dp"
+
             android:orientation="vertical">
 
             <android.support.v7.widget.CardView
 
-                android:layout_marginTop="20dp"
                 android:layout_width="match_parent"
                 android:layout_height="150dp"
-                app:cardElevation="25dp"
+                android:layout_marginTop="20dp"
+                app:cardBackgroundColor="@color/white"
                 app:cardCornerRadius="10dp"
-                app:cardBackgroundColor="@color/white">
+                app:cardElevation="25dp">
+
                 <RelativeLayout
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    >
+                    android:layout_height="match_parent">
+
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="WEBWAR"
-                        android:textStyle="bold"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
 
                         android:layout_gravity="center|center_horizontal"
-                        android:padding="5dp"
-                        android:textColor="@color/back"
                         android:fontFamily="monospace"
-                        android:textSize="30dp"
+                        android:padding="5dp"
+                        android:text="ELECTROMANIA WORKSHOP"
+                        android:textColor="@color/back"
 
-                        android:layout_centerVertical="true"
-                        android:layout_centerHorizontal="true" />
+                        android:textSize="22dp"
+                        android:textStyle="bold" />
                 </RelativeLayout>
             </android.support.v7.widget.CardView>
-
-
 
 
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:layout_marginTop="30dp">
+                android:layout_marginTop="30dp"
+                android:orientation="horizontal">
 
 
                 <android.support.v7.widget.CardView
-                    android:id="@+id/c1_IT"
+                    android:id="@+id/c1_Civil"
+
                     android:layout_width="150dp"
                     android:layout_height="100dp"
 
@@ -76,38 +77,40 @@
                             android:layout_height="30dp"
 
                             android:layout_alignEnd="@+id/textView"
-                            android:layout_alignParentTop="true"
                             android:layout_alignRight="@+id/textView"
+                            android:layout_alignParentTop="true"
+                            android:layout_marginTop="18dp"
                             android:layout_marginEnd="51dp"
                             android:layout_marginRight="51dp"
-                            android:layout_marginTop="18dp"
                             app:srcCompat="@drawable/ic_pin_drop_black_50dp" />
 
                         <TextView
                             android:id="@+id/textView"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
+                            android:layout_below="@+id/imageView"
+                            android:layout_alignParentStart="true"
+                            android:layout_alignParentLeft="true"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginTop="9dp"
                             android:text="JNEC CAMPUS"
                             android:textColor="@color/back"
                             android:textSize="20dp"
-                            android:textStyle="bold"
-                            android:layout_marginTop="9dp"
-                            android:layout_marginLeft="5dp"
-                            android:layout_below="@+id/imageView"
-                            android:layout_alignParentLeft="true"
-                            android:layout_alignParentStart="true" />
+                            android:textStyle="bold" />
                     </RelativeLayout>
 
                 </android.support.v7.widget.CardView>
 
 
                 <android.support.v7.widget.CardView
-                    android:id="@+id/c2_IT"
+                    android:id="@+id/c2_Civil"
+
                     android:layout_width="150dp"
                     android:layout_height="100dp"
 
-                    app:cardCornerRadius="10dp"
-                    android:layout_marginLeft="10dp">
+                    android:layout_marginLeft="10dp"
+                    app:cardCornerRadius="10dp">
+
                     <RelativeLayout
                         android:layout_width="match_parent"
                         android:layout_height="match_parent">
@@ -117,28 +120,28 @@
                             android:layout_width="30dp"
                             android:layout_height="30dp"
 
-                            app:srcCompat="@drawable/ic_date_range_black_24dp"
-
-                            android:layout_marginTop="20dp"
                             android:layout_alignParentTop="true"
-                            android:layout_centerHorizontal="true" />
+
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="20dp"
+                            app:srcCompat="@drawable/ic_date_range_black_24dp" />
 
                         <TextView
+                            android:id="@+id/textView2"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
+                            android:layout_below="@+id/imageView2"
+                            android:layout_alignParentEnd="true"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginTop="7dp"
+
+                            android:layout_marginRight="8dp"
+                            android:gravity="center_horizontal"
                             android:text="27 | 28 March"
                             android:textColor="@color/back"
                             android:textSize="20dp"
-                            android:textStyle="bold"
-                            android:id="@+id/textView2"
 
-                            android:layout_marginTop="7dp"
-                            android:layout_below="@+id/imageView2"
-                            android:layout_alignParentRight="true"
-                            android:gravity="center_horizontal"
-                            android:layout_marginRight="8dp"
-
-                            android:layout_alignParentEnd="true">
+                            android:textStyle="bold">
 
                         </TextView>
 
@@ -147,194 +150,168 @@
                 </android.support.v7.widget.CardView>
 
 
-
-
-
-
-
-
             </LinearLayout>
 
 
             <android.support.v7.widget.CardView
-                android:id="@+id/c3_IT"
-                android:layout_marginTop="20dp"
+                android:id="@+id/c3_Civil"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="5dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:fontFamily="sans-serif"
+                        android:padding="5dp"
+                        android:text="Details"
+                        android:textColor="@color/back"
+                        android:textSize="30dp"
+                        android:textStyle="bold" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:background="@color/back"></View>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="sans-serif"
+                        android:padding="15dp"
+                        android:text="1. Two days workshop + compitition
+2. Entries:  Individual or group max 3 members per team.
+3. For individual entries group form by organizer.
+4. All components will provided by organizer.
+5. Limited entries
+"
+                        android:textColor="@color/back"
+                        android:textSize="18dp"></TextView>
+
+
+                </LinearLayout>
+
+
+            </android.support.v7.widget.CardView>
+
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/c5_Civil"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+
                 app:cardCornerRadius="10dp">
 
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:orientation="vertical">
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Round 1"
-                        android:textStyle="bold"
-                        android:textColor="@color/back"
-                        android:padding="5dp"
-                        android:fontFamily="sans-serif"
-                        android:textSize="30dp"
-                        android:layout_gravity="center"
-                        />
-                    <View
-                        android:layout_width="match_parent"
-                        android:layout_height="2dp"
-                        android:background="@color/back"
-                        ></View>
-                    <TextView
-                        android:padding="15dp"
-                        android:textColor="@color/back"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:textSize="18dp"
-                        android:fontFamily="sans-serif"
-                        android:text="MCQ'S TEST - 1 Hour"></TextView>
+
 
                 </LinearLayout>
-
 
 
             </android.support.v7.widget.CardView>
 
             <android.support.v7.widget.CardView
-                android:id="@+id/c4_IT"
-                android:layout_marginTop="20dp"
+
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-
-                app:cardCornerRadius="10dp">
-
+                android:layout_marginTop="20dp"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="5dp">
 
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:orientation="vertical">
+
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Round 2"
-                        android:textStyle="bold"
-                        android:textColor="@color/back"
-                        android:padding="5dp"
+                        android:layout_gravity="left"
                         android:fontFamily="sans-serif"
-                        android:textSize="30dp"
-                        android:layout_gravity="center"
-                        />
-                    <View
-                        android:layout_width="match_parent"
-                        android:layout_height="2dp"
-                        android:background="@color/back"
-                        ></View>
-                    <TextView
                         android:padding="15dp"
-                        android:fontFamily="sans-serif"
-                        android:layout_width="wrap_content"
+                        android:text="Single or Group of max 3\n\nENTRY FEE : \n\nSingle: 200/-\nTeam: 300/-"
                         android:textColor="@color/back"
-                        android:layout_height="wrap_content"
-                        android:textSize="18dp"
-                        android:text="Coding Round \nParticipants will be given a problem statement on which they have to create a website.They can use any technology for the same. Time will be 2 hours. Participants will be judged on the basis of Website Development."></TextView>
-
-                </LinearLayout>
-
-            </android.support.v7.widget.CardView>
-
-            <android.support.v7.widget.CardView
-
-                android:layout_marginTop="20dp"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                app:cardElevation="5dp"
-                app:cardCornerRadius="10dp">
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:orientation="vertical">
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="TEAM MEMBERS:\nGROUP OF 2\n\nENTRY FEE: 50/-"
-                        android:textStyle="bold"
-                        android:padding="15dp"
-                        android:textColor="@color/back"
-                        android:fontFamily="sans-serif"
                         android:textSize="20dp"
-                        android:layout_gravity="left"
-                        />
+                        android:textStyle="bold" />
 
 
                 </LinearLayout>
             </android.support.v7.widget.CardView>
 
 
-
-
             <android.support.v7.widget.CardView
 
-                android:layout_marginTop="20dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                app:cardElevation="5dp"
-                app:cardCornerRadius="10dp">
+                android:layout_marginTop="20dp"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="5dp">
+
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:orientation="vertical">
+
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Contact"
-                        android:textStyle="bold"
-                        android:padding="5dp"
-                        android:textColor="@color/back"
-                        android:fontFamily="sans-serif"
-                        android:textSize="30dp"
                         android:layout_gravity="center"
-                        />
+                        android:fontFamily="sans-serif"
+                        android:padding="5dp"
+                        android:text="Contact"
+                        android:textColor="@color/back"
+                        android:textSize="30dp"
+                        android:textStyle="bold" />
+
                     <View
                         android:layout_width="match_parent"
                         android:layout_height="2dp"
-                        android:background="@color/back"
-                        ></View>
+                        android:background="@color/back"></View>
+
                     <TextView
-                        android:layout_height="wrap_content"
-                        android:layout_width="wrap_content"
                         android:id="@+id/phoneNumber"
-                        android:autoLink="phone"
-                        android:textColor="@color/back"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
                         android:layout_gravity="left"
-                        android:padding="15dp"
-                        android:textStyle="bold"
+                        android:autoLink="phone"
                         android:linksClickable="true"
-                        android:text="Head:\nRitu Chaudhari +919168068206\n\nCo-head:\nShubham Snehi +918999376870" />
+                        android:padding="15dp"
+                        android:text="Head:\nSaurabh Jirekar +918766932201\n\nCo-Head:\n-"
+                        android:textColor="@color/back"
+                        android:textStyle="bold"></TextView>
                 </LinearLayout>
             </android.support.v7.widget.CardView>
 
 
             <Button
-                android:id="@+id/button_event_1_IT"
+                android:id="@+id/button_projectcompetition"
+                android:layout_width="180dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center_horizontal"
                 android:layout_marginTop="30dp"
                 android:layout_marginBottom="40dp"
-                android:textColor="@color/back"
-                android:layout_gravity="center_horizontal"
-                android:focusable="true"
-                android:clickable="true"
-                android:text="Book"
-                android:layout_height="50dp"
-                android:layout_width="180dp"
                 android:background="@drawable/buttoncorners"
-                />
+                android:clickable="true"
+                android:focusable="true"
+                android:text="Book"
+                android:textColor="@color/back" />
 
         </LinearLayout>
-
-
 
 
     </ScrollView>
 
 
 </LinearLayout>
-
-
-

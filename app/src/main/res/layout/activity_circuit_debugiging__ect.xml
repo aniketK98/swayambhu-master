@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/back"
-    tools:context=".CircuitDebugiging_ECT">
+    tools:context="com.jnec.techfest.swayambhu.CircuitDebugiging_ECT">
 
     <ScrollView
         android:layout_width="match_parent"
@@ -40,7 +40,7 @@
                         android:layout_gravity="center|center_horizontal"
                         android:fontFamily="monospace"
                         android:padding="5dp"
-                        android:text="CIRCUIT MAKING"
+                        android:text="CIRCUIT DEBUGGING"
                         android:textColor="@color/back"
 
                         android:textSize="30dp"
@@ -135,7 +135,7 @@
 
                             android:layout_marginRight="8dp"
                             android:gravity="center_horizontal"
-                            android:text="30 March 2018"
+                            android:text="27 | 28 March"
                             android:textColor="@color/back"
                             android:textSize="20dp"
 
@@ -186,7 +186,7 @@
                         android:fontFamily="sans-serif"
                         android:gravity="left"
                         android:padding="15dp"
-                        android:text="Each team will get a circuit name to make circuit diagram in software [PROTEUS]. If the circuit diagram is right then the team will be selected for second round."
+                        android:text="Technical knowledge of the participants will be tested through 10 Electrical Engginering based related questions. 2 marks for each question and alloted time will be 30 minutes."
                         android:textColor="@color/back"
                         android:textSize="18dp"></TextView>
 
@@ -231,7 +231,7 @@
                         android:fontFamily="sans-serif"
                         android:gravity="left"
                         android:padding="15dp"
-                        android:text="Each team has to make layout of the given circuit. If the layout is correct team will be selected for third round."
+                        android:text="Participants will be provided with the digital/analog circuit made up of wrong connections. They have to identify faulty connection and obtain desired output. "
                         android:textColor="@color/back"
                         android:textSize="18dp"></TextView>
 
@@ -254,31 +254,11 @@
                     android:layout_height="match_parent"
                     android:orientation="vertical">
 
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center"
-                        android:fontFamily="sans-serif"
-                        android:padding="5dp"
-                        android:text="Round 3"
-                        android:textColor="@color/back"
-                        android:textSize="30dp"
-                        android:textStyle="bold" />
 
                     <View
                         android:layout_width="match_parent"
                         android:layout_height="2dp"
                         android:background="@color/back"></View>
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:fontFamily="sans-serif"
-                        android:gravity="left"
-                        android:padding="15dp"
-                        android:text="Each team has to make hardware of the circuit. If possible team can bring their components for making hardware. Winner will be selected on the basis of completion of task in minimum time with correct output."
-                        android:textColor="@color/back"
-                        android:textSize="18dp"></TextView>
 
                 </LinearLayout>
 

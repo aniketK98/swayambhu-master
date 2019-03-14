@@ -132,7 +132,7 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="30 March 2018"
+                            android:text="27 | 28 March"
                             android:textColor="@color/back"
                             android:textSize="20dp"
                             android:textStyle="bold"
@@ -187,7 +187,7 @@
                         android:gravity="left"
                         android:textColor="@color/back"
                         android:fontFamily="sans-serif"
-                        android:text="Every individual/team will be given a design which they need to develop on Auto-CAD.A time of 30 minutes will be given to accomplish the motive. Best  work will be 	selected for the next round."></TextView>
+                        android:text="Development of simple design on AutoCAD.(30 minutes)"></TextView>
 
 
 
@@ -233,7 +233,7 @@
                         android:layout_height="wrap_content"
                         android:textSize="18dp"
                         android:textColor="@color/back"
-                        android:text="For this round , more intricate designs will be given to the individual/teams. A time of 45 minutes will be given to the participants.Twist: A set of 20 questions  based on AutoCAD will be asked online"></TextView>
+                        android:text="Development of intricate design on AutoCAD and solving 20 MCQs.(45 minutes)"></TextView>
 
 
 
@@ -281,7 +281,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="ENTRY FEE :\n30/- (Single Entry)"
+                        android:text="ENTRY FEE :\n40/- (Single Entry)"
                         android:textStyle="bold"
                         android:padding="15dp"
                         android:textColor="@color/back"
@@ -334,7 +334,7 @@
                         android:padding="15dp"
                         android:textStyle="bold"
                         android:layout_gravity="left"
-                        android:text="Head :\nPiyush Bhosale +919860675538\n\nCo-head :\nRishikesh Khangar +919975669556"></TextView>
+                        android:text="Head :\nKunal Rajput +918180892811\n\nCo-head :\nAkshay Rodge +919075598300"></TextView>
                 </LinearLayout>
             </android.support.v7.widget.CardView>
 
