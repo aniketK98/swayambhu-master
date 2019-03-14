@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.jnec.techfest.swayambhu.FAQ_ACTIVITY"
+    android:background="@color/back"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="20dp"
+        android:background="@color/white"
+        android:textStyle="bold"
+        android:text="FAQ"
+        android:gravity="center"
+        android:textSize="30dp"
+        android:textColor="@color/black"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="● How to make Payment of the events..??"
+        android:textColor="@color/white"
+        android:layout_marginLeft="10dp"
+        android:textSize="20dp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="Payment Desk will we available in various\ninstitutes in and around AURANGABAD before\n30 March 2018 , Where in Cash payment will\naccepted."
+        android:textColor="@color/white"
+        android:layout_marginLeft="20dp"
+        android:textSize="15dp"
+         />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="● How to Book Event..??"
+        android:textColor="@color/white"
+        android:layout_marginLeft="10dp"
+        android:textSize="20dp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="New Users register , Click on the event which you would like to parcipate , there you will\nfind BOOK Button , Where on Onclick you will get booking confirmation  Email or SMS."
+        android:textColor="@color/white"
+        android:layout_marginLeft="20dp"
+        android:textSize="15dp"
+         />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="● Do we need to come with ID-Cards..??"
+        android:textColor="@color/white"
+        android:layout_marginLeft="10dp"
+        android:textSize="20dp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="Yes , you need to come with your College ID-CARD. On entering the Campus you will be given SWAYAMBHU event ID-CARD. This Card is only for students other than JNEC. "
+        android:textColor="@color/white"
+        android:layout_marginLeft="20dp"
+        android:textSize="15dp"
+         />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="● How to Confirm the event booking..??"
+        android:textColor="@color/white"
+        android:layout_marginLeft="10dp"
+        android:textSize="20dp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="Just Show the Email or SMS on the Payment Desk , and check your name in the particular \nevent list. Where on payment you will get a Reciept."
+        android:textColor="@color/white"
+        android:layout_marginLeft="20dp"
+        android:textSize="15dp"
+
+        android:layout_marginBottom="10dp"/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:text="● Why I get a toast 'clicked' two times..??"
+
+                android:textColor="@color/white"
+                android:layout_marginLeft="10dp"
+                android:textSize="20dp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="Once you have Registered for an event , You cant book it twice on same email , and then You will get that 'clicked' two times and get a message ' Already Registered for the event.'"
+                android:textColor="@color/white"
+                android:layout_marginLeft="20dp"
+                android:textSize="15dp"
+
+                android:layout_marginBottom="10dp"/>
+
+
+
+
+                      <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:text="● App is Crashing for no reason??"
+
+                android:textColor="@color/white"
+                android:layout_marginLeft="10dp"
+                android:textSize="20dp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="Please check INTERNET connectivity , App sometime crashes when there is connectivity problem. Or else Restart the Application"
+                android:textColor="@color/white"
+                android:layout_marginLeft="20dp"
+                android:textSize="15dp"
+
+                android:layout_marginBottom="20dp"/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:text="● Why am I not getting SMS on my registered Contact"
+
+                android:textColor="@color/white"
+                android:layout_marginLeft="10dp"
+                android:textSize="20dp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="The SMS service is Active  between 9 AM to 9 PM."
+                android:textColor="@color/white"
+                android:layout_marginLeft="20dp"
+                android:textSize="15dp"
+
+                android:layout_marginBottom="20dp"/>
+
+
+
+        </LinearLayout>
+
+
+
+
+
+
+
+    </ScrollView>
+
+
+
+
+</LinearLayout>

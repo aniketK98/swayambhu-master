@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "88927458284",
+    "firebase_url": "https://swayambhu-master-74813.firebaseio.com",
+    "project_id": "swayambhu-master-74813",
+    "storage_bucket": "swayambhu-master-74813.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:88927458284:android:24a522078083cf53",
+        "android_client_info": {
+          "package_name": "com.ashay.swayambhu_1"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "88927458284-74hmu1bmh81na5529s15ko19n6plrvuk.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.ashay.swayambhu_1",
+            "certificate_hash": "2e62a8f3bbaa8fa6fa6ff60912e47194b2c7ed5c"
+          }
+        },
+        {
+          "client_id": "88927458284-7ntkgm1h9vd1hbv1nrndo4eubbp1lcb9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC_e4cs5yM85mVb09Huc9ZeEz5HEkK8LAQ"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "88927458284-7ntkgm1h9vd1hbv1nrndo4eubbp1lcb9.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
