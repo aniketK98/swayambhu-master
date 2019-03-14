@@ -49,7 +49,7 @@ public class WelcomeActivity extends AppCompatActivity {
 
         if(Build.VERSION.SDK_INT>=21)
         {
-            ActivityOptionsCompat options = ActivityOptionsCompat.makeSceneTransitionAnimation(this);
+            ActivityOptionsCompat options =  ActivityOptionsCompat.makeSceneTransitionAnimation(this);
         }
 
         setContentView(R.layout.activity_welcome);
