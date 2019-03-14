@@ -13,7 +13,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-
+        <activity android:name=".CircuitDebugiging_ECT"></activity>
         <activity
             android:name=".CSE_EVENTS_MAIN"
             android:screenOrientation="portrait" />
@@ -149,7 +149,7 @@
             android:name=".Master_vs_Slave_robot"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".Beg_Borrow_Steal"
+            android:name=".BBB"
             android:screenOrientation="portrait" />
         <activity
             android:name=".Image_Makeover"
@@ -173,7 +173,7 @@
         <activity android:name=".Developers_activity" />
         <activity android:name=".Paper_Presentation" />
         <activity android:name=".Suggestion_box" />
-        <activity android:name=".About_event"></activity>
+        <activity android:name=".About_event" />
     </application>
 
 </manifest>

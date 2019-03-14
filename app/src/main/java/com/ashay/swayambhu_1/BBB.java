@@ -29,7 +29,7 @@ import java.net.URL;
 import java.util.HashMap;
 import java.util.Map;
 
-public class Beg_Borrow_Steal extends AppCompatActivity {
+public class BBB extends AppCompatActivity {
 
     private FirebaseAuth mAuth;
     private DatabaseReference mDatabase;
@@ -151,7 +151,7 @@ public class Beg_Borrow_Steal extends AppCompatActivity {
 
                     //Toast.makeText(getApplicationContext(),email+" ",Toast.LENGTH_LONG).show();
 
-                    SendMail sm = new SendMail(Beg_Borrow_Steal.this, email, subject, message);
+                    SendMail sm = new SendMail(BBB.this, email, subject, message);
 
                     //Executing sendmail to send email
                     sm.execute();

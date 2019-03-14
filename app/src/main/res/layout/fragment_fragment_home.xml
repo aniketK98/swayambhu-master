@@ -72,7 +72,50 @@
     </android.support.v7.widget.CardView>
 
 
+    <android.support.v7.widget.CardView
+        android:id="@+id/cardView_FUN"
+        android:layout_width="300dp"
+        android:layout_height="130dp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="30dp"
 
+        android:animationCache="false"
+        android:background="@color/white"
+        android:scrollingCache="false"
+        android:smoothScrollbar="true"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="@dimen/cardview_compat_inset_shadow"
+        app:cardPreventCornerOverlap="true"
+        app:contentPadding="5dp">
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/animation_view_FUN"
+            android:layout_width="140dp"
+            android:layout_height="100dp"
+            android:layout_alignEnd="@+id/cardView"
+            android:layout_alignRight="@+id/cardView"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_horizontal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:lottie_autoPlay="true"
+            app:lottie_fileName="cubes.json"
+            app:lottie_loop="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center_horizontal"
+            android:layout_marginBottom="1dp"
+            android:fontFamily="sans-serif-thin"
+            android:text="How to start a StartUp"
+            android:textColor="#FF5733"
+            android:textSize="20dp"></TextView>
+
+
+    </android.support.v7.widget.CardView>
 
 
     <android.support.v7.widget.CardView
@@ -116,7 +159,7 @@
                  android:layout_gravity="bottom|center_horizontal"
                 android:layout_marginBottom="5dp"
                 android:textStyle="bold"
-                android:text="CSE/IT"
+                android:text="CSE/IT/MCA"
                 android:textSize="20dp"
                 ></TextView>
 
@@ -163,7 +206,7 @@
             android:textColor="#800000"
             android:layout_gravity="bottom|center_horizontal"
             android:layout_marginBottom="5dp"
-            android:text="ECT/EEP/ICE"
+            android:text="ECT/EEP"
             android:textStyle="bold"
 
             android:textSize="20dp"
@@ -317,7 +360,7 @@
             android:textColor="@color/back"
             android:layout_gravity="bottom|center_horizontal"
             android:layout_marginBottom="5dp"
-            android:text="Chemical/Biotech"
+            android:text="Chemical"
             android:textStyle="bold"
 
             android:textSize="20dp"
@@ -332,51 +375,7 @@
 
 
 
-    <android.support.v7.widget.CardView
-        android:layout_width="300dp"
-        android:layout_height="130dp"
-        android:layout_gravity="center"
-        android:background="@color/white"
-        android:id="@+id/cardView_FUN"
-        android:layout_marginTop="30dp"
 
-        app:cardCornerRadius="20dp"
-        app:cardElevation="@dimen/cardview_compat_inset_shadow"
-        app:contentPadding="5dp"
-        app:cardPreventCornerOverlap="true"
-        android:smoothScrollbar="true"
-        android:scrollingCache="false"
-        android:animationCache="false">
-
-        <com.airbnb.lottie.LottieAnimationView
-            android:id="@+id/animation_view_FUN"
-            android:layout_width="140dp"
-            android:layout_height="100dp"
-            android:layout_alignEnd="@+id/cardView"
-            app:lottie_loop="true"
-            android:layout_alignRight="@+id/cardView"
-            android:layout_centerVertical="true"
-            android:layout_gravity="center_horizontal"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:lottie_autoPlay="true"
-            app:lottie_fileName="cubes.json" />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:fontFamily="sans-serif-thin"
-            android:textColor="#FF5733"
-            android:layout_gravity="bottom|center_horizontal"
-            android:layout_marginBottom="5dp"
-            android:text="Fun Mania"
-            android:textSize="20dp"
-            ></TextView>
-
-
-    </android.support.v7.widget.CardView>
 
     <android.support.v7.widget.CardView
         android:layout_width="300dp"

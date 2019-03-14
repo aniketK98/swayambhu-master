@@ -59,6 +59,8 @@ public class Signup extends AppCompatActivity {
         mCol = (AutoCompleteTextView) findViewById(R.id.signup_College);
 
         //firebase linking
+//        FirebaseApp.initializeApp(this);
+
         mAuth = FirebaseAuth.getInstance();
         mDatabase = FirebaseDatabase.getInstance().getReference().child("Users");
 

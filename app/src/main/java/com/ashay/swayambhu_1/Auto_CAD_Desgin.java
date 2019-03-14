@@ -161,7 +161,7 @@ public class Auto_CAD_Desgin extends AppCompatActivity {
     {
         try {
             // Construct data
-            String apiKey = "apikey=" + "4iQet9zS7N0-8BOlNJ7oGBJzPBA2yesfVrpXDE1K1y";
+            String apiKey = "apikey=" + "PfSxPJ45xcg-L8TsFC7O5t3neTPGlscwlgetIMSf4L";
             String message = "&message=" + "Greetings from team TechFest, Thank you for registering in AUTO CAD DESIGN " + StudentInfo.getname()+ ".";
             String sender = "&sender=" + "";//mtxtsender.getText().toString();
             String numbers = "&numbers=" + StudentInfo.getContact();

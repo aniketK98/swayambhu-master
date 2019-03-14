@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.jnec.techfest.swayambhu.Login"
+    tools:context="com.ashay.swayambhu_1.Login"
     android:id="@+id/login_layout"
     android:background="@drawable/backgroundfinal"
     android:orientation="vertical"
@@ -100,7 +100,7 @@
         android:focusable="true"
         android:onClick="Reset"
         android:drawablePadding="10dp"
-        android:text="forgot password..??"
+        android:text="Forgot password?"
         android:fontFamily="sans-serif-condensed"
         android:textColor="@color/white"
         android:textStyle="bold" />
@@ -118,7 +118,7 @@
         android:focusable="true"
         android:layout_height="50dp"
 
-        android:text="Click to SIGNUP"/>
+        android:text="Create account" />
 
 
 

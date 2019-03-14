@@ -122,10 +122,10 @@ public class CIVIL_EVENTS_MAIN extends AppCompatActivity {
     {
 
 
-        CivilEvent1List.add(new Civil_Event_1("Smarmony","https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQHI42tAtDsr0x6jlyj5E7pEUh6EVpb3uYzShqUP1x6FfKyAKVj"));
+        CivilEvent1List.add(new Civil_Event_1("Aakruti", "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQHI42tAtDsr0x6jlyj5E7pEUh6EVpb3uYzShqUP1x6FfKyAKVj"));
         CivilEvent1List.add(new Civil_Event_1("CartoFest","https://image.freepik.com/free-vector/land-survey-and-civil-engineer-working_3446-431.jpg"));
-        CivilEvent1List.add(new Civil_Event_1("Levelling Master","https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSYPwI5-J5Gw2JEVnnHCyJIy9L6bvsQ7Bs2qFrZQZVz-em2TldY"));
-        CivilEvent1List.add(new Civil_Event_1("The Sustaining Boat","https://www.boatdesign.net/attachments/perspective-fullsail-jpg.20802/"));
+        CivilEvent1List.add(new Civil_Event_1("Aakaar", "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSYPwI5-J5Gw2JEVnnHCyJIy9L6bvsQ7Bs2qFrZQZVz-em2TldY"));
+        CivilEvent1List.add(new Civil_Event_1("Fun in Survey", "https://www.boatdesign.net/attachments/perspective-fullsail-jpg.20802/"));
 
     }
 
