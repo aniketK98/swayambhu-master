@@ -100,7 +100,7 @@ public class General_Event_Main extends AppCompatActivity {
 
                 if(position == 2)
                 {
-                    Intent in = new Intent(getApplicationContext(),Master_vs_Slave_robot.class);
+                    Intent in = new Intent(getApplicationContext(), TechOne_open.class);
                     startActivity(in);
                 }
                 if(position == 3)
@@ -130,7 +130,7 @@ public class General_Event_Main extends AppCompatActivity {
                 }
                 if(position == 8)
                 {
-                    Intent in = new Intent(getApplicationContext(),Suggestion_box.class);
+                    Intent in = new Intent(getApplicationContext(), Speakup_open.class);
                     startActivity(in);
                 }
 
@@ -140,12 +140,27 @@ public class General_Event_Main extends AppCompatActivity {
                 }
 
                 if (position == 10) {
-                    Intent in = new Intent(getApplicationContext(), Suggestion_box.class);
+                    Intent in = new Intent(getApplicationContext(), LeaderInYou_open.class);
                     startActivity(in);
                 }
 
                 if (position == 11) {
                     Intent in = new Intent(getApplicationContext(), TechnoConfetti_open.class);
+                    startActivity(in);
+                }
+
+                if (position == 12) {
+                    Intent in = new Intent(getApplicationContext(), Water_rocket.class);
+                    startActivity(in);
+                }
+
+                if (position == 13) {
+                    Intent in = new Intent(getApplicationContext(), BehindTheLens_open.class);
+                    startActivity(in);
+                }
+
+                if (position == 14) {
+                    Intent in = new Intent(getApplicationContext(), EnggInterns_open.class);
                     startActivity(in);
                 }
 
@@ -171,6 +186,10 @@ public class General_Event_Main extends AppCompatActivity {
         GeneralEvent1List.add(new General_Event_1("Innovate to implement", "https://associationsnow.com/wp-content/uploads/2016/02/0201_suggestion-800x480.jpg"));
         GeneralEvent1List.add(new General_Event_1("Leader in You", "https://associationsnow.com/wp-content/uploads/2016/02/0201_suggestion-800x480.jpg"));
         GeneralEvent1List.add(new General_Event_1("Techno Confetti Poster Competition", "https://associationsnow.com/wp-content/uploads/2016/02/0201_suggestion-800x480.jpg"));
+        GeneralEvent1List.add(new General_Event_1("Water Rocket", "https://associationsnow.com/wp-content/uploads/2016/02/0201_suggestion-800x480.jpg"));
+        GeneralEvent1List.add(new General_Event_1("Behind the Lens", "https://associationsnow.com/wp-content/uploads/2016/02/0201_suggestion-800x480.jpg"));
+        GeneralEvent1List.add(new General_Event_1("Engineering Interns", "https://associationsnow.com/wp-content/uploads/2016/02/0201_suggestion-800x480.jpg"));
+
 
     }
 }

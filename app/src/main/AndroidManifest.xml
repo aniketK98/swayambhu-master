@@ -13,7 +13,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".TechnoConfetti_open"></activity>
+        <activity android:name=".EnggInterns_open"></activity>
+        <activity android:name=".BehindTheLens_open" />
+        <activity android:name=".TechnoConfetti_open" />
         <activity android:name=".LeaderInYou_open" />
         <activity android:name=".Innovate_open" />
         <activity android:name=".Speakup_open" />

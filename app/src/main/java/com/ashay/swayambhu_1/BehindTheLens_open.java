@@ -1,10 +1,10 @@
 package com.ashay.swayambhu_1;
 
 import android.app.Dialog;
-import android.os.Bundle;
 import android.os.StrictMode;
 import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
+import android.os.Bundle;
 import android.support.v7.widget.CardView;
 import android.view.View;
 import android.view.animation.Animation;
@@ -29,63 +29,59 @@ import java.net.URL;
 import java.util.HashMap;
 import java.util.Map;
 
-public class Water_rocket extends AppCompatActivity {
+public class BehindTheLens_open extends AppCompatActivity {
 
-
+    Dialog mydialog;
+    Button mbook;
     private FirebaseAuth mAuth;
     private DatabaseReference mDatabase;
     private FirebaseUser user;
-    Dialog mydialog;
-    Button mbook;
     private int count = 0;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_water_rocket);
+        setContentView(R.layout.activity_behind_the_lens_open);
 
-        Animation a = AnimationUtils.loadAnimation(this,R.anim.viewanim);
-        CardView v1 = (CardView)findViewById(R.id.c1_Chemical);
-        CardView v2 = (CardView)findViewById(R.id.c2_Chemical);
-        CardView v3 = (CardView)findViewById(R.id.c3_Chemical);
-        CardView v4 = (CardView)findViewById(R.id.c4_Chemical);
-        // CardView v5 = (CardView)findViewById(R.id.c5_Chemical);
-
+        Animation a = AnimationUtils.loadAnimation(this, R.anim.viewanim);
+        CardView v1 = (CardView) findViewById(R.id.c1_Mech);
+        CardView v2 = (CardView) findViewById(R.id.c2_Mech);
+        CardView v3 = (CardView) findViewById(R.id.c3_Mech);
+        CardView v4 = (CardView) findViewById(R.id.c4_Mech);
+        CardView v5 = (CardView) findViewById(R.id.c5_Mech);
 
 
         v1.startAnimation(a);
         v2.startAnimation(a);
         v3.startAnimation(a);
         v4.startAnimation(a);
-        //  v5.startAnimation(a);
+        v5.startAnimation(a);
 
-        mAuth=FirebaseAuth.getInstance();
+        mAuth = FirebaseAuth.getInstance();
 
-        mbook = (Button)findViewById(R.id.button_waterrocket);
+        mbook = (Button) findViewById(R.id.button_lathe_war);
 
         mbook.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
-                Toast.makeText(getApplication(),"Clicked",Toast.LENGTH_SHORT).show();
+                Toast.makeText(getApplication(), "Clicked", Toast.LENGTH_SHORT).show();
                 Datacheck();
                 //smsApiCall();
             }
         });
 
-        StrictMode.ThreadPolicy policy=new StrictMode.ThreadPolicy.Builder().permitAll().build();
+        StrictMode.ThreadPolicy policy = new StrictMode.ThreadPolicy.Builder().permitAll().build();
         StrictMode.setThreadPolicy(policy);
-
 
 
     }
 
-    private void Datacheck()
-    {
-        FirebaseUser user= FirebaseAuth.getInstance().getCurrentUser();
-        String email=user.getEmail();
-        String uid=user.getUid();
-        DatabaseReference dr = FirebaseDatabase.getInstance().getReference().child("CHEM").child("Water-Rocket").child(uid);
+    private void Datacheck() {
+        FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
+        String email = user.getEmail();
+        String uid = user.getUid();
+        DatabaseReference dr = FirebaseDatabase.getInstance().getReference().child("Open").child("Behind the Lens").child(uid);
 
 
         dr.addValueEventListener(new ValueEventListener() {
@@ -93,17 +89,16 @@ public class Water_rocket extends AppCompatActivity {
             public void onDataChange(DataSnapshot dataSnapshot) {
 
                 try {
-                   // Toast.makeText(getApplicationContext(), "in data", Toast.LENGTH_LONG).show();
+                    //Toast.makeText(getApplicationContext(), "in data", Toast.LENGTH_LONG).show();
                     String email = dataSnapshot.child("Email").getValue().toString();
-                    if(count >= 1) {
-                        Toast.makeText(getApplicationContext(), "Already Registered with this " + email, Toast.LENGTH_SHORT).show();
+                    if (count >= 1) {
+                        Toast.makeText(getApplicationContext(), "Already Registered with this " + email, Toast.LENGTH_LONG).show();
                     }
                     count++;
-                }
-                catch (Exception e)
-                {
-                   // Toast.makeText(getApplicationContext(),"in catch ",Toast.LENGTH_LONG).show();
+                } catch (Exception e) {
+                    //Toast.makeText(getApplicationContext(),"in catch ",Toast.LENGTH_LONG).show();
                     DataEntry();
+
                 }
             }
 
@@ -117,53 +112,50 @@ public class Water_rocket extends AppCompatActivity {
 
 
     private void DataEntry() {
-        FirebaseUser user=FirebaseAuth.getInstance().getCurrentUser();
-        String email=user.getEmail();
-        String uid=user.getUid();
+        FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
+        String email = user.getEmail();
+        String uid = user.getUid();
 
         //Toast.makeText(getApplicationContext(),""+email, Toast.LENGTH_SHORT).show();
 
 
-        DatabaseReference mDatabase = FirebaseDatabase.getInstance().getReference().child("CHEM").child("Water-Rocket").child(uid);
+        DatabaseReference mDatabase = FirebaseDatabase.getInstance().getReference().child("Open").child("Behind the Lens").child(uid);
 
-        Map<String, String> data=new HashMap<String,String>();
-        data.put("Email",email);
-        data.put("Contact",StudentInfo.getContact());
+        Map<String, String> data = new HashMap<String, String>();
+        data.put("Email", email);
+        data.put("Contact", StudentInfo.getContact());
         mDatabase.setValue(data).addOnCompleteListener(new OnCompleteListener<Void>() {
             @Override
             public void onComplete(@NonNull Task<Void> task) {
 
-                if(task.isSuccessful())
-                {
+                if (task.isSuccessful()) {
                     Toast.makeText(getApplicationContext(), "Registered ", Toast.LENGTH_SHORT).show();
+
                     smsApiCall();
 
-                    String email=StudentInfo.getEmail();
-                    String subject="Greetings from JNEC-SWAYAMBHU";
-                    String message="Thank you "+ StudentInfo.getname()+" for registering in WATER ROCKET. Kindly show this message/email on payment desk to confirm your booking. This email is valid until bookings are full.";
+                    String email = StudentInfo.getEmail();
+                    String subject = "Greetings from JNEC-SWAYAMBHU";
+                    String message = "Thank you " + StudentInfo.getname() + " for registering in Behind the Lens. Kindly show this message/email on payment desk to confirm your booking. This email is valid until bookings are full.";
 
                     //Toast.makeText(getApplicationContext(),email+" ",Toast.LENGTH_LONG).show();
 
-                    SendMail sm = new SendMail(Water_rocket.this, email, subject, message);
+                    SendMail sm = new SendMail(BehindTheLens_open.this, email, subject, message);
 
                     //Executing sendmail to send email
                     sm.execute();
-                }
-                else
-                {
-                    Toast.makeText(getApplicationContext(),"Error ",Toast.LENGTH_LONG).show();
+                } else {
+                    Toast.makeText(getApplicationContext(), "Error ", Toast.LENGTH_LONG).show();
                 }
             }
         });
     }
 
 
-    public void smsApiCall()
-    {
+    public void smsApiCall() {
         try {
             // Construct data
-            String apiKey = "apikey=" + "4iQet9zS7N0-8BOlNJ7oGBJzPBA2yesfVrpXDE1K1y";
-            String message = "&message=" + "Thank you "+ StudentInfo.getname()+" for registering in WATER ROCKET. Kindly show this message/email on payment desk to confirm your booking.";
+            String apiKey = "apikey=" + "PfSxPJ45xcg-L8TsFC7O5t3neTPGlscwlgetIMSf4L";
+            String message = "&message=" + "Thank you " + StudentInfo.getname() + " for registering in Behind the Lens. Kindly show this message/email on payment desk to confirm your booking.";
             String sender = "&sender=" + "";//mtxtsender.getText().toString();
             String numbers = "&numbers=" + StudentInfo.getContact();
 
@@ -182,7 +174,7 @@ public class Water_rocket extends AppCompatActivity {
             String line;
             while ((line = rd.readLine()) != null) {
                 //stringBuffer.append(line);
-               // Toast.makeText(getApplicationContext(),"The Message is: "+line,Toast.LENGTH_LONG).show();
+                //Toast.makeText(getApplicationContext(),"The Message is: "+line,Toast.LENGTH_LONG).show();
             }
 
             rd.close();
@@ -191,7 +183,7 @@ public class Water_rocket extends AppCompatActivity {
         } catch (Exception e) {
             //System.out.println("Error SMS "+e);
             //return "Error "+e;
-            Toast.makeText(getApplicationContext(),"The Error Message is: "+e,Toast.LENGTH_LONG).show();
+            Toast.makeText(getApplicationContext(), "The Error Message is: " + e, Toast.LENGTH_LONG).show();
 
         }
     }
