@@ -125,7 +125,7 @@ public class General_Event_Main extends AppCompatActivity {
                 }
                 if(position == 7)
                 {
-                    Intent in = new Intent(getApplicationContext(),Paper_Presentation.class);
+                    Intent in = new Intent(getApplicationContext(), Ideathon_open.class);
                     startActivity(in);
                 }
                 if(position == 8)
@@ -135,7 +135,7 @@ public class General_Event_Main extends AppCompatActivity {
                 }
 
                 if (position == 9) {
-                    Intent in = new Intent(getApplicationContext(), Suggestion_box.class);
+                    Intent in = new Intent(getApplicationContext(), Innovate_open.class);
                     startActivity(in);
                 }
 

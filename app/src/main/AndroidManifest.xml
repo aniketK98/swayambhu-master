@@ -13,7 +13,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Proyekto_open"></activity>
+        <activity android:name=".Innovate_open"></activity>
+        <activity android:name=".Speakup_open" />
+        <activity android:name=".Ideathon_open" />
+        <activity android:name=".Proyekto_open" />
         <activity android:name=".BussinessIdea_open" />
         <activity android:name=".Bestfromwaste_open" />
         <activity android:name=".MrMsTechy_open" />
