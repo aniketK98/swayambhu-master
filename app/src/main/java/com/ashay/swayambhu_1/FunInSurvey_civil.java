@@ -59,7 +59,7 @@ public class FunInSurvey_civil extends AppCompatActivity {
         v4.startAnimation(a);
         v5.startAnimation(a);
 
-        mbtn = (Button) findViewById(R.id.button_autocad);
+        mbtn = (Button) findViewById(R.id.button_lathe_war);
 
         mbtn.setOnClickListener(new View.OnClickListener() {
             @Override

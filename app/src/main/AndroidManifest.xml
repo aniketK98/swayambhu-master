@@ -13,7 +13,12 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".FunInSurvey_civil"></activity>
+        <activity android:name=".Bestfromwaste_open"></activity>
+        <activity android:name=".MrMsTechy_open" />
+        <activity android:name=".TechOne_open" />
+        <activity android:name=".SurvivalBattle_open" />
+        <activity android:name=".JNEC_KBC_open" />
+        <activity android:name=".FunInSurvey_civil" />
         <activity android:name=".Aakar_civil" />
         <activity android:name=".Cartofest_civil" />
         <activity android:name=".Aakruti_civil" />

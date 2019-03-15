@@ -88,13 +88,13 @@ public class General_Event_Main extends AppCompatActivity {
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 if (position == 0)
                 {
-                    Intent in = new Intent(getApplicationContext(),Democracy.class);
+                    Intent in = new Intent(getApplicationContext(), JNEC_KBC_open.class);
                     startActivity(in);
 
                 }
                 if(position == 1)
                 {
-                    Intent in = new Intent(getApplicationContext(),The_One.class);
+                    Intent in = new Intent(getApplicationContext(), SurvivalBattle_open.class);
                     startActivity(in);
                 }
 
@@ -105,7 +105,7 @@ public class General_Event_Main extends AppCompatActivity {
                 }
                 if(position == 3)
                 {
-                    Intent in = new Intent(getApplicationContext(),Project_Competition.class);
+                    Intent in = new Intent(getApplicationContext(), MrMsTechy_open.class);
                     startActivity(in);
                 }
                 if(position == 4)
@@ -134,6 +134,21 @@ public class General_Event_Main extends AppCompatActivity {
                     startActivity(in);
                 }
 
+                if (position == 9) {
+                    Intent in = new Intent(getApplicationContext(), Suggestion_box.class);
+                    startActivity(in);
+                }
+
+                if (position == 10) {
+                    Intent in = new Intent(getApplicationContext(), Suggestion_box.class);
+                    startActivity(in);
+                }
+
+                if (position == 11) {
+                    Intent in = new Intent(getApplicationContext(), Suggestion_box.class);
+                    startActivity(in);
+                }
+
             }
         });
 
@@ -144,15 +159,18 @@ public class General_Event_Main extends AppCompatActivity {
 
     private void initData()
     {
-        GeneralEvent1List.add(new General_Event_1("Democracy","http://www.miastogier.pl/baza/Encyklopedia/gry/Democracy3_PC/Okladka/okl_democracy3cover.jpg"));
-        GeneralEvent1List.add(new General_Event_1("The One","http://www.salfordcommunityleisure.co.uk/sites/default/files/styles/page_width_standard/public/uploads/events/Model%20making%20edited%20for%20web.jpg?itok=NoYY2rBb"));
-        GeneralEvent1List.add(new General_Event_1("Master Robot vs Slave Robot","http://thamesandkosmos.com/images/stories/virtuemart/product/620377_roboticsworkshop_model8.jpg"));
-        GeneralEvent1List.add(new General_Event_1("Project Competition","https://newsignature.com/wp-content/uploads/2017/02/project-management-1024x512.png"));
-        GeneralEvent1List.add(new General_Event_1("Introduction To Robotics","https://image.freepik.com/free-photo/robot-doing-the-peace-sign_1048-3527.jpg"));
-        GeneralEvent1List.add(new General_Event_1("Abhivyakti","https://image.freepik.com/free-photo/people_1122-1876.jpg"));
-        GeneralEvent1List.add(new General_Event_1("The Quiz","https://image.freepik.com/free-vector/quiz-background-with-items-in-flat-design_23-2147599082.jpg"));
-        GeneralEvent1List.add(new General_Event_1("Paper Presentation","http://millenniumupdate.in/img/competiton/paper.jpg"));
-        GeneralEvent1List.add(new General_Event_1("Suggesstion Box Designing and Model Making","https://associationsnow.com/wp-content/uploads/2016/02/0201_suggestion-800x480.jpg"));
+        GeneralEvent1List.add(new General_Event_1("JNEC ka KBC", "http://www.miastogier.pl/baza/Encyklopedia/gry/Democracy3_PC/Okladka/okl_democracy3cover.jpg"));
+        GeneralEvent1List.add(new General_Event_1("Survival Battle", "http://www.salfordcommunityleisure.co.uk/sites/default/files/styles/page_width_standard/public/uploads/events/Model%20making%20edited%20for%20web.jpg?itok=NoYY2rBb"));
+        GeneralEvent1List.add(new General_Event_1("Tech One", "http://thamesandkosmos.com/images/stories/virtuemart/product/620377_roboticsworkshop_model8.jpg"));
+        GeneralEvent1List.add(new General_Event_1("Mr. and Ms. Techy", "https://newsignature.com/wp-content/uploads/2017/02/project-management-1024x512.png"));
+        GeneralEvent1List.add(new General_Event_1("Best from Waste", "https://image.freepik.com/free-photo/robot-doing-the-peace-sign_1048-3527.jpg"));
+        GeneralEvent1List.add(new General_Event_1("Business Idea Competition", "https://image.freepik.com/free-photo/people_1122-1876.jpg"));
+        GeneralEvent1List.add(new General_Event_1("Proyekto", "https://image.freepik.com/free-vector/quiz-background-with-items-in-flat-design_23-2147599082.jpg"));
+        GeneralEvent1List.add(new General_Event_1("Ideathon", "http://millenniumupdate.in/img/competiton/paper.jpg"));
+        GeneralEvent1List.add(new General_Event_1("Speak-up", "https://associationsnow.com/wp-content/uploads/2016/02/0201_suggestion-800x480.jpg"));
+        GeneralEvent1List.add(new General_Event_1("Innovate to implement", "https://associationsnow.com/wp-content/uploads/2016/02/0201_suggestion-800x480.jpg"));
+        GeneralEvent1List.add(new General_Event_1("Leader in You", "https://associationsnow.com/wp-content/uploads/2016/02/0201_suggestion-800x480.jpg"));
+        GeneralEvent1List.add(new General_Event_1("Techno Confetti Poster Competition", "https://associationsnow.com/wp-content/uploads/2016/02/0201_suggestion-800x480.jpg"));
 
     }
 }

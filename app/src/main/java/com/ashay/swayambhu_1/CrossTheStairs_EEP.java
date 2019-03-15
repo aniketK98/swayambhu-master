@@ -60,7 +60,7 @@ public class CrossTheStairs_EEP extends AppCompatActivity {
 
         mAuth = FirebaseAuth.getInstance();
 
-        mbook = (Button) findViewById(R.id.button_circuit);
+        mbook = (Button) findViewById(R.id.button_projectcompetition);
 
         mbook.setOnClickListener(new View.OnClickListener() {
             @Override

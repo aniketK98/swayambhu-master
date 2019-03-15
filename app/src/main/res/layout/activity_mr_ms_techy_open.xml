@@ -5,23 +5,21 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/back"
-    android:orientation="vertical"
-    tools:context="com.ashay.swayambhu_1.Aakar_civil ">
+    tools:context="com.ashay.swayambhu_1.MrMsTechy_open">
 
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_margin="25dp"
-            android:layout_marginTop="20dp"
+
             android:orientation="vertical">
 
             <android.support.v7.widget.CardView
-                android:id="@+id/c1_Mech"
+
                 android:layout_width="match_parent"
                 android:layout_height="150dp"
                 android:layout_marginTop="20dp"
@@ -42,7 +40,7 @@
                         android:layout_gravity="center|center_horizontal"
                         android:fontFamily="monospace"
                         android:padding="5dp"
-                        android:text="AAKAAR"
+                        android:text="Mr AND Ms TECHY"
                         android:textColor="@color/back"
 
                         android:textSize="30dp"
@@ -54,12 +52,12 @@
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="30dp"
+                android:layout_marginTop="20dp"
                 android:orientation="horizontal">
 
 
                 <android.support.v7.widget.CardView
-                    android:id="@+id/c2_Mech"
+                    android:id="@+id/c1_ECT"
 
                     android:layout_width="150dp"
                     android:layout_height="100dp"
@@ -89,7 +87,6 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_below="@+id/imageView"
-
                             android:layout_alignParentStart="true"
                             android:layout_alignParentLeft="true"
                             android:layout_marginLeft="5dp"
@@ -104,7 +101,7 @@
 
 
                 <android.support.v7.widget.CardView
-                    android:id="@+id/c3_Mech"
+                    android:id="@+id/c2_ECT"
 
                     android:layout_width="150dp"
                     android:layout_height="100dp"
@@ -155,7 +152,7 @@
 
 
             <android.support.v7.widget.CardView
-                android:id="@+id/c4_Mech"
+                android:id="@+id/c3_ECT"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="20dp"
@@ -187,8 +184,9 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:fontFamily="sans-serif"
+                        android:gravity="left"
                         android:padding="15dp"
-                        android:text=": It will be fun. The participants will solve riddles and they will find the material required for building the tower by solving them."
+                        android:text="Technical Quiz: - MCQ’s question based on technical, aptitude and current affairs."
                         android:textColor="@color/back"
                         android:textSize="18dp"></TextView>
 
@@ -199,7 +197,7 @@
             </android.support.v7.widget.CardView>
 
             <android.support.v7.widget.CardView
-                android:id="@+id/c5_Mech"
+                android:id="@+id/c4_ECT"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="20dp"
@@ -231,17 +229,61 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:fontFamily="sans-serif"
+                        android:gravity="left"
                         android:padding="15dp"
-                        android:text="After getting the materials they will build the towers as per the mentioned specifications."
+                        android:text="Rapid fire round: - Basics questions to check speed and accuracy of participants."
                         android:textColor="@color/back"
                         android:textSize="18dp"></TextView>
-
 
                 </LinearLayout>
 
 
             </android.support.v7.widget.CardView>
 
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/c5_ECT"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+
+                app:cardCornerRadius="10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:fontFamily="sans-serif"
+                        android:padding="5dp"
+                        android:text="Round 3"
+                        android:textColor="@color/back"
+                        android:textSize="30dp"
+                        android:textStyle="bold" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:background="@color/back"></View>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="sans-serif"
+                        android:gravity="left"
+                        android:padding="15dp"
+                        android:text=" Interview round: - We want to simulate the exact environment of campus interview. Panel of  faculty and organizer will conduct the interview."
+                        android:textColor="@color/back"
+                        android:textSize="18dp"></TextView>
+
+                </LinearLayout>
+
+
+            </android.support.v7.widget.CardView>
 
             <android.support.v7.widget.CardView
 
@@ -260,11 +302,9 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="left"
-
                         android:fontFamily="sans-serif"
                         android:padding="15dp"
-                        android:text="TEAM MEMBERS:\n1 or 2\n
-ENTRY FEE: 50/-"
+                        android:text="TEAM MEMBER : Single\n\nENTRY FEE : 30/-"
                         android:textColor="@color/back"
                         android:textSize="20dp"
                         android:textStyle="bold" />
@@ -309,17 +349,19 @@ ENTRY FEE: 50/-"
                         android:layout_height="wrap_content"
                         android:layout_gravity="left"
                         android:autoLink="phone"
+
                         android:linksClickable="true"
                         android:padding="15dp"
-                        android:text="Head:\nKhushboo Mundhada +918329176479 \n\nCo-head:\nDeepika Lodhi +919588633530"
+                        android:text="Head :\nSuyog Kalani +919421608748\n\nCo-head :\nManish Sonawane +919637449232 "
                         android:textColor="@color/back"
-                        android:textStyle="bold"></TextView>
+
+                        android:textStyle="bold" />
                 </LinearLayout>
             </android.support.v7.widget.CardView>
 
 
             <Button
-                android:id="@+id/button_lathe_war"
+                android:id="@+id/button_circuit"
                 android:layout_width="180dp"
                 android:layout_height="50dp"
                 android:layout_gravity="center_horizontal"
@@ -329,8 +371,10 @@ ENTRY FEE: 50/-"
                 android:clickable="true"
                 android:focusable="true"
                 android:text="Book"
-                android:textColor="@color/back" />
-            />
+                android:textColor="@color/back"
+
+
+                />
 
         </LinearLayout>
 
