@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="@color/back"
     android:orientation="vertical"
-    tools:context="com.ashay.swayambhu_1.Bestfromwaste_open">
+    tools:context="com.ashay.swayambhu_1.BussinessIdea_open">
 
     <ScrollView
         android:layout_width="match_parent"
@@ -42,7 +42,7 @@
                         android:layout_gravity="center|center_horizontal"
                         android:fontFamily="monospace"
                         android:padding="5dp"
-                        android:text="BEST FROM WASTE"
+                        android:text="BUSINESS IDEA COMPETITION"
                         android:textColor="@color/back"
 
                         android:textSize="30dp"
@@ -188,7 +188,7 @@
                         android:layout_height="wrap_content"
                         android:fontFamily="sans-serif"
                         android:padding="15dp"
-                        android:text="Waste products will be provided, useful product and creativity should be shown."
+                        android:text="The panel of judges for the first round of competition will be constituted internally in your institution. This will mean recruiting your own faculty members on the panel. Ideally, the panel should consists of three faculty members."
                         android:textColor="@color/back"
                         android:textSize="18dp"></TextView>
 
@@ -232,7 +232,7 @@
                         android:layout_height="wrap_content"
                         android:fontFamily="sans-serif"
                         android:padding="15dp"
-                        android:text="Battery and waste product are provided, and any creative, useful and working product should bebshown and presentation should be given of that product."
+                        android:text=" A panel of consisting 3 external judges can select the final winners. The judges could be entrepreneurs, analyst, venture investors, industry experts, corporate professional or faculty members from Institution. However, one entrepreneur must be part of this panel to add the perspective gained from experiencing the entrepreneurial process first-hand. This will be an opportunity for us to network with the academic, business and entrepreneurial communities."
                         android:textColor="@color/back"
                         android:textSize="18dp"></TextView>
 
@@ -263,8 +263,8 @@
 
                         android:fontFamily="sans-serif"
                         android:padding="15dp"
-                        android:text="TEAM MEMBERS: 4\n
-ENTRY FEE:50/-"
+                        android:text="TEAM MEMBERS:-\n
+ENTRY FEE:-"
                         android:textColor="@color/back"
                         android:textSize="20dp"
                         android:textStyle="bold" />
@@ -311,7 +311,7 @@ ENTRY FEE:50/-"
                         android:autoLink="phone"
                         android:linksClickable="true"
                         android:padding="15dp"
-                        android:text="Head:\nRutuja Rode +91738771877 \n\nCo-head:\nShruti Potdar +917219521921"
+                        android:text="Head:\n- \n\nCo-head:\n-"
                         android:textColor="@color/back"
                         android:textStyle="bold"></TextView>
                 </LinearLayout>

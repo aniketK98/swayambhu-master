@@ -29,7 +29,8 @@ import java.net.URL;
 import java.util.HashMap;
 import java.util.Map;
 
-public class Bestfromwaste_open extends AppCompatActivity {
+public class BussinessIdea_open extends AppCompatActivity {
+
 
     Dialog mydialog;
     Button mbook;
@@ -42,7 +43,7 @@ public class Bestfromwaste_open extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_bestfromwaste_open);
+        setContentView(R.layout.activity_bussiness_idea_open);
 
 
         Animation a = AnimationUtils.loadAnimation(this, R.anim.viewanim);
@@ -80,7 +81,7 @@ public class Bestfromwaste_open extends AppCompatActivity {
         FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
         String email = user.getEmail();
         String uid = user.getUid();
-        DatabaseReference dr = FirebaseDatabase.getInstance().getReference().child("Open").child("Best from Waste").child(uid);
+        DatabaseReference dr = FirebaseDatabase.getInstance().getReference().child("Open").child("Business Ideal Competition").child(uid);
 
 
         dr.addValueEventListener(new ValueEventListener() {
@@ -120,7 +121,7 @@ public class Bestfromwaste_open extends AppCompatActivity {
         //Toast.makeText(getApplicationContext(),""+email, Toast.LENGTH_SHORT).show();
 
 
-        DatabaseReference mDatabase = FirebaseDatabase.getInstance().getReference().child("Open").child("Best from Waste").child(uid);
+        DatabaseReference mDatabase = FirebaseDatabase.getInstance().getReference().child("Open").child("Business Ideal Competition").child(uid);
 
         Map<String, String> data = new HashMap<String, String>();
         data.put("Email", email);
@@ -135,11 +136,11 @@ public class Bestfromwaste_open extends AppCompatActivity {
 
                     String email = StudentInfo.getEmail();
                     String subject = "Greetings from JNEC-SWAYAMBHU";
-                    String message = "Thank you " + StudentInfo.getname() + " for registering in Best from Waste. Kindly show this message/email on payment desk to confirm your booking. This email is valid until bookings are full.";
+                    String message = "Thank you " + StudentInfo.getname() + " for registering in Business Ideal Competition. Kindly show this message/email on payment desk to confirm your booking. This email is valid until bookings are full.";
 
                     //Toast.makeText(getApplicationContext(),email+" ",Toast.LENGTH_LONG).show();
 
-                    SendMail sm = new SendMail(Bestfromwaste_open.this, email, subject, message);
+                    SendMail sm = new SendMail(BussinessIdea_open.this, email, subject, message);
 
                     //Executing sendmail to send email
                     sm.execute();
@@ -155,7 +156,7 @@ public class Bestfromwaste_open extends AppCompatActivity {
         try {
             // Construct data
             String apiKey = "apikey=" + "PfSxPJ45xcg-L8TsFC7O5t3neTPGlscwlgetIMSf4L";
-            String message = "&message=" + "Greetings from team TechFest, Thank you for registering in Best from Waste " + StudentInfo.getname() + ".";
+            String message = "&message=" + "Greetings from team TechFest, Thank you for registering in Business Ideal Competition " + StudentInfo.getname() + ".";
             String sender = "&sender=" + "";//mtxtsender.getText().toString();
             String numbers = "&numbers=" + StudentInfo.getContact();
 
@@ -187,5 +188,4 @@ public class Bestfromwaste_open extends AppCompatActivity {
 
         }
     }
-
 }

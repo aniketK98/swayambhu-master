@@ -6,18 +6,17 @@
     android:layout_height="match_parent"
     android:background="@color/back"
     android:orientation="vertical"
-    tools:context="com.ashay.swayambhu_1.Bestfromwaste_open">
+    tools:context="com.ashay.swayambhu_1.Project_Competition">
 
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_margin="25dp"
-            android:layout_marginTop="20dp"
+
             android:orientation="vertical">
 
             <android.support.v7.widget.CardView
@@ -42,7 +41,7 @@
                         android:layout_gravity="center|center_horizontal"
                         android:fontFamily="monospace"
                         android:padding="5dp"
-                        android:text="BEST FROM WASTE"
+                        android:text="PROYEKTO"
                         android:textColor="@color/back"
 
                         android:textSize="30dp"
@@ -54,13 +53,15 @@
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="30dp"
-                android:orientation="horizontal">
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal"
+
+                >
 
 
                 <android.support.v7.widget.CardView
                     android:id="@+id/c2_Mech"
-
                     android:layout_width="150dp"
                     android:layout_height="100dp"
 
@@ -89,7 +90,6 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_below="@+id/imageView"
-
                             android:layout_alignParentStart="true"
                             android:layout_alignParentLeft="true"
                             android:layout_marginLeft="5dp"
@@ -135,7 +135,6 @@
                             android:layout_alignParentEnd="true"
                             android:layout_alignParentRight="true"
                             android:layout_marginTop="7dp"
-
                             android:layout_marginRight="8dp"
                             android:gravity="center_horizontal"
                             android:text="27 | 28 March"
@@ -149,10 +148,7 @@
                     </RelativeLayout>
 
                 </android.support.v7.widget.CardView>
-
-
             </LinearLayout>
-
 
             <android.support.v7.widget.CardView
                 android:id="@+id/c4_Mech"
@@ -187,8 +183,9 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:fontFamily="sans-serif"
+                        android:gravity="left"
                         android:padding="15dp"
-                        android:text="Waste products will be provided, useful product and creativity should be shown."
+                        android:text=" Judges round 1. The judges will go through the scrutinized projects. 2. 20 % projects will be shortlisted for the final judges round."
                         android:textColor="@color/back"
                         android:textSize="18dp"></TextView>
 
@@ -232,7 +229,7 @@
                         android:layout_height="wrap_content"
                         android:fontFamily="sans-serif"
                         android:padding="15dp"
-                        android:text="Battery and waste product are provided, and any creative, useful and working product should bebshown and presentation should be given of that product."
+                        android:text=" Industry judges round The judges analyze and evaluate shortlisted projects; winners will be decided in each category."
                         android:textColor="@color/back"
                         android:textSize="18dp"></TextView>
 
@@ -242,6 +239,34 @@
 
             </android.support.v7.widget.CardView>
 
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/c6_Mech"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+
+                app:cardCornerRadius="10dp">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif"
+                    android:padding="15dp"
+                    android:text="Sub categories -1. Research based 2.Product based 3. Application based.
+1. On the event day all participants should report at 8 am.
+2. All teams will take their allocated places. Inauguration of the exhibition after the main function by guests.
+3. Exhibition timings: 11 am- 5 pm.
+4. Students will showcase their projects with live demonstrations and posters.
+5. Panel of judges (academicians and alumni) will finalize
+50% projects based on their abstract.."
+                    android:textColor="@color/back"
+                    android:textSize="18dp"
+                    android:textStyle="bold"></TextView>
+
+
+            </android.support.v7.widget.CardView>
 
             <android.support.v7.widget.CardView
 
@@ -260,11 +285,9 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="left"
-
                         android:fontFamily="sans-serif"
                         android:padding="15dp"
-                        android:text="TEAM MEMBERS: 4\n
-ENTRY FEE:50/-"
+                        android:text="ENTRY FEE : 200/- (Single or Team of 5)"
                         android:textColor="@color/back"
                         android:textSize="20dp"
                         android:textStyle="bold" />
@@ -309,9 +332,11 @@ ENTRY FEE:50/-"
                         android:layout_height="wrap_content"
                         android:layout_gravity="left"
                         android:autoLink="phone"
+
                         android:linksClickable="true"
+
                         android:padding="15dp"
-                        android:text="Head:\nRutuja Rode +91738771877 \n\nCo-head:\nShruti Potdar +917219521921"
+                        android:text="Head :\nSufiyan Shaikh +917798521896\n\nCo-head :\nShubham Dangwal +919423178097"
                         android:textColor="@color/back"
                         android:textStyle="bold"></TextView>
                 </LinearLayout>
@@ -319,7 +344,7 @@ ENTRY FEE:50/-"
 
 
             <Button
-                android:id="@+id/button_lathe_war"
+                android:id="@+id/button_autocad"
                 android:layout_width="180dp"
                 android:layout_height="50dp"
                 android:layout_gravity="center_horizontal"
@@ -329,8 +354,10 @@ ENTRY FEE:50/-"
                 android:clickable="true"
                 android:focusable="true"
                 android:text="Book"
-                android:textColor="@color/back" />
-            />
+                android:textColor="@color/back"
+
+
+                />
 
         </LinearLayout>
 

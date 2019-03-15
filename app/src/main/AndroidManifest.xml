@@ -13,7 +13,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Bestfromwaste_open"></activity>
+        <activity android:name=".Proyekto_open"></activity>
+        <activity android:name=".BussinessIdea_open" />
+        <activity android:name=".Bestfromwaste_open" />
         <activity android:name=".MrMsTechy_open" />
         <activity android:name=".TechOne_open" />
         <activity android:name=".SurvivalBattle_open" />

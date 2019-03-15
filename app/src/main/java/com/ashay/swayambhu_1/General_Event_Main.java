@@ -110,17 +110,17 @@ public class General_Event_Main extends AppCompatActivity {
                 }
                 if(position == 4)
                 {
-                    Intent in = new Intent(getApplicationContext(),Introduction_to_robotics.class);
+                    Intent in = new Intent(getApplicationContext(), Bestfromwaste_open.class);
                     startActivity(in);
                 }
                 if(position == 5)
                 {
-                    Intent in = new Intent(getApplicationContext(),Abhivyakti_IT.class);
+                    Intent in = new Intent(getApplicationContext(), BussinessIdea_open.class);
                     startActivity(in);
                 }
                 if(position == 6)
                 {
-                    Intent in = new Intent(getApplicationContext(),The_Quiz.class);
+                    Intent in = new Intent(getApplicationContext(), Proyekto_open.class);
                     startActivity(in);
                 }
                 if(position == 7)
