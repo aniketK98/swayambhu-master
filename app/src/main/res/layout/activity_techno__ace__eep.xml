@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/back"
-    tools:context="com.jnec.techfest.swayambhu.Techno_Ace_EEP">
+    tools:context="com.ashay.swayambhu_1.Techno_Ace_EEP">
 
     <ScrollView
         android:layout_width="match_parent"
@@ -276,7 +276,10 @@
                         android:fontFamily="sans-serif"
                         android:gravity="left"
                         android:padding="15dp"
-                        android:text="3"
+                        android:text="Escape Room: 4 puzzles will be provided in the Room  Solve the circuit and takes its reading. Ex. Resistors connected in parallel
+ Cross word solving.
+ Chess playing or solving riddles.
+Ex. A box without key or lid yet golden treasure inside is hiding what it is? ANS:- Egg CKT debugging"
                         android:textColor="@color/back"
                         android:textSize="18dp"></TextView>
 

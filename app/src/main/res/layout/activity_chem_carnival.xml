@@ -352,7 +352,7 @@
 
                         android:linksClickable="true"
                         android:padding="15dp"
-                        android:text="Head :\nJayesh Kalambe +918668938730\n\nCo-head :\Vinayak Thigale +919890882544 "
+                        android:text="Head :\nJayesh Kalambe +918668938730\n\nCo-head :\nVinayak Thigale +919890882544 "
                         android:textColor="@color/back"
 
                         android:textStyle="bold" />

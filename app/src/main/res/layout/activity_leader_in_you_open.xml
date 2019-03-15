@@ -408,7 +408,7 @@ Rules: The last decision will be finalize by judges, any excuses will not entert
                         android:layout_gravity="left"
                         android:fontFamily="sans-serif"
                         android:padding="15dp"
-                        android:text="TEAM MEMBER : \ntSingle or 2 or 3\n\nENTRY FEE :\n\nSingle: 30/-\nTeam: 50/-"
+                        android:text="TEAM MEMBER : \nSingle or 2 or 3\n\nENTRY FEE :\n\nSingle: 30/-\nTeam: 50/-"
                         android:textColor="@color/back"
                         android:textSize="20dp"
                         android:textStyle="bold" />

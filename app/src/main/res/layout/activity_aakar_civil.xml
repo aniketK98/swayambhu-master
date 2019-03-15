@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="@color/back"
     android:orientation="vertical"
-    tools:context="com.ashay.swayambhu_1.Aakar_civil ">
+    tools:context="com.ashay.swayambhu_1.Aakar_civil">
 
     <ScrollView
         android:layout_width="match_parent"
@@ -188,7 +188,7 @@
                         android:layout_height="wrap_content"
                         android:fontFamily="sans-serif"
                         android:padding="15dp"
-                        android:text=": It will be fun. The participants will solve riddles and they will find the material required for building the tower by solving them."
+                        android:text="It will be fun. The participants will solve riddles and they will find the material required for building the tower by solving them."
                         android:textColor="@color/back"
                         android:textSize="18dp"></TextView>
 

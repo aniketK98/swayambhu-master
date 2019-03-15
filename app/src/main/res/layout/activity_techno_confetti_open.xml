@@ -237,7 +237,7 @@ In the judges round that participant has to give detailed oral presentation abou
                         android:layout_gravity="left"
                         android:fontFamily="sans-serif"
                         android:padding="15dp"
-                        android:text="Single/Team of 2or3 \n\nENTRY FEE :\n\n Single: 40/- \n Team of 2: 60/- \n Team of 3: 100/-"
+                        android:text="TEAM MEMBERS: \nSingle or 2 or 3 \n\nENTRY FEE :\n\n Single: 40/- \n Team of 2: 60/- \n Team of 3: 100/-"
                         android:textColor="@color/back"
                         android:textSize="20dp"
                         android:textStyle="bold" />

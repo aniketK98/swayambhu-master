@@ -352,7 +352,7 @@
 
                         android:linksClickable="true"
                         android:padding="15dp"
-                        android:text="Head :\nSanjay Walke +917875694376\n\nCo-head :\Tarikesh Shinde +918975516379 "
+                        android:text="Head :\nSanjay Walke +917875694376\n\nCo-head :\nTarikesh Shinde +918975516379 "
                         android:textColor="@color/back"
 
                         android:textStyle="bold" />

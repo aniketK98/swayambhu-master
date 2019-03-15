@@ -5,7 +5,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.jnec.techfest.swayambhu.Intro"
+    tools:context="com.ashay.swayambhu_1.Intro"
     android:orientation="vertical"
     android:background="#000">
 
@@ -34,7 +34,7 @@
             android:layout_gravity="center"
             android:layout_marginTop="5dp"
             android:fontFamily="monospace"
-            android:text="Technical Student Convention"
+            android:text="Students' Technical Convention"
             android:textColor="@color/white"
             android:textSize="15dp"
             android:textStyle="bold" />

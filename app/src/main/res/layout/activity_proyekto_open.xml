@@ -185,7 +185,9 @@
                         android:fontFamily="sans-serif"
                         android:gravity="left"
                         android:padding="15dp"
-                        android:text=" Judges round 1. The judges will go through the scrutinized projects. 2. 20 % projects will be shortlisted for the final judges round."
+                        android:text=" Judges round
+1. The judges will go through the scrutinized projects.
+2. 20 % projects will be shortlisted for the final judges round."
                         android:textColor="@color/back"
                         android:textSize="18dp"></TextView>
 
