@@ -86,13 +86,13 @@ public class ECT_EVENTS_MAIN extends AppCompatActivity {
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 if (position == 0)
                 {
-                    Intent in = new Intent(getApplicationContext(),Circuit_Making_ECT.class);
+                    Intent in = new Intent(getApplicationContext(), Micron_ECT.class);
                     startActivity(in);
 
                 }
                 if(position == 1)
                 {
-                    Intent in = new Intent(getApplicationContext(),Tech_Hunt.class);
+                    Intent in = new Intent(getApplicationContext(), Sports_Data_ECT.class);
                     startActivity(in);
                 }
 
@@ -104,9 +104,23 @@ public class ECT_EVENTS_MAIN extends AppCompatActivity {
 
                 if(position == 3)
                 {
-                    Intent in = new Intent(getApplicationContext(),AquaBoat.class);
+                    Intent in = new Intent(getApplicationContext(), ElectromaniaWork_ECT.class);
                     startActivity(in);
                 }
+                if (position == 4) {
+                    Intent in = new Intent(getApplicationContext(), Techno_Ace_EEP.class);
+                    startActivity(in);
+                }
+                if (position == 5) {
+                    Intent in = new Intent(getApplicationContext(), CrossTheStairs_EEP.class);
+                    startActivity(in);
+                }
+                if (position == 6) {
+                    Intent in = new Intent(getApplicationContext(), Khoj2k19_EEP.class);
+                    startActivity(in);
+                }
+
+
             }
         });
 
@@ -119,11 +133,13 @@ public class ECT_EVENTS_MAIN extends AppCompatActivity {
     {
 
 
-        ECTEvent1List.add(new ECT_EVENT_1("Circuit Making","https://image.freepik.com/free-vector/technological-logo_1035-6545.jpg"));
-        ECTEvent1List.add(new ECT_EVENT_1("Tech Hunt","https://image.freepik.com/free-photo/light-bulb-with-monuments-drawn-around_1232-886.jpg"));
-        ECTEvent1List.add(new ECT_EVENT_1("Mat-Mania","https://www.zyxware.com/files/styles/article/public/software_testing.jpg?itok=0j0cFmYc"));
-        ECTEvent1List.add(new ECT_EVENT_1("AquaBoat","https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQ-aILSlL1_VBPHLXXaEsKSsmInolPqo4las8Q_XZmgZZ71Yf2"));
-
+        ECTEvent1List.add(new ECT_EVENT_1("Micron", "https://image.freepik.com/free-vector/technological-logo_1035-6545.jpg"));
+        ECTEvent1List.add(new ECT_EVENT_1("Sports Data Analytic", "https://image.freepik.com/free-photo/light-bulb-with-monuments-drawn-around_1232-886.jpg"));
+        ECTEvent1List.add(new ECT_EVENT_1("The Mat Hacker", "https://www.zyxware.com/files/styles/article/public/software_testing.jpg?itok=0j0cFmYc"));
+        ECTEvent1List.add(new ECT_EVENT_1("Electromania Workshop", "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQ-aILSlL1_VBPHLXXaEsKSsmInolPqo4las8Q_XZmgZZ71Yf2"));
+        ECTEvent1List.add(new ECT_EVENT_1("Techno Ace", "https://image.freepik.com/free-vector/technological-logo_1035-6545.jpg"));
+        ECTEvent1List.add(new ECT_EVENT_1("Cross the Stairs", "https://image.freepik.com/free-vector/technological-logo_1035-6545.jpg"));
+        ECTEvent1List.add(new ECT_EVENT_1("KHOJ 2k19", "https://image.freepik.com/free-vector/technological-logo_1035-6545.jpg"));
     }
 
     void Circlemenu(View v)

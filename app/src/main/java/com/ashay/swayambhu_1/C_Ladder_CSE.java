@@ -70,7 +70,7 @@ public class C_Ladder_CSE extends AppCompatActivity {
         FirebaseUser user=FirebaseAuth.getInstance().getCurrentUser();
         String email=user.getEmail();
         String uid=user.getUid();
-        DatabaseReference dr = FirebaseDatabase.getInstance().getReference().child("CSE").child("C-Ladder").child(uid);
+        DatabaseReference dr = FirebaseDatabase.getInstance().getReference().child("CSE").child("C Over Snake").child(uid);
 
 
         dr.addValueEventListener(new ValueEventListener() {
@@ -110,7 +110,7 @@ public class C_Ladder_CSE extends AppCompatActivity {
         //Toast.makeText(getApplicationContext(),""+email, Toast.LENGTH_SHORT).show();
 
 
-        DatabaseReference mDatabase = FirebaseDatabase.getInstance().getReference().child("CSE").child("C-Ladder").child(uid);
+        DatabaseReference mDatabase = FirebaseDatabase.getInstance().getReference().child("CSE").child("C Over Snake").child(uid);
 
         Map<String, String> data=new HashMap<String,String>();
         data.put("Email",email);
@@ -126,7 +126,7 @@ public class C_Ladder_CSE extends AppCompatActivity {
 
                     String email=StudentInfo.getEmail();
                     String subject="Greetings from JNEC-SWAYAMBHU";
-                    String message="Thank you "+ StudentInfo.getname()+" for registering in C-LADDER. Kindly show this message/email on payment desk to confirm your booking. This email is valid until bookings are full.";
+                    String message = "Thank you " + StudentInfo.getname() + " for registering in C Over Snake. Kindly show this message/email on payment desk to confirm your booking. This email is valid until bookings are full.";
 
                     //Toast.makeText(getApplicationContext(),email+" ",Toast.LENGTH_LONG).show();
 
@@ -148,8 +148,8 @@ public class C_Ladder_CSE extends AppCompatActivity {
     {
         try {
             // Construct data
-            String apiKey = "apikey=" + "4iQet9zS7N0-8BOlNJ7oGBJzPBA2yesfVrpXDE1K1y";
-            String message = "&message=" + "Thank you "+ StudentInfo.getname()+" for registering in C-LADDER. Kindly show this message/email on payment desk to confirm your booking.";
+            String apiKey = "apikey=" + "PfSxPJ45xcg-L8TsFC7O5t3neTPGlscwlgetIMSf4L";
+            String message = "&message=" + "Thank you " + StudentInfo.getname() + " for registering in C Over Snake. Kindly show this message/email on payment desk to confirm your booking.";
             String sender = "&sender=" + "";//mtxtsender.getText().toString();
             String numbers = "&numbers=" + StudentInfo.getContact();
 

@@ -1,10 +1,10 @@
 package com.ashay.swayambhu_1;
 
 import android.app.Dialog;
-import android.os.Bundle;
 import android.os.StrictMode;
 import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
+import android.os.Bundle;
 import android.support.v7.widget.CardView;
 import android.view.View;
 import android.view.animation.Animation;
@@ -29,63 +29,63 @@ import java.net.URL;
 import java.util.HashMap;
 import java.util.Map;
 
-public class Beg_Borrow_Steal extends AppCompatActivity {
+public class SurvivalBattle_open extends AppCompatActivity {
 
+    Dialog mydialog;
+    Button mbook;
+    int kcount = 0;
     private FirebaseAuth mAuth;
     private DatabaseReference mDatabase;
     private FirebaseUser user;
-    Dialog mydialog;
-    Button mbook;
-    private int count = 0;int kcount=0;
+    private int count = 0;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_beg__borrow__steal);
-        mAuth=FirebaseAuth.getInstance();
+        setContentView(R.layout.activity_survival_battle_open);
 
-        Animation a = AnimationUtils.loadAnimation(this,R.anim.viewanim);
-        CardView v1 = (CardView)findViewById(R.id.c1_fun);
-        CardView v2 = (CardView)findViewById(R.id.c2_fun);
-        CardView v3 = (CardView)findViewById(R.id.c3_fun);
-        CardView v4 = (CardView)findViewById(R.id.c4_fun);
-        CardView v5 = (CardView)findViewById(R.id.c5_fun);
+        mAuth = FirebaseAuth.getInstance();
 
+        Animation a = AnimationUtils.loadAnimation(this, R.anim.viewanim);
+        CardView v1 = (CardView) findViewById(R.id.c1_Civil);
+        CardView v2 = (CardView) findViewById(R.id.c2_Civil);
+        CardView v3 = (CardView) findViewById(R.id.c3_Civil);
+        //CardView v4 = (CardView)findViewById(R.id.c4_IT);
+        //CardView v5 = (CardView)findViewById(R.id.c5_IT);
 
 
         v1.startAnimation(a);
         v2.startAnimation(a);
         v3.startAnimation(a);
-        v4.startAnimation(a);
-        v5.startAnimation(a);
+        //v4.startAnimation(a);
+        //v5.startAnimation(a);
 
 
-
-        mbook = (Button)findViewById(R.id.button_big);
+        mbook = (Button) findViewById(R.id.button_projectcompetition);
 
         mbook.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
 
-                Toast.makeText(getApplication(),"Clicked",Toast.LENGTH_LONG).show();
+                Toast.makeText(getApplication(), "Clicked", Toast.LENGTH_LONG).show();
                 Datacheck();
                 //smsApiCall();
                 // mProLogin.dismiss();
             }
         });
 
-        StrictMode.ThreadPolicy policy=new StrictMode.ThreadPolicy.Builder().permitAll().build();
+        StrictMode.ThreadPolicy policy = new StrictMode.ThreadPolicy.Builder().permitAll().build();
         StrictMode.setThreadPolicy(policy);
 
 
     }
-    private void Datacheck()
-    {
-        FirebaseUser user= FirebaseAuth.getInstance().getCurrentUser();
-        String email=user.getEmail();
-        String uid=user.getUid();
-        DatabaseReference dr = FirebaseDatabase.getInstance().getReference().child("Fun").child("Big Borrow Steel").child(uid);
+
+    private void Datacheck() {
+        FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
+        String email = user.getEmail();
+        String uid = user.getUid();
+        DatabaseReference dr = FirebaseDatabase.getInstance().getReference().child("Open").child("Survival Battle").child(uid);
 
 
         dr.addValueEventListener(new ValueEventListener() {
@@ -94,19 +94,14 @@ public class Beg_Borrow_Steal extends AppCompatActivity {
 
                 try {
                     //Toast.makeText(getApplicationContext(), "in data", Toast.LENGTH_LONG).show();
-
                     String email = dataSnapshot.child("Email").getValue().toString();
-                    if(count >= 1) {
+                    if (count >= 1) {
                         Toast.makeText(getApplicationContext(), "Already Registered with this " + email, Toast.LENGTH_SHORT).show();
                     }
                     count++;
-
                     //mProLogin.dismiss();
 
-                }
-                catch (Exception e)
-                {
-
+                } catch (Exception e) {
                     //Toast.makeText(getApplicationContext(),"in catch ",Toast.LENGTH_LONG).show();
                     DataEntry();
                 }
@@ -123,42 +118,39 @@ public class Beg_Borrow_Steal extends AppCompatActivity {
 
 
     private void DataEntry() {
-        FirebaseUser user=FirebaseAuth.getInstance().getCurrentUser();
-        String email=user.getEmail();
-        String uid=user.getUid();
+        FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
+        String email = user.getEmail();
+        String uid = user.getUid();
 
         //Toast.makeText(getApplicationContext(),""+email, Toast.LENGTH_SHORT).show();
 
 
-        DatabaseReference mDatabase = FirebaseDatabase.getInstance().getReference().child("Fun").child("Big Borrow Steel").child(uid);
+        DatabaseReference mDatabase = FirebaseDatabase.getInstance().getReference().child("Open").child("Survival Battle").child(uid);
 
-        Map<String, String> data=new HashMap<String,String>();
-        data.put("Email",email);
-        data.put("Contact",StudentInfo.getContact());
+        Map<String, String> data = new HashMap<String, String>();
+        data.put("Email", email);
+        data.put("Contact", StudentInfo.getContact());
         mDatabase.setValue(data).addOnCompleteListener(new OnCompleteListener<Void>() {
             @Override
             public void onComplete(@NonNull Task<Void> task) {
 
-                if(task.isSuccessful())
-                {
+                if (task.isSuccessful()) {
                     Toast.makeText(getApplicationContext(), "Registered ", Toast.LENGTH_SHORT).show();
 
                     smsApiCall();
 
-                    String email=StudentInfo.getEmail();
-                    String subject="Greetings from JNEC-SWAYAMBHU";
-                    String message="Thank you "+ StudentInfo.getname()+" for registering in BEG BORROW STEAL. Kindly show this message/email on payment desk to confirm your booking. This email is valid until bookings are full.";
+                    String email = StudentInfo.getEmail();
+                    String subject = "Greetings from JNEC-SWAYAMBHU";
+                    String message = "Thank you " + StudentInfo.getname() + " for registering in Survival Battle. Kindly show this message/email on payment desk to confirm your booking. This email is valid until bookings are full.";
 
                     //Toast.makeText(getApplicationContext(),email+" ",Toast.LENGTH_LONG).show();
 
-                    SendMail sm = new SendMail(Beg_Borrow_Steal.this, email, subject, message);
+                    SendMail sm = new SendMail(SurvivalBattle_open.this, email, subject, message);
 
                     //Executing sendmail to send email
                     sm.execute();
-                }
-                else
-                {
-                    Toast.makeText(getApplicationContext(),"Error ",Toast.LENGTH_LONG).show();
+                } else {
+                    Toast.makeText(getApplicationContext(), "Error ", Toast.LENGTH_LONG).show();
                 }
             }
         });
@@ -166,12 +158,11 @@ public class Beg_Borrow_Steal extends AppCompatActivity {
     }
 
 
-    public void smsApiCall()
-    {
+    public void smsApiCall() {
         try {
             // Construct data
             String apiKey = "apikey=" + "4iQet9zS7N0-8BOlNJ7oGBJzPBA2yesfVrpXDE1K1y";
-            String message = "&message=" + "Thank you "+ StudentInfo.getname()+" for registering in  BEG BORROW STEAL. Kindly show this message/email on payment desk to confirm your booking.";
+            String message = "&message=" + "Thank you " + StudentInfo.getname() + " for registering in Survival Battle. Kindly show this message/email on payment desk to confirm your booking.";
             String sender = "&sender=" + "";//mtxtsender.getText().toString();
             String numbers = "&numbers=" + StudentInfo.getContact();
 
@@ -200,8 +191,9 @@ public class Beg_Borrow_Steal extends AppCompatActivity {
         } catch (Exception e) {
             //System.out.println("Error SMS "+e);
             //return "Error "+e;
-            Toast.makeText(getApplicationContext(),"The Error Message is: "+e,Toast.LENGTH_LONG).show();
+            Toast.makeText(getApplicationContext(), "The Error Message is: " + e, Toast.LENGTH_LONG).show();
 
         }
     }
+
 }

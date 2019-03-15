@@ -90,9 +90,13 @@ public class MECH_EVENTS_MAIN extends AppCompatActivity {
                     Intent in = new Intent(getApplicationContext(),Lathe_War_Mech.class);
                     startActivity(in);
                 }
+                if (position == 0) {
+                    Intent in = new Intent(getApplicationContext(), Auto_CAD_Desgin.class);
+                    startActivity(in);
+                }
                 if(position == 2)
                 {
-                    Intent in = new Intent(getApplicationContext(),Auto_CAD_Desgin.class);
+                    Intent in = new Intent(getApplicationContext(), adalat_mech.class);
                     startActivity(in);
                 }
             }
@@ -113,7 +117,7 @@ public class MECH_EVENTS_MAIN extends AppCompatActivity {
 
         MechEvent1List.add(new MECH_EVENT_1("AutoCAD Design","https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTCxkKNPeMq4NV4ZygsoYDDXYeh9gvYp5E9MR8avThHKMybDovhyQ"));
         MechEvent1List.add(new MECH_EVENT_1("Lathe War","https://i.ytimg.com/vi/0zwVKxM7YGs/hqdefault.jpg"));
-
+        MechEvent1List.add(new MECH_EVENT_1("Adalat", "https://i.ytimg.com/vi/0zwVKxM7YGs/hqdefault.jpg"));
 
     }
 

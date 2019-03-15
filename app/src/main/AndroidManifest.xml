@@ -13,7 +13,28 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-
+        <activity android:name=".Bestfromwaste_open"></activity>
+        <activity android:name=".MrMsTechy_open" />
+        <activity android:name=".TechOne_open" />
+        <activity android:name=".SurvivalBattle_open" />
+        <activity android:name=".JNEC_KBC_open" />
+        <activity android:name=".FunInSurvey_civil" />
+        <activity android:name=".Aakar_civil" />
+        <activity android:name=".Cartofest_civil" />
+        <activity android:name=".Aakruti_civil" />
+        <activity android:name=".Khoj2k19_EEP" />
+        <activity android:name=".CrossTheStairs_EEP" />
+        <activity android:name=".Techno_Ace_EEP" />
+        <activity android:name=".ElectromaniaWork_ECT" />
+        <activity android:name=".Sports_Data_ECT" />
+        <activity android:name=".Micron_ECT" />
+        <activity android:name=".Code_Wizard_MCA" />
+        <activity android:name=".Codingo2_CSE" />
+        <activity android:name=".FastFurious_IT" />
+        <activity android:name=".chem_carnival" />
+        <activity android:name=".ModelMaking_chem" />
+        <activity android:name=".adalat_mech" />
+        <activity android:name=".CircuitDebugiging_ECT" />
         <activity
             android:name=".CSE_EVENTS_MAIN"
             android:screenOrientation="portrait" />
@@ -149,7 +170,7 @@
             android:name=".Master_vs_Slave_robot"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".Beg_Borrow_Steal"
+            android:name=".BBB"
             android:screenOrientation="portrait" />
         <activity
             android:name=".Image_Makeover"
@@ -173,7 +194,7 @@
         <activity android:name=".Developers_activity" />
         <activity android:name=".Paper_Presentation" />
         <activity android:name=".Suggestion_box" />
-        <activity android:name=".About_event"></activity>
+        <activity android:name=".About_event" />
     </application>
 
 </manifest>

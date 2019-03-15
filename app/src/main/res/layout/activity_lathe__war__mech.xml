@@ -128,7 +128,7 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="30 March 2018"
+                            android:text="27 | 28 March"
                             android:textColor="@color/back"
                             android:textSize="20dp"
                             android:textStyle="bold"
@@ -192,7 +192,7 @@
                         android:textSize="18dp"
                         android:textColor="@color/back"
                         android:fontFamily="sans-serif"
-                        android:text="There will be a quiz on Lathe Machine. The quiz will comprise of 30 questions. A time of 30 minutes, i.e., 1 minute for 1 question will be given. Top scoring students/teams will be selected for the final round."></TextView>
+                        android:text="Quiz of 60 questions for 60 minutes."></TextView>
 
 
 
@@ -238,7 +238,7 @@
                         android:layout_height="wrap_content"
                         android:textSize="18dp"
                         android:textColor="@color/back"
-                        android:text="This round will be a practical round, wherein the teams need to work out on lathes. Those who are single participant would be teamed-up.On the day of war, the teams will be given the designs for the jobs they need to work on.Each team will be given a period of 1 hour to complete their jobs .\n\nThe team with optimum time for completion of job along with best surface finish will be selected as the winners and will be awarded."></TextView>
+                        android:text="Teams need to work out on lathe machine for given design in 60 minutes."></TextView>
 
 
                 </LinearLayout>
@@ -314,7 +314,7 @@ ENTRY FEE:\n30/-(Single) 50/-(Group)"
                         android:padding="15dp"
                         android:textStyle="bold"
                         android:linksClickable="true"
-                        android:text="Head:\nPravin Jamode +917773929102 \n\nCo-head:\nKaran Jadhav +917058021517"></TextView>
+                        android:text="Head:\nAjay Sonone +919130536022 \n\nCo-head:\nAditi Koralahalli +917038075069"></TextView>
                 </LinearLayout>
             </android.support.v7.widget.CardView>
 

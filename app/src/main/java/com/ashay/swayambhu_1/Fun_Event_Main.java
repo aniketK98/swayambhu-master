@@ -87,7 +87,7 @@ public class Fun_Event_Main extends AppCompatActivity {
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 if (position == 0)
                 {
-                    Intent in = new Intent(getApplicationContext(),Beg_Borrow_Steal.class);
+                    Intent in = new Intent(getApplicationContext(), BBB.class);
                     startActivity(in);
 
                 }

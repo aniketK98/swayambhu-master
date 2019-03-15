@@ -97,12 +97,16 @@ public class IT_EVENTS_MAIN extends AppCompatActivity {
                 }
                 if(position == 2)
                 {
-                    Intent in = new Intent(getApplicationContext(),LanGaming_IT.class);
+                    Intent in = new Intent(getApplicationContext(), Codingo2_CSE.class);
                     startActivity(in);
                 }
                 if(position == 3)
                 {
-                    Intent in = new Intent(getApplicationContext(),Codinggo_IT.class);
+                    Intent in = new Intent(getApplicationContext(), Codingo2_CSE.class);
+                    startActivity(in);
+                }
+                if (position == 4) {
+                    Intent in = new Intent(getApplicationContext(), Codinggo_IT.class);
                     startActivity(in);
                 }
             }
@@ -122,9 +126,10 @@ public class IT_EVENTS_MAIN extends AppCompatActivity {
 
 
         ITEvent1List.add(new IT_EVENT_1("Web-War","http://xln.co.nz/images/xln/servicesContentWeb.png"));
-        ITEvent1List.add(new IT_EVENT_1("Abhivyakti","https://cdn.pixabay.com/photo/2016/02/13/16/13/camera-1198125_960_720.jpg"));
-        ITEvent1List.add(new IT_EVENT_1("Lan Gaming","http://assets-cf.gbeye.com/thumbnails/small_product_thumb_193206_1497014015.jpg"));
-        ITEvent1List.add(new IT_EVENT_1("Codingo","http://www.viewranger.com/temp/imagecache/4693-120.png"));
+        ITEvent1List.add(new IT_EVENT_1("Fast and Furious", "http://assets-cf.gbeye.com/thumbnails/small_product_thumb_193206_1497014015.jpg"));
+        ITEvent1List.add(new IT_EVENT_1("Codingo 2.0", "http://www.viewranger.com/temp/imagecache/4693-120.png"));
+        ITEvent1List.add(new IT_EVENT_1("C over Snakes", "http://www.viewranger.com/temp/imagecache/4693-120.png"));
+        ITEvent1List.add(new IT_EVENT_1("Code Wizards", "http://www.viewranger.com/temp/imagecache/4693-120.png"));
 
     }
 

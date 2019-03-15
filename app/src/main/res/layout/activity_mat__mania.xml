@@ -34,7 +34,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="MAT MANIA"
+                        android:text="THE MAT HACKER"
                         android:textStyle="bold"
 
                         android:layout_gravity="center|center_horizontal"
@@ -127,7 +127,7 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="30 March 2018"
+                            android:text="27 | 28 March"
                             android:textColor="@color/back"
                             android:textSize="20dp"
                             android:textStyle="bold"
@@ -191,7 +191,7 @@
                         android:textSize="18dp"
                         android:textColor="@color/back"
                         android:fontFamily="sans-serif"
-                        android:text="GUESS THE PASSWORD :This round is based on very basic technical knowledge. Participants will be given simple questions. The answer to the questions will be the password for the PC provided to them. Correct password will open the system and candidate  goes to the next round."></TextView>
+                        android:text="Puzzle round- we will give them random letters and they have to arrange that letters in appropriate manner which is a password of computer."></TextView>
 
 
 
@@ -237,7 +237,7 @@
                         android:layout_height="wrap_content"
                         android:textSize="18dp"
                         android:textColor="@color/back"
-                        android:text="FISH'S EYE : Participants will have to perform basic coding in MATLAB. The twist is that the screen will be masked, so they have to type the correct code just by seeing 	the keyboard and nothing on screen. Those getting the correct o/p in quick time will be chosen for the 	next round."></TextView>
+                        android:text="WAP in matlab- basic programs eg. Sine wave"></TextView>
 
 
                 </LinearLayout>
@@ -282,7 +282,7 @@
                         android:layout_height="wrap_content"
                         android:textSize="18dp"
                         android:textColor="@color/back"
-                        android:text="HIT THE RIGHT SPOT :this is the decider round of the event. In this round the participants will be provided a written code. The code will contain only one error. Without running the program or seeing the o/p, the participants have to guess the mistake at the earliest. The participants who spots the error first will be the winner."></TextView>
+                        android:text="Finding the errors in program"></TextView>
 
                 </LinearLayout>
 
@@ -354,7 +354,7 @@
                         android:padding="15dp"
                         android:textStyle="bold"
                         android:linksClickable="true"
-                        android:text="Head:\nTejashri Kundalwal +919689150656\n\nCo-head:\nRevati Gadekar +918669013984"></TextView>
+                        android:text="Head:\nAmruta Shelke +917887501074\n\nCo-head:\nKomal Lahire +917709429651"></TextView>
                 </LinearLayout>
             </android.support.v7.widget.CardView>
 

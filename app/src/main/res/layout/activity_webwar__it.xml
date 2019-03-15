@@ -126,7 +126,7 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="30 March 2018"
+                            android:text="27 | 28 March"
                             android:textColor="@color/back"
                             android:textSize="20dp"
                             android:textStyle="bold"
@@ -190,7 +190,7 @@
                         android:layout_height="wrap_content"
                         android:textSize="18dp"
                         android:fontFamily="sans-serif"
-                        android:text = "50 MCQ'S TEST - 1 Hour"></TextView>
+                        android:text="MCQ'S TEST - 1 Hour"></TextView>
 
                 </LinearLayout>
 
@@ -234,7 +234,7 @@
                         android:textColor="@color/back"
                         android:layout_height="wrap_content"
                         android:textSize="18dp"
-                        android:text = "Coding Round \nParticipants will be given a problem statement on which they have to create a website.They can use any technology for the same. Time will be 3 hours. The best developed site will be declared as winner"></TextView>
+                        android:text="Coding Round \nParticipants will be given a problem statement on which they have to create a website.They can use any technology for the same. Time will be 2 hours. Participants will be judged on the basis of Website Development."></TextView>
 
                 </LinearLayout>
 
@@ -254,7 +254,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="TEAM MEMBERS:\nSINGLE OR GROUP OF 2\n\nENTRY FEE: 50/-"
+                        android:text="TEAM MEMBERS:\nGROUP OF 2\n\nENTRY FEE: 50/-"
                         android:textStyle="bold"
                         android:padding="15dp"
                         android:textColor="@color/back"
@@ -307,7 +307,7 @@
                         android:padding="15dp"
                         android:textStyle="bold"
                         android:linksClickable="true"
-                        android:text="Head:\nAbhishek Nilekar +918007300505\n\nCo-head:\nVallabh Patil +919561864259"/>
+                        android:text="Head:\nRitu Chaudhari +919168068206\n\nCo-head:\nShubham Snehi +918999376870" />
                 </LinearLayout>
             </android.support.v7.widget.CardView>
 
