@@ -114,6 +114,11 @@ public class CSE_EVENTS_MAIN extends AppCompatActivity {
                     startActivity(in);
                 }
 
+                if (position == 5) {
+                    Intent in = new Intent(getApplicationContext(), Hackathon_CSE.class);
+                    startActivity(in);
+                }
+
             }
         });
 
@@ -134,6 +139,7 @@ public class CSE_EVENTS_MAIN extends AppCompatActivity {
         CSEEvent1List.add(new CSE_Event_1("Code Wizards", "https://image.freepik.com/free-vector/web-programming-background_1300-188.jpg"));
         CSEEvent1List.add(new CSE_Event_1("Codingo2.0", "https://image.freepik.com/free-vector/web-design-background_1300-72.jpg"));
         CSEEvent1List.add(new CSE_Event_1("Fast and Furious", "https://res.cloudinary.com/teepublic/image/private/s--91AeMXfq--/t_Preview/b_rgb:262c3a,c_limit,f_auto,h_313,q_90,w_313/v1496756374/production/designs/1649485_1"));
+        CSEEvent1List.add(new CSE_Event_1("Hackathon", "https://res.cloudinary.com/teepublic/image/private/s--91AeMXfq--/t_Preview/b_rgb:262c3a,c_limit,f_auto,h_313,q_90,w_313/v1496756374/production/designs/1649485_1"));
     }
 
 
