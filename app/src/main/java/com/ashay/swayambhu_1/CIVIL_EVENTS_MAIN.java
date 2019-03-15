@@ -90,25 +90,25 @@ public class CIVIL_EVENTS_MAIN extends AppCompatActivity {
                 public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                     if (position == 0)
                     {
-                        Intent in = new Intent(getApplicationContext(),Smarmony.class);
+                        Intent in = new Intent(getApplicationContext(), Aakruti_civil.class);
                         startActivity(in);
 
                     }
                     if(position == 1)
                     {
-                        Intent in = new Intent(getApplicationContext(),CartoFest.class);
+                        Intent in = new Intent(getApplicationContext(), Cartofest_civil.class);
                         startActivity(in);
                     }
 
                     if(position == 2)
                     {
-                        Intent in = new Intent(getApplicationContext(),Levelling_Master.class);
+                        Intent in = new Intent(getApplicationContext(), Aakar_civil.class);
                         startActivity(in);
                     }
 
                     if(position == 3)
                     {
-                        Intent in = new Intent(getApplicationContext(),The_Sustaining_Boat.class);
+                        Intent in = new Intent(getApplicationContext(), FunInSurvey_civil.class);
                         startActivity(in);
                     }
                 }

@@ -13,7 +13,11 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Khoj2k19_EEP"></activity>
+        <activity android:name=".FunInSurvey_civil"></activity>
+        <activity android:name=".Aakar_civil" />
+        <activity android:name=".Cartofest_civil" />
+        <activity android:name=".Aakruti_civil" />
+        <activity android:name=".Khoj2k19_EEP" />
         <activity android:name=".CrossTheStairs_EEP" />
         <activity android:name=".Techno_Ace_EEP" />
         <activity android:name=".ElectromaniaWork_ECT" />
