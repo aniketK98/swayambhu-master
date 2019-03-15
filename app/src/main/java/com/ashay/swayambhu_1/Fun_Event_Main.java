@@ -87,37 +87,10 @@ public class Fun_Event_Main extends AppCompatActivity {
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 if (position == 0)
                 {
-                    Intent in = new Intent(getApplicationContext(), BBB.class);
+                    Intent in = new Intent(getApplicationContext(), JNEC_KBC_open.class);
                     startActivity(in);
 
                 }
-                if(position == 1)
-                {
-                    Intent in = new Intent(getApplicationContext(),Trivia.class);
-                    startActivity(in);
-                }
-
-                if(position == 2)
-                {
-                    Intent in = new Intent(getApplicationContext(),Murder_Mystery.class);
-                    startActivity(in);
-                }
-                if(position == 3)
-                {
-                    Intent in = new Intent(getApplicationContext(),LanGaming_IT.class);
-                    startActivity(in);
-                }
-                if(position == 4)
-                {
-                    Intent in = new Intent(getApplicationContext(),Element_Sorting.class);
-                    startActivity(in);
-                }
-                if(position == 5)
-                {
-                    Intent in = new Intent(getApplicationContext(),Image_Makeover.class);
-                    startActivity(in);
-                }
-
 
             }
         });
@@ -131,12 +104,7 @@ public class Fun_Event_Main extends AppCompatActivity {
     {
 
 
-        FunEvent1List.add(new Fun_Event_1("Beg Borrow Steal","https://cdn.movember.com/uploads/network-profile/2805f986dc753d9998254e9bfc076ea7-57f76863acea2-hero.png"));
-        FunEvent1List.add(new Fun_Event_1("Trivia","https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQAONquF2M8dQhKky4kL49-1w3WrbEgdBJfYaP1h6YR-Tox-jFj"));
         FunEvent1List.add(new Fun_Event_1("Murder Mystery","https://t2.rbxcdn.com/f9394f26c573740776260e19051ef7ee"));
-        FunEvent1List.add(new Fun_Event_1("LAN Gaming","https://steemit-production-imageproxy-thumbnail.s3.amazonaws.com/U5dtqWmtAa9ULiANacbyj9nNCj1Da3k_1680x8400"));
-        FunEvent1List.add(new Fun_Event_1("Element Sorting","https://ak9.picdn.net/shutterstock/videos/10728479/thumb/1.jpg?i10c=img.resize(height:160)"));
-        FunEvent1List.add(new Fun_Event_1("Image Makeover","https://image.freepik.com/free-vector/analog-camera-icon_23-2147511482.jpg"));
 
 
     }

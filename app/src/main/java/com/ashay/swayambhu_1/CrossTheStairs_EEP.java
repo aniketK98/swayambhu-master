@@ -45,22 +45,22 @@ public class CrossTheStairs_EEP extends AppCompatActivity {
 
 
         Animation a = AnimationUtils.loadAnimation(this, R.anim.viewanim);
-        CardView v1 = (CardView) findViewById(R.id.c1_ECT);
-        CardView v2 = (CardView) findViewById(R.id.c2_ECT);
-        CardView v3 = (CardView) findViewById(R.id.c3_ECT);
-        CardView v4 = (CardView) findViewById(R.id.c4_ECT);
-        CardView v5 = (CardView) findViewById(R.id.c5_ECT);
+        CardView v1 = (CardView) findViewById(R.id.c1_cCivil);
+        CardView v2 = (CardView) findViewById(R.id.c2_cCivil);
+        CardView v3 = (CardView) findViewById(R.id.c3_cCivil);
+//        CardView v4 = (CardView) findViewById(R.id.c4_cCivil);
+        CardView v5 = (CardView) findViewById(R.id.c5_cCivil);
 
 
         v1.startAnimation(a);
         v2.startAnimation(a);
         v3.startAnimation(a);
-        v4.startAnimation(a);
+//        v4.startAnimation(a);
         v5.startAnimation(a);
 
         mAuth = FirebaseAuth.getInstance();
 
-        mbook = (Button) findViewById(R.id.button_projectcompetition);
+        mbook = (Button) findViewById(R.id.button_projecctcompetition);
 
         mbook.setOnClickListener(new View.OnClickListener() {
             @Override

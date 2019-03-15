@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="@color/back"
     android:orientation="vertical"
-    tools:context="com.jnec.techfest.swayambhu.CrossTheStairs_EEP">
+    tools:context="com.ashay.swayambhu_1.CrossTheStairs_EEP">
 
 
     <ScrollView
@@ -59,7 +59,7 @@
 
 
                 <android.support.v7.widget.CardView
-                    android:id="@+id/c1_Civil"
+                    android:id="@+id/c1_cCivil"
 
                     android:layout_width="150dp"
                     android:layout_height="100dp"
@@ -103,7 +103,7 @@
 
 
                 <android.support.v7.widget.CardView
-                    android:id="@+id/c2_Civil"
+                    android:id="@+id/c2_cCivil"
 
                     android:layout_width="150dp"
                     android:layout_height="100dp"
@@ -154,7 +154,7 @@
 
 
             <android.support.v7.widget.CardView
-                android:id="@+id/c3_Civil"
+                android:id="@+id/c3_cCivil"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="20dp"
@@ -204,7 +204,7 @@
 
 
             <android.support.v7.widget.CardView
-                android:id="@+id/c5_Civil"
+                android:id="@+id/c5_cCivil"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="20dp"
@@ -241,7 +241,7 @@
                         android:layout_gravity="left"
                         android:fontFamily="sans-serif"
                         android:padding="15dp"
-                        android:text="Group of 2 or 4\n\nENTRY FEE : \n\nTeam of 2: 100/-\nTeam of 4: 200/-"
+                        android:text="TEAM MEMBERS: Group of 2 or 4\n\nENTRY FEE : \n\nTeam of 2: 100/-\nTeam of 4: 200/-"
                         android:textColor="@color/back"
                         android:textSize="20dp"
                         android:textStyle="bold" />
@@ -296,7 +296,7 @@
 
 
             <Button
-                android:id="@+id/button_projectcompetition"
+                android:id="@+id/button_projecctcompetition"
                 android:layout_width="180dp"
                 android:layout_height="50dp"
                 android:layout_gravity="center_horizontal"
