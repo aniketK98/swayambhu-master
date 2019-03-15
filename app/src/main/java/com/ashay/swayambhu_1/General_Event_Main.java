@@ -145,7 +145,7 @@ public class General_Event_Main extends AppCompatActivity {
                 }
 
                 if (position == 11) {
-                    Intent in = new Intent(getApplicationContext(), Suggestion_box.class);
+                    Intent in = new Intent(getApplicationContext(), TechnoConfetti_open.class);
                     startActivity(in);
                 }
 
