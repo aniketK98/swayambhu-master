@@ -190,7 +190,7 @@
                         android:fontFamily="sans-serif"
                         android:gravity="left"
                         android:padding="15dp"
-                        android:text="Apurva Rohiwal, who is an Interpreneur is going to conduct a workshop on 'How to start a START-UP.'."
+                        android:text="Apurva Rohiwal, who is an Interpreneur is going to conduct a workshop on 'How to start a START-UP'."
                         android:textColor="@color/back"
                         android:textSize="18dp"></TextView>
 
