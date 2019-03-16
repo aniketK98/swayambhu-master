@@ -5,7 +5,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/back"
-    tools:context="com.ashay.swayambhu_1.TechOne_open">
+    android:orientation="vertical"
+    tools:context="com.ashay.swayambhu_1.Ideathon_open">
 
     <ScrollView
         android:layout_width="match_parent"
@@ -19,7 +20,7 @@
             android:orientation="vertical">
 
             <android.support.v7.widget.CardView
-
+                android:id="@+id/c1_Mech"
                 android:layout_width="match_parent"
                 android:layout_height="150dp"
                 android:layout_marginTop="20dp"
@@ -40,7 +41,7 @@
                         android:layout_gravity="center|center_horizontal"
                         android:fontFamily="monospace"
                         android:padding="5dp"
-                        android:text="TECH ONE"
+                        android:text="IDEATHON"
                         android:textColor="@color/back"
 
                         android:textSize="30dp"
@@ -52,13 +53,15 @@
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_gravity="center"
                 android:layout_marginTop="20dp"
-                android:orientation="horizontal">
+                android:orientation="horizontal"
+
+                >
 
 
                 <android.support.v7.widget.CardView
-                    android:id="@+id/c1_ECT"
-
+                    android:id="@+id/c2_Mech"
                     android:layout_width="150dp"
                     android:layout_height="100dp"
 
@@ -101,7 +104,7 @@
 
 
                 <android.support.v7.widget.CardView
-                    android:id="@+id/c2_ECT"
+                    android:id="@+id/c3_Mech"
 
                     android:layout_width="150dp"
                     android:layout_height="100dp"
@@ -132,7 +135,6 @@
                             android:layout_alignParentEnd="true"
                             android:layout_alignParentRight="true"
                             android:layout_marginTop="7dp"
-
                             android:layout_marginRight="8dp"
                             android:gravity="center_horizontal"
                             android:text="27 | 28 March"
@@ -146,13 +148,10 @@
                     </RelativeLayout>
 
                 </android.support.v7.widget.CardView>
-
-
             </LinearLayout>
 
-
             <android.support.v7.widget.CardView
-                android:id="@+id/c3_ECT"
+                android:id="@+id/c4_Mech"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="20dp"
@@ -186,7 +185,8 @@
                         android:fontFamily="sans-serif"
                         android:gravity="left"
                         android:padding="15dp"
-                        android:text="In this round the participants will have to speak on a random topic for about 2 min. They would be given time to think for 5 to 6 min."
+                        android:text="1. Participants will present their idea on how they plan to solve the problem using current technologies.
+2. Candidates will be shortlisted based on Idea Presentation and Idea Feasibility."
                         android:textColor="@color/back"
                         android:textSize="18dp"></TextView>
 
@@ -197,7 +197,7 @@
             </android.support.v7.widget.CardView>
 
             <android.support.v7.widget.CardView
-                android:id="@+id/c4_ECT"
+                android:id="@+id/c5_Mech"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="20dp"
@@ -229,11 +229,12 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:fontFamily="sans-serif"
-                        android:gravity="left"
                         android:padding="15dp"
-                        android:text="Product Designing - participants will have to design a product which they feel could be good for a startup idea."
+                        android:text="Teams will be asked to present Prototypes for their solution.
+Winners will be evaluated by the judges on the basis of prototype design and feasibility."
                         android:textColor="@color/back"
                         android:textSize="18dp"></TextView>
+
 
                 </LinearLayout>
 
@@ -242,139 +243,27 @@
 
 
             <android.support.v7.widget.CardView
-                android:id="@+id/c5_ECT"
+                android:id="@+id/c6_Mech"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="20dp"
 
                 app:cardCornerRadius="10dp">
 
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:orientation="vertical">
 
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center"
-                        android:fontFamily="sans-serif"
-                        android:padding="5dp"
-                        android:text="Round 3"
-                        android:textColor="@color/back"
-                        android:textSize="30dp"
-                        android:textStyle="bold" />
-
-                    <View
-                        android:layout_width="match_parent"
-                        android:layout_height="2dp"
-                        android:background="@color/back"></View>
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:fontFamily="sans-serif"
-                        android:gravity="left"
-                        android:padding="15dp"
-                        android:text="Product selling - participants will have to sell the product which they have designed by convincing how it is effective and different from current options available in the market. The Profit and the Selling Rate of the specific product will be considered."
-                        android:textColor="@color/back"
-                        android:textSize="18dp"></TextView>
-
-                </LinearLayout>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif"
+                    android:padding="15dp"
+                    android:text="10 Problem statements will be collected from AMC, SEB, PWD, Government Agency and Industry. 4 hrs before the event, Ideathon Problems will be given to all the participants
+The schedule and venue of the event will be conveyed to all the participants two days prior to the event. On the event day all participants should report at the given time.."
+                    android:textColor="@color/back"
+                    android:textSize="18dp"
+                    android:textStyle="bold"></TextView>
 
 
             </android.support.v7.widget.CardView>
-
-            <android.support.v7.widget.CardView
-                android:id="@+id/c6_ECT"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="20dp"
-                app:cardCornerRadius="10dp"
-                app:cardElevation="5dp">
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:orientation="vertical">
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center"
-                        android:fontFamily="sans-serif"
-                        android:padding="5dp"
-                        android:text="Round 4"
-                        android:textColor="@color/back"
-                        android:textSize="30dp"
-                        android:textStyle="bold" />
-
-                    <View
-                        android:layout_width="match_parent"
-                        android:layout_height="2dp"
-                        android:background="@color/back"></View>
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:fontFamily="sans-serif"
-                        android:gravity="left"
-                        android:padding="15dp"
-                        android:text="Robust Round - In this round both IQ and Fitness will be examined The Participants will have to answer the questions while holding a specific amount of weight, if answered correctly the weights shall be reduced and if not done so the weights shall be increased."
-                        android:textColor="@color/back"
-                        android:textSize="18dp"></TextView>
-
-
-                </LinearLayout>
-
-
-            </android.support.v7.widget.CardView>
-
-            <android.support.v7.widget.CardView
-                android:id="@+id/c7_ECT"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="20dp"
-                app:cardCornerRadius="10dp"
-                app:cardElevation="5dp">
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:orientation="vertical">
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center"
-                        android:fontFamily="sans-serif"
-                        android:padding="5dp"
-                        android:text="Round 5"
-                        android:textColor="@color/back"
-                        android:textSize="30dp"
-                        android:textStyle="bold" />
-
-                    <View
-                        android:layout_width="match_parent"
-                        android:layout_height="2dp"
-                        android:background="@color/back"></View>
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:fontFamily="sans-serif"
-                        android:gravity="left"
-                        android:padding="15dp"
-                        android:text=" Panel Discussion - A group shall be formed and the topics will be distributed to them and the judging will be done on the basis of how correctly a participant is expressing his points"
-                        android:textColor="@color/back"
-                        android:textSize="18dp"></TextView>
-
-
-                </LinearLayout>
-
-
-            </android.support.v7.widget.CardView>
-
 
             <android.support.v7.widget.CardView
 
@@ -395,7 +284,7 @@
                         android:layout_gravity="left"
                         android:fontFamily="sans-serif"
                         android:padding="15dp"
-                        android:text="TEAM MEMBER : -\n\nENTRY FEE : 50/-"
+                        android:text="Team: 2 to 5\n\nENTRY FEE :\n100/-"
                         android:textColor="@color/back"
                         android:textSize="20dp"
                         android:textStyle="bold" />
@@ -442,17 +331,17 @@
                         android:autoLink="phone"
 
                         android:linksClickable="true"
-                        android:padding="15dp"
-                        android:text="Head :\nDolly Badgujar +919834252472\n\nCo-head :\nRevati Patil +919922445367 "
-                        android:textColor="@color/back"
 
-                        android:textStyle="bold" />
+                        android:padding="15dp"
+                        android:text="Head :\nNihal Mishra +918149471314\n\nCo-head :\nKetaki Deshpande +918983225132"
+                        android:textColor="@color/back"
+                        android:textStyle="bold"></TextView>
                 </LinearLayout>
             </android.support.v7.widget.CardView>
 
 
             <Button
-                android:id="@+id/button_circuit"
+                android:id="@+id/button_autocad"
                 android:layout_width="180dp"
                 android:layout_height="50dp"
                 android:layout_gravity="center_horizontal"

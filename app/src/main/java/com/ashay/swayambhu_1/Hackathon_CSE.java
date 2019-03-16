@@ -29,58 +29,62 @@ import java.net.URL;
 import java.util.HashMap;
 import java.util.Map;
 
-public class Cartofest_civil extends AppCompatActivity {
-
+public class Hackathon_CSE extends AppCompatActivity {
     Dialog mydialog;
     Button mbook;
-    Button mbtn;
-    int count = 0;
+    int kcount = 0;
     private FirebaseAuth mAuth;
     private DatabaseReference mDatabase;
     private FirebaseUser user;
+    private int count = 0;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_cartofest_civil);
+        setContentView(R.layout.activity_hackathon__cse);
 
+        mAuth = FirebaseAuth.getInstance();
 
         Animation a = AnimationUtils.loadAnimation(this, R.anim.viewanim);
-        CardView v1 = (CardView) findViewById(R.id.c1_ECT);
-        CardView v2 = (CardView) findViewById(R.id.c2_ECT);
-        CardView v3 = (CardView) findViewById(R.id.c3_ECT);
-        CardView v4 = (CardView) findViewById(R.id.c4_ECT);
-        CardView v5 = (CardView) findViewById(R.id.c5_ECT);
+        CardView v1 = (CardView) findViewById(R.id.c1_Civil);
+        CardView v2 = (CardView) findViewById(R.id.c2_Civil);
+        CardView v3 = (CardView) findViewById(R.id.c3_Civil);
+        //CardView v4 = (CardView)findViewById(R.id.c4_IT);
+        //CardView v5 = (CardView)findViewById(R.id.c5_IT);
 
 
         v1.startAnimation(a);
         v2.startAnimation(a);
         v3.startAnimation(a);
-        v4.startAnimation(a);
-        v5.startAnimation(a);
+        //v4.startAnimation(a);
+        //v5.startAnimation(a);
 
-        mbtn = (Button) findViewById(R.id.button_circuit);
 
-        mbtn.setOnClickListener(new View.OnClickListener() {
+        mbook = (Button) findViewById(R.id.button_projectcompetition);
+
+        mbook.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
-                Toast.makeText(getApplication(), "Clicked", Toast.LENGTH_SHORT).show();
-                Datacheck();
 
+                Toast.makeText(getApplication(), "Clicked", Toast.LENGTH_LONG).show();
+                Datacheck();
+                //smsApiCall();
+                // mProLogin.dismiss();
             }
         });
 
         StrictMode.ThreadPolicy policy = new StrictMode.ThreadPolicy.Builder().permitAll().build();
         StrictMode.setThreadPolicy(policy);
-    }
 
+
+    }
 
     private void Datacheck() {
         FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
         String email = user.getEmail();
         String uid = user.getUid();
-        DatabaseReference dr = FirebaseDatabase.getInstance().getReference().child("Civil").child("Carto Fest").child(uid);
+        DatabaseReference dr = FirebaseDatabase.getInstance().getReference().child("CSE").child("Hackathon").child(uid);
 
 
         dr.addValueEventListener(new ValueEventListener() {
@@ -90,15 +94,15 @@ public class Cartofest_civil extends AppCompatActivity {
                 try {
                     //Toast.makeText(getApplicationContext(), "in data", Toast.LENGTH_LONG).show();
                     String email = dataSnapshot.child("Email").getValue().toString();
-                    if (count >= 0) {
-                        Toast.makeText(getApplicationContext(), "Already Registered with this " + email, Toast.LENGTH_LONG).show();
-
+                    if (count >= 1) {
+                        Toast.makeText(getApplicationContext(), "Already Registered with this " + email, Toast.LENGTH_SHORT).show();
                     }
                     count++;
+                    //mProLogin.dismiss();
+
                 } catch (Exception e) {
                     //Toast.makeText(getApplicationContext(),"in catch ",Toast.LENGTH_LONG).show();
                     DataEntry();
-
                 }
             }
 
@@ -120,7 +124,7 @@ public class Cartofest_civil extends AppCompatActivity {
         //Toast.makeText(getApplicationContext(),""+email, Toast.LENGTH_SHORT).show();
 
 
-        DatabaseReference mDatabase = FirebaseDatabase.getInstance().getReference().child("Civil").child("Carto Fest").child(uid);
+        DatabaseReference mDatabase = FirebaseDatabase.getInstance().getReference().child("CSE").child("Hackathon").child(uid);
 
         Map<String, String> data = new HashMap<String, String>();
         data.put("Email", email);
@@ -131,15 +135,16 @@ public class Cartofest_civil extends AppCompatActivity {
 
                 if (task.isSuccessful()) {
                     Toast.makeText(getApplicationContext(), "Registered ", Toast.LENGTH_SHORT).show();
+
                     smsApiCall();
 
                     String email = StudentInfo.getEmail();
                     String subject = "Greetings from JNEC-SWAYAMBHU";
-                    String message = "Thank you " + StudentInfo.getname() + " for registering in Carto Fest. Kindly show this message/email on payment desk to confirm your booking. This email is valid until bookings are full.";
+                    String message = "Thank you " + StudentInfo.getname() + " for registering in Hackathon. Kindly show this message/email on payment desk to confirm your booking. This email is valid until bookings are full.";
 
                     //Toast.makeText(getApplicationContext(),email+" ",Toast.LENGTH_LONG).show();
 
-                    SendMail sm = new SendMail(Cartofest_civil.this, email, subject, message);
+                    SendMail sm = new SendMail(Hackathon_CSE.this, email, subject, message);
 
                     //Executing sendmail to send email
                     sm.execute();
@@ -148,6 +153,7 @@ public class Cartofest_civil extends AppCompatActivity {
                 }
             }
         });
+
     }
 
 
@@ -155,7 +161,7 @@ public class Cartofest_civil extends AppCompatActivity {
         try {
             // Construct data
             String apiKey = "apikey=" + "PfSxPJ45xcg-L8TsFC7O5t3neTPGlscwlgetIMSf4L";
-            String message = "&message=" + "Greetings from team TechFest, Thank you for registering in Carto Fest " + StudentInfo.getname() + ".";
+            String message = "&message=" + "Thank you " + StudentInfo.getname() + " for registering in Hackathon. Kindly show this message/email on payment desk to confirm your booking.";
             String sender = "&sender=" + "";//mtxtsender.getText().toString();
             String numbers = "&numbers=" + StudentInfo.getContact();
 
@@ -174,7 +180,8 @@ public class Cartofest_civil extends AppCompatActivity {
             String line;
             while ((line = rd.readLine()) != null) {
                 //stringBuffer.append(line);
-                //Toast.makeText(getApplicationContext(),"The Message is: "+line,Toast.LENGTH_LONG).show();
+                // Toast.makeText(getApplicationContext(),"The Message is: "+line,Toast.LENGTH_LONG).show();
+
             }
 
             rd.close();

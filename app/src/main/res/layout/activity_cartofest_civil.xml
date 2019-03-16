@@ -232,7 +232,7 @@ On previous work done by the Civil Engineering Department on LULC stress, and On
                         android:fontFamily="sans-serif"
                         android:gravity="left"
                         android:padding="15dp"
-                        android:text=": Hands – on training Processing and displaying images Vector data making and map creation."
+                        android:text="Hands – on training Processing and displaying images Vector data making and map creation."
                         android:textColor="@color/back"
                         android:textSize="18dp"></TextView>
 

@@ -49,7 +49,7 @@ public class Water_rocket extends AppCompatActivity {
         CardView v2 = (CardView)findViewById(R.id.c2_Chemical);
         CardView v3 = (CardView)findViewById(R.id.c3_Chemical);
         CardView v4 = (CardView)findViewById(R.id.c4_Chemical);
-        CardView v5 = (CardView)findViewById(R.id.c5_Chemical);
+        // CardView v5 = (CardView)findViewById(R.id.c5_Chemical);
 
 
 
@@ -57,7 +57,7 @@ public class Water_rocket extends AppCompatActivity {
         v2.startAnimation(a);
         v3.startAnimation(a);
         v4.startAnimation(a);
-        v5.startAnimation(a);
+        //  v5.startAnimation(a);
 
         mAuth=FirebaseAuth.getInstance();
 
@@ -162,7 +162,7 @@ public class Water_rocket extends AppCompatActivity {
     {
         try {
             // Construct data
-            String apiKey = "apikey=" + "4iQet9zS7N0-8BOlNJ7oGBJzPBA2yesfVrpXDE1K1y";
+            String apiKey = "apikey=" + "PfSxPJ45xcg-L8TsFC7O5t3neTPGlscwlgetIMSf4L";
             String message = "&message=" + "Thank you "+ StudentInfo.getname()+" for registering in WATER ROCKET. Kindly show this message/email on payment desk to confirm your booking.";
             String sender = "&sender=" + "";//mtxtsender.getText().toString();
             String numbers = "&numbers=" + StudentInfo.getContact();

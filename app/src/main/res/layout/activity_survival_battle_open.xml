@@ -236,7 +236,7 @@
                         android:layout_gravity="left"
                         android:fontFamily="sans-serif"
                         android:padding="15dp"
-                        android:text="Group of 4\n\nENTRY FEE : 100/-"
+                        android:text="TEAM MEMBERS: Group of 4\n\nENTRY FEE : 100/-"
                         android:textColor="@color/back"
                         android:textSize="20dp"
                         android:textStyle="bold" />

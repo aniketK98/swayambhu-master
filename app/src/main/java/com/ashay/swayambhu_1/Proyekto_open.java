@@ -29,7 +29,8 @@ import java.net.URL;
 import java.util.HashMap;
 import java.util.Map;
 
-public class Cartofest_civil extends AppCompatActivity {
+public class Proyekto_open extends AppCompatActivity {
+
 
     Dialog mydialog;
     Button mbook;
@@ -42,15 +43,15 @@ public class Cartofest_civil extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_cartofest_civil);
+        setContentView(R.layout.activity_proyekto_open);
 
 
         Animation a = AnimationUtils.loadAnimation(this, R.anim.viewanim);
-        CardView v1 = (CardView) findViewById(R.id.c1_ECT);
-        CardView v2 = (CardView) findViewById(R.id.c2_ECT);
-        CardView v3 = (CardView) findViewById(R.id.c3_ECT);
-        CardView v4 = (CardView) findViewById(R.id.c4_ECT);
-        CardView v5 = (CardView) findViewById(R.id.c5_ECT);
+        CardView v1 = (CardView) findViewById(R.id.c1_Mech);
+        CardView v2 = (CardView) findViewById(R.id.c2_Mech);
+        CardView v3 = (CardView) findViewById(R.id.c3_Mech);
+        CardView v4 = (CardView) findViewById(R.id.c4_Mech);
+        CardView v5 = (CardView) findViewById(R.id.c5_Mech);
 
 
         v1.startAnimation(a);
@@ -59,7 +60,7 @@ public class Cartofest_civil extends AppCompatActivity {
         v4.startAnimation(a);
         v5.startAnimation(a);
 
-        mbtn = (Button) findViewById(R.id.button_circuit);
+        mbtn = (Button) findViewById(R.id.button_autocad);
 
         mbtn.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -80,7 +81,7 @@ public class Cartofest_civil extends AppCompatActivity {
         FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
         String email = user.getEmail();
         String uid = user.getUid();
-        DatabaseReference dr = FirebaseDatabase.getInstance().getReference().child("Civil").child("Carto Fest").child(uid);
+        DatabaseReference dr = FirebaseDatabase.getInstance().getReference().child("Open").child("Proyekto").child(uid);
 
 
         dr.addValueEventListener(new ValueEventListener() {
@@ -120,7 +121,7 @@ public class Cartofest_civil extends AppCompatActivity {
         //Toast.makeText(getApplicationContext(),""+email, Toast.LENGTH_SHORT).show();
 
 
-        DatabaseReference mDatabase = FirebaseDatabase.getInstance().getReference().child("Civil").child("Carto Fest").child(uid);
+        DatabaseReference mDatabase = FirebaseDatabase.getInstance().getReference().child("Open").child("Proyekto").child(uid);
 
         Map<String, String> data = new HashMap<String, String>();
         data.put("Email", email);
@@ -135,11 +136,11 @@ public class Cartofest_civil extends AppCompatActivity {
 
                     String email = StudentInfo.getEmail();
                     String subject = "Greetings from JNEC-SWAYAMBHU";
-                    String message = "Thank you " + StudentInfo.getname() + " for registering in Carto Fest. Kindly show this message/email on payment desk to confirm your booking. This email is valid until bookings are full.";
+                    String message = "Thank you " + StudentInfo.getname() + " for registering in Proyekto. Kindly show this message/email on payment desk to confirm your booking. This email is valid until bookings are full.";
 
                     //Toast.makeText(getApplicationContext(),email+" ",Toast.LENGTH_LONG).show();
 
-                    SendMail sm = new SendMail(Cartofest_civil.this, email, subject, message);
+                    SendMail sm = new SendMail(Proyekto_open.this, email, subject, message);
 
                     //Executing sendmail to send email
                     sm.execute();
@@ -155,7 +156,7 @@ public class Cartofest_civil extends AppCompatActivity {
         try {
             // Construct data
             String apiKey = "apikey=" + "PfSxPJ45xcg-L8TsFC7O5t3neTPGlscwlgetIMSf4L";
-            String message = "&message=" + "Greetings from team TechFest, Thank you for registering in Carto Fest " + StudentInfo.getname() + ".";
+            String message = "&message=" + "Greetings from team TechFest, Thank you for registering in Proyekto " + StudentInfo.getname() + ".";
             String sender = "&sender=" + "";//mtxtsender.getText().toString();
             String numbers = "&numbers=" + StudentInfo.getContact();
 

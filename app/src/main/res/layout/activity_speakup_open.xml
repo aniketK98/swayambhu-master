@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/back"
-    tools:context="com.ashay.swayambhu_1.TechOne_open">
+    tools:context="com.ashay.swayambhu_1.Speakup_open">
 
     <ScrollView
         android:layout_width="match_parent"
@@ -40,7 +40,7 @@
                         android:layout_gravity="center|center_horizontal"
                         android:fontFamily="monospace"
                         android:padding="5dp"
-                        android:text="TECH ONE"
+                        android:text="SPEAK UP"
                         android:textColor="@color/back"
 
                         android:textSize="30dp"
@@ -186,7 +186,7 @@
                         android:fontFamily="sans-serif"
                         android:gravity="left"
                         android:padding="15dp"
-                        android:text="In this round the participants will have to speak on a random topic for about 2 min. They would be given time to think for 5 to 6 min."
+                        android:text="(10min) GD: Duration: 2 hour , 2 class rooms 2 GDs in parallel. 30% of the participants will be eliminated in the 1st round.(Day1)"
                         android:textColor="@color/back"
                         android:textSize="18dp"></TextView>
 
@@ -231,7 +231,7 @@
                         android:fontFamily="sans-serif"
                         android:gravity="left"
                         android:padding="15dp"
-                        android:text="Product Designing - participants will have to design a product which they feel could be good for a startup idea."
+                        android:text=" (90min) Location: Seminar hall, Architecture department. Further 30% of the participants will be eliminated in this round.(Day1)"
                         android:textColor="@color/back"
                         android:textSize="18dp"></TextView>
 
@@ -276,7 +276,7 @@
                         android:fontFamily="sans-serif"
                         android:gravity="left"
                         android:padding="15dp"
-                        android:text="Product selling - participants will have to sell the product which they have designed by convincing how it is effective and different from current options available in the market. The Profit and the Selling Rate of the specific product will be considered."
+                        android:text="Location: Seminar hall, Architecture department. Only 5 participants will advance to the 4th round. (Day2)."
                         android:textColor="@color/back"
                         android:textSize="18dp"></TextView>
 
@@ -320,52 +320,7 @@
                         android:fontFamily="sans-serif"
                         android:gravity="left"
                         android:padding="15dp"
-                        android:text="Robust Round - In this round both IQ and Fitness will be examined The Participants will have to answer the questions while holding a specific amount of weight, if answered correctly the weights shall be reduced and if not done so the weights shall be increased."
-                        android:textColor="@color/back"
-                        android:textSize="18dp"></TextView>
-
-
-                </LinearLayout>
-
-
-            </android.support.v7.widget.CardView>
-
-            <android.support.v7.widget.CardView
-                android:id="@+id/c7_ECT"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="20dp"
-                app:cardCornerRadius="10dp"
-                app:cardElevation="5dp">
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:orientation="vertical">
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center"
-                        android:fontFamily="sans-serif"
-                        android:padding="5dp"
-                        android:text="Round 5"
-                        android:textColor="@color/back"
-                        android:textSize="30dp"
-                        android:textStyle="bold" />
-
-                    <View
-                        android:layout_width="match_parent"
-                        android:layout_height="2dp"
-                        android:background="@color/back"></View>
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:fontFamily="sans-serif"
-                        android:gravity="left"
-                        android:padding="15dp"
-                        android:text=" Panel Discussion - A group shall be formed and the topics will be distributed to them and the judging will be done on the basis of how correctly a participant is expressing his points"
+                        android:text="(45min, five minutes per participant) Location: Seminar hall, Architecture department. Elocution Competition. Winner will be evaluated by judges."
                         android:textColor="@color/back"
                         android:textSize="18dp"></TextView>
 
@@ -395,7 +350,7 @@
                         android:layout_gravity="left"
                         android:fontFamily="sans-serif"
                         android:padding="15dp"
-                        android:text="TEAM MEMBER : -\n\nENTRY FEE : 50/-"
+                        android:text="TEAM MEMBER : Single\n\nENTRY FEE : 30/-"
                         android:textColor="@color/back"
                         android:textSize="20dp"
                         android:textStyle="bold" />
@@ -443,7 +398,7 @@
 
                         android:linksClickable="true"
                         android:padding="15dp"
-                        android:text="Head :\nDolly Badgujar +919834252472\n\nCo-head :\nRevati Patil +919922445367 "
+                        android:text="Head :\nPragya Singh +919922215268\n\nCo-head :\nAnuja Kulkarni  +919404388391 "
                         android:textColor="@color/back"
 
                         android:textStyle="bold" />

@@ -100,7 +100,7 @@ public class General_Event_Main extends AppCompatActivity {
 
                 if(position == 2)
                 {
-                    Intent in = new Intent(getApplicationContext(),Master_vs_Slave_robot.class);
+                    Intent in = new Intent(getApplicationContext(), TechOne_open.class);
                     startActivity(in);
                 }
                 if(position == 3)
@@ -110,42 +110,57 @@ public class General_Event_Main extends AppCompatActivity {
                 }
                 if(position == 4)
                 {
-                    Intent in = new Intent(getApplicationContext(),Introduction_to_robotics.class);
+                    Intent in = new Intent(getApplicationContext(), Bestfromwaste_open.class);
                     startActivity(in);
                 }
                 if(position == 5)
                 {
-                    Intent in = new Intent(getApplicationContext(),Abhivyakti_IT.class);
+                    Intent in = new Intent(getApplicationContext(), BussinessIdea_open.class);
                     startActivity(in);
                 }
                 if(position == 6)
                 {
-                    Intent in = new Intent(getApplicationContext(),The_Quiz.class);
+                    Intent in = new Intent(getApplicationContext(), Proyekto_open.class);
                     startActivity(in);
                 }
                 if(position == 7)
                 {
-                    Intent in = new Intent(getApplicationContext(),Paper_Presentation.class);
+                    Intent in = new Intent(getApplicationContext(), Ideathon_open.class);
                     startActivity(in);
                 }
                 if(position == 8)
                 {
-                    Intent in = new Intent(getApplicationContext(),Suggestion_box.class);
+                    Intent in = new Intent(getApplicationContext(), Speakup_open.class);
                     startActivity(in);
                 }
 
                 if (position == 9) {
-                    Intent in = new Intent(getApplicationContext(), Suggestion_box.class);
+                    Intent in = new Intent(getApplicationContext(), Innovate_open.class);
                     startActivity(in);
                 }
 
                 if (position == 10) {
-                    Intent in = new Intent(getApplicationContext(), Suggestion_box.class);
+                    Intent in = new Intent(getApplicationContext(), LeaderInYou_open.class);
                     startActivity(in);
                 }
 
                 if (position == 11) {
-                    Intent in = new Intent(getApplicationContext(), Suggestion_box.class);
+                    Intent in = new Intent(getApplicationContext(), TechnoConfetti_open.class);
+                    startActivity(in);
+                }
+
+                if (position == 12) {
+                    Intent in = new Intent(getApplicationContext(), Water_rocket.class);
+                    startActivity(in);
+                }
+
+                if (position == 13) {
+                    Intent in = new Intent(getApplicationContext(), BehindTheLens_open.class);
+                    startActivity(in);
+                }
+
+                if (position == 14) {
+                    Intent in = new Intent(getApplicationContext(), EnggInterns_open.class);
                     startActivity(in);
                 }
 
@@ -159,18 +174,22 @@ public class General_Event_Main extends AppCompatActivity {
 
     private void initData()
     {
-        GeneralEvent1List.add(new General_Event_1("JNEC ka KBC", "http://www.miastogier.pl/baza/Encyklopedia/gry/Democracy3_PC/Okladka/okl_democracy3cover.jpg"));
-        GeneralEvent1List.add(new General_Event_1("Survival Battle", "http://www.salfordcommunityleisure.co.uk/sites/default/files/styles/page_width_standard/public/uploads/events/Model%20making%20edited%20for%20web.jpg?itok=NoYY2rBb"));
+        GeneralEvent1List.add(new General_Event_1("JNEC ka KBC", "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0dIw52IesjCXtFz9d4nJW2tY5Ju-_-I1JuAnTTWSXCEEriViyBQ"));
+        GeneralEvent1List.add(new General_Event_1("Survival Battle", "https://fsb.zobj.net/crop.php?r=QnkDZMFRpSkq5MLFnT2tuDowQj9dgbOFKCp-mvKjQZpS1rTMUQYOf_4-oOu8mXpIE5MOnnrzLR2bM_p0jo80KoBa48TZhyDlQjBhKcoxhbbQDYHoeaWE-rhGtZ-evfUCs3AGtR0NvcXc2NBB"));
         GeneralEvent1List.add(new General_Event_1("Tech One", "http://thamesandkosmos.com/images/stories/virtuemart/product/620377_roboticsworkshop_model8.jpg"));
-        GeneralEvent1List.add(new General_Event_1("Mr. and Ms. Techy", "https://newsignature.com/wp-content/uploads/2017/02/project-management-1024x512.png"));
-        GeneralEvent1List.add(new General_Event_1("Best from Waste", "https://image.freepik.com/free-photo/robot-doing-the-peace-sign_1048-3527.jpg"));
-        GeneralEvent1List.add(new General_Event_1("Business Idea Competition", "https://image.freepik.com/free-photo/people_1122-1876.jpg"));
-        GeneralEvent1List.add(new General_Event_1("Proyekto", "https://image.freepik.com/free-vector/quiz-background-with-items-in-flat-design_23-2147599082.jpg"));
+        GeneralEvent1List.add(new General_Event_1("Mr. and Ms. Techy", "https://previews.123rf.com/images/yupiramos/yupiramos1809/yupiramos180913407/110155288-business-couple-with-social-media-marketing-icons-vector-illustration.jpg"));
+        GeneralEvent1List.add(new General_Event_1("Best from Waste", "https://img.sheroes.in/tr:w-790/img/uploads/sheroespage/logoes/1517993979cardboard-tube-monster.jpg?tr=w-790"));
+        GeneralEvent1List.add(new General_Event_1("Business Idea Competition", "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRBWQviIWVULy9Svnq7culhyrZ1tt_r4A5Ax7IwqFTEVU-L47KP"));
+        GeneralEvent1List.add(new General_Event_1("Proyekto", "https://i0.wp.com/oupeltglobalblog.com/wp-content/uploads/2013/10/project-competition-logo.png?fit=597%2C401&ssl=1"));
         GeneralEvent1List.add(new General_Event_1("Ideathon", "http://millenniumupdate.in/img/competiton/paper.jpg"));
-        GeneralEvent1List.add(new General_Event_1("Speak-up", "https://associationsnow.com/wp-content/uploads/2016/02/0201_suggestion-800x480.jpg"));
-        GeneralEvent1List.add(new General_Event_1("Innovate to implement", "https://associationsnow.com/wp-content/uploads/2016/02/0201_suggestion-800x480.jpg"));
-        GeneralEvent1List.add(new General_Event_1("Leader in You", "https://associationsnow.com/wp-content/uploads/2016/02/0201_suggestion-800x480.jpg"));
-        GeneralEvent1List.add(new General_Event_1("Techno Confetti Poster Competition", "https://associationsnow.com/wp-content/uploads/2016/02/0201_suggestion-800x480.jpg"));
+        GeneralEvent1List.add(new General_Event_1("Speak-up", "http://varsitysportssa.com/wp-content/uploads/2018/01/SpeakUpLogoOnWhite.png"));
+        GeneralEvent1List.add(new General_Event_1("Innovate to implement", "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTzc9t9xnKXxspjmlh43S0laxDj_WusbFKEs0CpF3FN0Txnxl-w"));
+        GeneralEvent1List.add(new General_Event_1("Leader in You", "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTiPdvf7CxVFXhT_Gj7EJMUvPriU8aYOV6SKV00oCY7TjIT6tr2Eg"));
+        GeneralEvent1List.add(new General_Event_1("Techno Confetti Poster Competition", "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6DP4P-wWddMitqq8m9KLvxFjKy78H9vXNA2Y8XpLIKiV5eohE"));
+        GeneralEvent1List.add(new General_Event_1("Water Rocket", "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQQgZnPfD6zTYiRIvQNDd0PraC3s31R0WlFR00EMLLlActsm4EZ"));
+        GeneralEvent1List.add(new General_Event_1("Behind the Lens", "http://garyjonesphotosblog.com/wp-content/uploads/2015/09/camera-lens.jpg"));
+        GeneralEvent1List.add(new General_Event_1("Engineering Interns", "https://image.freepik.com/free-vector/variety-construction-engineer-icons_23-2147506665.jpg"));
+
 
     }
 }

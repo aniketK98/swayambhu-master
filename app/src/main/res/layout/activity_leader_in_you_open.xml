@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/back"
-    tools:context="com.ashay.swayambhu_1.TechOne_open">
+    tools:context="com.ashay.swayambhu_1.LeaderInYou_open">
 
     <ScrollView
         android:layout_width="match_parent"
@@ -40,7 +40,7 @@
                         android:layout_gravity="center|center_horizontal"
                         android:fontFamily="monospace"
                         android:padding="5dp"
-                        android:text="TECH ONE"
+                        android:text="LEADER IN YOU"
                         android:textColor="@color/back"
 
                         android:textSize="30dp"
@@ -186,7 +186,11 @@
                         android:fontFamily="sans-serif"
                         android:gravity="left"
                         android:padding="15dp"
-                        android:text="In this round the participants will have to speak on a random topic for about 2 min. They would be given time to think for 5 to 6 min."
+                        android:text="There are 20 questions are given in this round, the group of participants will find answers in JNEC and they have to click selfies with those answers within 30minute.
+Rules :
+1.All members should be in selfies
+2.Selfies should be clear
+3.Given task is complete within the time limit"
                         android:textColor="@color/back"
                         android:textSize="18dp"></TextView>
 
@@ -231,7 +235,10 @@
                         android:fontFamily="sans-serif"
                         android:gravity="left"
                         android:padding="15dp"
-                        android:text="Product Designing - participants will have to design a product which they feel could be good for a startup idea."
+                        android:text="A group of participants randomly pick up one cheats and they have toper form admire on that topic. There will be 15 min for preparation and 5 min for representation of Admire.
+Rules:
+1.Every member in group must be talk or act
+2.Idea of admire should not be copy from internet or any other sources"
                         android:textColor="@color/back"
                         android:textSize="18dp"></TextView>
 
@@ -276,7 +283,9 @@
                         android:fontFamily="sans-serif"
                         android:gravity="left"
                         android:padding="15dp"
-                        android:text="Product selling - participants will have to sell the product which they have designed by convincing how it is effective and different from current options available in the market. The Profit and the Selling Rate of the specific product will be considered."
+                        android:text="The Group discussion will be conduct by combining two groups the topic is given by co coordinators. There will be five minute for group discussion.
+Rules:
+1.Participants compulsory speak in English"
                         android:textColor="@color/back"
                         android:textSize="18dp"></TextView>
 
@@ -320,7 +329,10 @@
                         android:fontFamily="sans-serif"
                         android:gravity="left"
                         android:padding="15dp"
-                        android:text="Robust Round - In this round both IQ and Fitness will be examined The Participants will have to answer the questions while holding a specific amount of weight, if answered correctly the weights shall be reduced and if not done so the weights shall be increased."
+                        android:text="Here the participants perform individually. Participants will speak on topic which they have given within 3 to 5 minute.
+Rules :
+1.Language must be in English
+2. Participants must be speak for minimum three and maximum five minute"
                         android:textColor="@color/back"
                         android:textSize="18dp"></TextView>
 
@@ -365,7 +377,8 @@
                         android:fontFamily="sans-serif"
                         android:gravity="left"
                         android:padding="15dp"
-                        android:text=" Panel Discussion - A group shall be formed and the topics will be distributed to them and the judging will be done on the basis of how correctly a participant is expressing his points"
+                        android:text="Description : the leadership quality, spontaneity of participants will examine by judges
+Rules: The last decision will be finalize by judges, any excuses will not entertained."
                         android:textColor="@color/back"
                         android:textSize="18dp"></TextView>
 
@@ -395,7 +408,7 @@
                         android:layout_gravity="left"
                         android:fontFamily="sans-serif"
                         android:padding="15dp"
-                        android:text="TEAM MEMBER : -\n\nENTRY FEE : 50/-"
+                        android:text="TEAM MEMBER : \nSingle or 2 or 3\n\nENTRY FEE :\n\nSingle: 30/-\nTeam: 50/-"
                         android:textColor="@color/back"
                         android:textSize="20dp"
                         android:textStyle="bold" />
@@ -443,7 +456,7 @@
 
                         android:linksClickable="true"
                         android:padding="15dp"
-                        android:text="Head :\nDolly Badgujar +919834252472\n\nCo-head :\nRevati Patil +919922445367 "
+                        android:text="Head :\nSamiksha Bhume +919850424704\n\nCo-head :\n- "
                         android:textColor="@color/back"
 
                         android:textStyle="bold" />

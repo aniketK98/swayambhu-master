@@ -43,10 +43,10 @@ public class Codingo2_CSE extends AppCompatActivity {
         setContentView(R.layout.activity_codingo2__cse);
 
         Animation a = AnimationUtils.loadAnimation(this, R.anim.viewanim);
-        CardView v1 = (CardView) findViewById(R.id.c1_IT);
-        CardView v2 = (CardView) findViewById(R.id.c2_IT);
-        CardView v3 = (CardView) findViewById(R.id.c3_it);
-        CardView v4 = (CardView) findViewById(R.id.c4_it);
+        CardView v1 = (CardView) findViewById(R.id.c1_cse);
+        CardView v2 = (CardView) findViewById(R.id.c2_cse);
+        CardView v3 = (CardView) findViewById(R.id.c3_cse);
+        CardView v4 = (CardView) findViewById(R.id.c4_cse);
 
 
         v1.startAnimation(a);

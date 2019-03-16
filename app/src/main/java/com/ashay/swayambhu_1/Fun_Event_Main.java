@@ -3,143 +3,189 @@ package com.ashay.swayambhu_1;
 import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
+import android.os.StrictMode;
+import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.CardView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.widget.AdapterView;
+import android.widget.Button;
 import android.widget.TextSwitcher;
 import android.widget.TextView;
+import android.widget.Toast;
 import android.widget.ViewSwitcher;
 
+import com.google.android.gms.tasks.OnCompleteListener;
+import com.google.android.gms.tasks.Task;
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.ValueEventListener;
+
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
+import java.net.HttpURLConnection;
+import java.net.URL;
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 import it.moondroid.coverflow.components.ui.containers.FeatureCoverFlow;
 
 public class Fun_Event_Main extends AppCompatActivity {
 
 
-    private FeatureCoverFlow coverFlow_Fun;
-
-    private Fun_Event_Adapter FUNEVENTADAPTER;
-
-    private List<Fun_Event_1> FunEvent1List = new ArrayList<>();
-    private TextSwitcher mTitle_Fun;
-
-
+    int kcount = 0;
+    private Button mbtn;
+    private int count = 0;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_fun__event__main);
 
+        Animation a = AnimationUtils.loadAnimation(this, R.anim.viewanim);
+        CardView v1 = (CardView) findViewById(R.id.c1_cse);
+        CardView v2 = (CardView) findViewById(R.id.c2_cse);
+        CardView v3 = (CardView) findViewById(R.id.c3_cse);
+        //   CardView v4 = (CardView)findViewById(R.id.c4_cse);
 
-        initData();
+        v1.startAnimation(a);
+        v2.startAnimation(a);
+        v3.startAnimation(a);
+        //    v4.startAnimation(a);
 
+        mbtn = (Button) findViewById(R.id.button_event_2_cse);
 
-
-        mTitle_Fun = (TextSwitcher)findViewById(R.id.title_Fun);
-        mTitle_Fun.setFactory(new ViewSwitcher.ViewFactory() {
+        mbtn.setOnClickListener(new View.OnClickListener() {
             @Override
-            public View makeView() {
-                LayoutInflater inflater = LayoutInflater.from(Fun_Event_Main.this);
-                TextView txt = (TextView) inflater.inflate((R.layout.layout_title),null);
-                txt.setTextColor(Color.BLACK);
-                txt.setTextSize(30);
+            public void onClick(View v) {
 
-                return txt;
+                Toast.makeText(getApplication(), "Clicked", Toast.LENGTH_LONG).show();
+                Datacheck();
 
             }
         });
 
-        Animation in = AnimationUtils.loadAnimation(this,R.anim.slide_in_top);
-        Animation out = AnimationUtils.loadAnimation(this,R.anim.slide_out_bottom);
-
-        mTitle_Fun.setAnimation(in);
-        mTitle_Fun.setAnimation(out);
-
-
-
-
-        FUNEVENTADAPTER= new Fun_Event_Adapter(FunEvent1List,this);
-        coverFlow_Fun = (FeatureCoverFlow) findViewById(R.id.coverflow_FUN);
-        coverFlow_Fun.setAdapter(FUNEVENTADAPTER);
-
-        coverFlow_Fun.setOnScrollPositionListener(new FeatureCoverFlow.OnScrollPositionListener() {
-            @Override
-            public void onScrolledToPosition(int position) {
-                mTitle_Fun.setText(FunEvent1List.get(position).getName());
-
-
-            }
-
-            @Override
-            public void onScrolling() {
-
-            }
-        });
-
-
-        coverFlow_Fun.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-            @Override
-            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                if (position == 0)
-                {
-                    Intent in = new Intent(getApplicationContext(), BBB.class);
-                    startActivity(in);
-
-                }
-                if(position == 1)
-                {
-                    Intent in = new Intent(getApplicationContext(),Trivia.class);
-                    startActivity(in);
-                }
-
-                if(position == 2)
-                {
-                    Intent in = new Intent(getApplicationContext(),Murder_Mystery.class);
-                    startActivity(in);
-                }
-                if(position == 3)
-                {
-                    Intent in = new Intent(getApplicationContext(),LanGaming_IT.class);
-                    startActivity(in);
-                }
-                if(position == 4)
-                {
-                    Intent in = new Intent(getApplicationContext(),Element_Sorting.class);
-                    startActivity(in);
-                }
-                if(position == 5)
-                {
-                    Intent in = new Intent(getApplicationContext(),Image_Makeover.class);
-                    startActivity(in);
-                }
-
-
-            }
-        });
-
-
-
-
+        StrictMode.ThreadPolicy policy = new StrictMode.ThreadPolicy.Builder().permitAll().build();
+        StrictMode.setThreadPolicy(policy);
     }
 
-    private void initData()
-    {
+
+    private void Datacheck() {
+        FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
+        String email = user.getEmail();
+        String uid = user.getUid();
+        DatabaseReference dr = FirebaseDatabase.getInstance().getReference().child("Open").child("How to Start a Start-up").child(uid);
 
 
-        FunEvent1List.add(new Fun_Event_1("Beg Borrow Steal","https://cdn.movember.com/uploads/network-profile/2805f986dc753d9998254e9bfc076ea7-57f76863acea2-hero.png"));
-        FunEvent1List.add(new Fun_Event_1("Trivia","https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQAONquF2M8dQhKky4kL49-1w3WrbEgdBJfYaP1h6YR-Tox-jFj"));
-        FunEvent1List.add(new Fun_Event_1("Murder Mystery","https://t2.rbxcdn.com/f9394f26c573740776260e19051ef7ee"));
-        FunEvent1List.add(new Fun_Event_1("LAN Gaming","https://steemit-production-imageproxy-thumbnail.s3.amazonaws.com/U5dtqWmtAa9ULiANacbyj9nNCj1Da3k_1680x8400"));
-        FunEvent1List.add(new Fun_Event_1("Element Sorting","https://ak9.picdn.net/shutterstock/videos/10728479/thumb/1.jpg?i10c=img.resize(height:160)"));
-        FunEvent1List.add(new Fun_Event_1("Image Makeover","https://image.freepik.com/free-vector/analog-camera-icon_23-2147511482.jpg"));
+        dr.addValueEventListener(new ValueEventListener() {
+            @Override
+            public void onDataChange(DataSnapshot dataSnapshot) {
+
+                try {
+                    //Toast.makeText(getApplicationContext(), "in data", Toast.LENGTH_LONG).show();
+                    String email = dataSnapshot.child("Email").getValue().toString();
+                    if (count >= 1) {
+                        Toast.makeText(getApplicationContext(), "Already Registered with this " + email, Toast.LENGTH_SHORT).show();
+                    }
+                    count++;
+                } catch (Exception e) {
+                    //Toast.makeText(getApplicationContext(),"in catch ",Toast.LENGTH_LONG).show();
+                    DataEntry();
+                }
+            }
+
+            @Override
+            public void onCancelled(DatabaseError databaseError) {
+
+            }
+        });
 
 
     }
 
 
+    private void DataEntry() {
+        FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
+        String email = user.getEmail();
+        String uid = user.getUid();
+
+        //Toast.makeText(getApplicationContext(),""+email, Toast.LENGTH_SHORT).show();
+
+
+        DatabaseReference mDatabase = FirebaseDatabase.getInstance().getReference().child("Open").child("How to Start a Start-up").child(uid);
+
+        Map<String, String> data = new HashMap<String, String>();
+        data.put("Email", email);
+        data.put("Contact", StudentInfo.getContact());
+        mDatabase.setValue(data).addOnCompleteListener(new OnCompleteListener<Void>() {
+            @Override
+            public void onComplete(@NonNull Task<Void> task) {
+
+                if (task.isSuccessful()) {
+                    Toast.makeText(getApplicationContext(), "Registered ", Toast.LENGTH_SHORT).show();
+                    smsApiCall();
+
+                    String email = StudentInfo.getEmail();
+                    String subject = "Greetings from JNEC-SWAYAMBHU";
+                    String message = "Thank you " + StudentInfo.getname() + " for registering in How to Start a Start-up. Kindly show this message/email on payment desk to confirm your booking. This email is valid until bookings are full.";
+
+                    //Toast.makeText(getApplicationContext(),email+" ",Toast.LENGTH_LONG).show();
+
+                    SendMail sm = new SendMail(Fun_Event_Main.this, email, subject, message);
+
+                    //Executing sendmail to send email
+                    sm.execute();
+                } else {
+                    Toast.makeText(getApplicationContext(), "Error ", Toast.LENGTH_LONG).show();
+                }
+            }
+        });
+    }
+
+
+    public void smsApiCall() {
+        try {
+            // Construct data
+            String apiKey = "apikey=" + "PfSxPJ45xcg-L8TsFC7O5t3neTPGlscwlgetIMSf4L";
+            String message = "&message=" + "Thank you " + StudentInfo.getname() + " for registering in How to Start a Start-up. Kindly show this message/email on payment desk to confirm your booking.";
+            String sender = "&sender=" + "";//mtxtsender.getText().toString();
+            String numbers = "&numbers=" + StudentInfo.getContact();
+
+            // Send data
+            HttpURLConnection conn = (HttpURLConnection) new URL("https://api.textlocal.in/send/?").openConnection();
+            String data = apiKey + numbers + message + sender;
+            conn.setDoOutput(true);
+            conn.setRequestMethod("POST");
+            conn.setRequestProperty("Content-Length", Integer.toString(data.length()));
+
+            conn.getOutputStream().write(data.getBytes("UTF-8"));
+
+            final BufferedReader rd = new BufferedReader(new InputStreamReader(conn.getInputStream()));
+
+            final StringBuffer stringBuffer = new StringBuffer();
+            String line;
+            while ((line = rd.readLine()) != null) {
+                //stringBuffer.append(line);
+                //Toast.makeText(getApplicationContext(),"The Message is: "+line,Toast.LENGTH_LONG).show();
+            }
+
+            rd.close();
+
+            //return stringBuffer.toString();
+        } catch (Exception e) {
+            //System.out.println("Error SMS "+e);
+            //return "Error "+e;
+            Toast.makeText(getApplicationContext(), "The Error Message is: " + e, Toast.LENGTH_LONG).show();
+
+        }
+    }
 }

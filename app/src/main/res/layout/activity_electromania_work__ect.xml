@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="@color/back"
     android:orientation="vertical"
-    tools:context="com.jnec.techfest.swayambhu.ElectromaniaWork_ECT">
+    tools:context="com.ashay.swayambhu_1.ElectromaniaWork_ECT">
 
 
     <ScrollView
@@ -187,12 +187,11 @@
                         android:layout_height="wrap_content"
                         android:fontFamily="sans-serif"
                         android:padding="15dp"
-                        android:text="1. Two days workshop + compitition
+                        android:text="1. Two days workshop + competition
 2. Entries:  Individual or group max 3 members per team.
 3. For individual entries group form by organizer.
 4. All components will provided by organizer.
-5. Limited entries
-"
+5. Limited entries"
                         android:textColor="@color/back"
                         android:textSize="18dp"></TextView>
 

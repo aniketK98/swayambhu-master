@@ -304,7 +304,7 @@
                         android:layout_gravity="left"
                         android:fontFamily="sans-serif"
                         android:padding="15dp"
-                        android:text="TEAM MEMBERS : Single\n\nENTRY FEE : Single: 40/-"
+                        android:text="TEAM MEMBERS : Single\n\nENTRY FEE : 40/-"
                         android:textColor="@color/back"
                         android:textSize="20dp"
                         android:textStyle="bold" />
@@ -352,7 +352,7 @@
 
                         android:linksClickable="true"
                         android:padding="15dp"
-                        android:text="Head :\nNikita Bantia +918208696093\n\nCo-head :\Ranveer Rajput +917517090828 "
+                        android:text="Head :\nNikita Bantia +918208696093\n\nCo-head :\nRanveer Rajput +917517090828 "
                         android:textColor="@color/back"
 
                         android:textStyle="bold" />

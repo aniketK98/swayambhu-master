@@ -92,7 +92,7 @@ public class IT_EVENTS_MAIN extends AppCompatActivity {
                 }
                 if(position == 1)
                 {
-                    Intent in = new Intent(getApplicationContext(),Abhivyakti_IT.class);
+                    Intent in = new Intent(getApplicationContext(), Web_War_IT.class);
                     startActivity(in);
                 }
                 if(position == 2)
@@ -106,7 +106,7 @@ public class IT_EVENTS_MAIN extends AppCompatActivity {
                     startActivity(in);
                 }
                 if (position == 4) {
-                    Intent in = new Intent(getApplicationContext(), Codinggo_IT.class);
+                    Intent in = new Intent(getApplicationContext(), Codingo2_CSE.class);
                     startActivity(in);
                 }
             }
