@@ -310,7 +310,7 @@
                         android:autoLink="phone"
                         android:linksClickable="true"
                         android:padding="15dp"
-                        android:text="Head:\nPratik Takwale +919423392832\n\nCo-head:\nAkshay Raut +919595175030"
+                        android:text="Head:\nPratik Takwale +919423392832\n\nCo-head:\nAkshay Raut +919495175030"
                         android:textColor="@color/back"
                         android:textStyle="bold"></TextView>
                 </LinearLayout>
