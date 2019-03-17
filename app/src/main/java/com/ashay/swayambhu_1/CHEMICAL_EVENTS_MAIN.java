@@ -118,8 +118,8 @@ public class CHEMICAL_EVENTS_MAIN extends AppCompatActivity {
     {
 
 
-        ChemicalEvent1List.add(new Chemical_Event_1("Model Making", "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQf3wEFkl5fTuuEmjHG3mZDLOUKgP_pc1gkReMkobt7nGYq_fQM6A"));
-        ChemicalEvent1List.add(new Chemical_Event_1("Chem Carnival", "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTl2xGfUMaKAm4mjC9whIabBvAXeriHzyRSjKvV82W-iyecmPNp"));
+        ChemicalEvent1List.add(new Chemical_Event_1("Model Making", "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTxJxSbgHdLdQT9zAPG3PiN0dLqxYAtvC3eK8feQw6zt2Q_LDKR"));
+        ChemicalEvent1List.add(new Chemical_Event_1("Chem Carnival", "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRLD22cevc6F83i6nUR22vlvY3X0U4T35_G8cFAt-lGADb2ApRR"));
 
 
     }
