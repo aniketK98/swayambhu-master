@@ -6,22 +6,22 @@
     android:layout_height="match_parent"
     android:background="@color/back"
     android:orientation="vertical"
-    tools:context="com.ashay.swayambhu_1.BehindTheLens_open">
+    tools:context="com.ashay.swayambhu_1.MovieMaking_open">
+
 
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_margin="25dp"
-            android:layout_marginTop="20dp"
+
             android:orientation="vertical">
 
             <android.support.v7.widget.CardView
-                android:id="@+id/c1_Mech"
+
                 android:layout_width="match_parent"
                 android:layout_height="150dp"
                 android:layout_marginTop="20dp"
@@ -42,10 +42,10 @@
                         android:layout_gravity="center|center_horizontal"
                         android:fontFamily="monospace"
                         android:padding="5dp"
-                        android:text="BEHIND THE LENS"
+                        android:text="MOVIE MAKING WORKSHOP"
                         android:textColor="@color/back"
 
-                        android:textSize="30dp"
+                        android:textSize="22dp"
                         android:textStyle="bold" />
                 </RelativeLayout>
             </android.support.v7.widget.CardView>
@@ -59,7 +59,7 @@
 
 
                 <android.support.v7.widget.CardView
-                    android:id="@+id/c2_Mech"
+                    android:id="@+id/c1_Civil"
 
                     android:layout_width="150dp"
                     android:layout_height="100dp"
@@ -89,7 +89,6 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_below="@+id/imageView"
-
                             android:layout_alignParentStart="true"
                             android:layout_alignParentLeft="true"
                             android:layout_marginLeft="5dp"
@@ -104,7 +103,7 @@
 
 
                 <android.support.v7.widget.CardView
-                    android:id="@+id/c3_Mech"
+                    android:id="@+id/c2_Civil"
 
                     android:layout_width="150dp"
                     android:layout_height="100dp"
@@ -155,7 +154,7 @@
 
 
             <android.support.v7.widget.CardView
-                android:id="@+id/c4_Mech"
+                android:id="@+id/c3_Civil"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="20dp"
@@ -173,7 +172,7 @@
                         android:layout_gravity="center"
                         android:fontFamily="sans-serif"
                         android:padding="5dp"
-                        android:text="Round 1"
+                        android:text="Details"
                         android:textColor="@color/back"
                         android:textSize="30dp"
                         android:textStyle="bold" />
@@ -188,7 +187,7 @@
                         android:layout_height="wrap_content"
                         android:fontFamily="sans-serif"
                         android:padding="15dp"
-                        android:text=" Portrait Photography: After 1st Round we will shortlist the contestants for 2nd round."
+                        android:text="1) What is Cinema.\n2) What is Filmmaking.\n3) Engineer's scope in the movie making\n4) How to watch cinema(Film Appreciation).\n5) Photography and Cinematography Similarities/Difference.\n6) Observation and Visuals.\n\nGuest speaker with us -\nDirector. Shiv Kadam"
                         android:textColor="@color/back"
                         android:textSize="18dp"></TextView>
 
@@ -198,8 +197,9 @@
 
             </android.support.v7.widget.CardView>
 
+
             <android.support.v7.widget.CardView
-                android:id="@+id/c5_Mech"
+                android:id="@+id/c5_Civil"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="20dp"
@@ -211,37 +211,11 @@
                     android:layout_height="match_parent"
                     android:orientation="vertical">
 
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center"
-                        android:fontFamily="sans-serif"
-                        android:padding="5dp"
-                        android:text="Round 2"
-                        android:textColor="@color/back"
-                        android:textSize="30dp"
-                        android:textStyle="bold" />
-
-                    <View
-                        android:layout_width="match_parent"
-                        android:layout_height="2dp"
-                        android:background="@color/back"></View>
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:fontFamily="sans-serif"
-                        android:padding="15dp"
-                        android:text=" Photo story (Max 8 to 10 photos)."
-                        android:textColor="@color/back"
-                        android:textSize="18dp"></TextView>
-
 
                 </LinearLayout>
 
 
             </android.support.v7.widget.CardView>
-
 
             <android.support.v7.widget.CardView
 
@@ -260,11 +234,9 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="left"
-
                         android:fontFamily="sans-serif"
                         android:padding="15dp"
-                        android:text="TEAM MEMBERS: Single\n
-ENTRY FEE:-\nPhotography:30/-\nVideography:30/-\nBoth:50/-"
+                        android:text="TEAM MEMBERS: Single\n\nENTRY FEE : 50/-"
                         android:textColor="@color/back"
                         android:textSize="20dp"
                         android:textStyle="bold" />
@@ -311,7 +283,7 @@ ENTRY FEE:-\nPhotography:30/-\nVideography:30/-\nBoth:50/-"
                         android:autoLink="phone"
                         android:linksClickable="true"
                         android:padding="15dp"
-                        android:text="Head:\nShubham Padamwar +919404379546\n\nCo-head:\nRitesh Rathod +918275502398"
+                        android:text="Head:\nShubham Padamwar +919404379546\n\nCo-Head:\nAnuj Jangle +917875839313"
                         android:textColor="@color/back"
                         android:textStyle="bold"></TextView>
                 </LinearLayout>
@@ -319,7 +291,7 @@ ENTRY FEE:-\nPhotography:30/-\nVideography:30/-\nBoth:50/-"
 
 
             <Button
-                android:id="@+id/button_lathe_war"
+                android:id="@+id/button_projectcompetition"
                 android:layout_width="180dp"
                 android:layout_height="50dp"
                 android:layout_gravity="center_horizontal"
@@ -330,7 +302,6 @@ ENTRY FEE:-\nPhotography:30/-\nVideography:30/-\nBoth:50/-"
                 android:focusable="true"
                 android:text="Book"
                 android:textColor="@color/back" />
-            />
 
         </LinearLayout>
 

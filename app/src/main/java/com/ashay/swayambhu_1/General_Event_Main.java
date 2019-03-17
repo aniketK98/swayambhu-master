@@ -164,6 +164,11 @@ public class General_Event_Main extends AppCompatActivity {
                     startActivity(in);
                 }
 
+                if (position == 15) {
+                    Intent in = new Intent(getApplicationContext(), MovieMaking_open.class);
+                    startActivity(in);
+                }
+
             }
         });
 
@@ -189,6 +194,7 @@ public class General_Event_Main extends AppCompatActivity {
         GeneralEvent1List.add(new General_Event_1("Water Rocket", "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQQgZnPfD6zTYiRIvQNDd0PraC3s31R0WlFR00EMLLlActsm4EZ"));
         GeneralEvent1List.add(new General_Event_1("Behind the Lens", "http://garyjonesphotosblog.com/wp-content/uploads/2015/09/camera-lens.jpg"));
         GeneralEvent1List.add(new General_Event_1("Engineering Interns", "https://image.freepik.com/free-vector/variety-construction-engineer-icons_23-2147506665.jpg"));
+        GeneralEvent1List.add(new General_Event_1("Movie Making Workshop", "http://clipart-library.com/img1/1594085.jpg"));
 
 
     }

@@ -13,7 +13,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Hackathon_CSE"></activity>
+        <activity android:name=".Hackathon_CSE" />
         <activity android:name=".EnggInterns_open" />
         <activity android:name=".BehindTheLens_open" />
         <activity android:name=".TechnoConfetti_open" />
@@ -128,6 +128,7 @@
         <activity android:name=".Our_Team" />
         <activity android:name=".Developers_activity" />
         <activity android:name=".About_event" />
+        <activity android:name=".MovieMaking_open"></activity>
     </application>
 
 </manifest>

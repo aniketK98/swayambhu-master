@@ -186,7 +186,7 @@
                         android:fontFamily="sans-serif"
                         android:gravity="left"
                         android:padding="15dp"
-                        android:text=" Questions on topic selected."
+                        android:text="Pen and Paper: There will be 4 topics   -Mechanical/Civil, Computers/IT , Electronics, Chemical, Applied Sciences. Teams will choose the topic and will be given the question paper."
                         android:textColor="@color/back"
                         android:textSize="18dp"></TextView>
 
@@ -231,7 +231,7 @@
                         android:fontFamily="sans-serif"
                         android:gravity="left"
                         android:padding="15dp"
-                        android:text=" Buzzer Round. "
+                        android:text="Press the Buzzer: Team pressing the buzzer first will be answering the questions displayed on projector. Negative points for wrong answers. "
                         android:textColor="@color/back"
                         android:textSize="18dp"></TextView>
 
@@ -276,7 +276,7 @@
                         android:fontFamily="sans-serif"
                         android:gravity="left"
                         android:padding="15dp"
-                        android:text=" Hot seat Round. "
+                        android:text="Play on the Hotseat. One by one teams will play on the Hotseat. Lifelines to help. "
                         android:textColor="@color/back"
                         android:textSize="18dp"></TextView>
 

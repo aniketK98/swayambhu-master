@@ -19,7 +19,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/slide_3_title"
+            android:text="27 | 28 MARCH"
             android:textColor="#ff3838"
             android:textSize="@dimen/slide_title"
             android:textStyle="bold" />
