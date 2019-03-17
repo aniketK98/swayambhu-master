@@ -88,13 +88,13 @@ public class General_Event_Main extends AppCompatActivity {
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 if (position == 0)
                 {
-                    Intent in = new Intent(getApplicationContext(), JNEC_KBC_open.class);
+                    Intent in = new Intent(getApplicationContext(),JNEC_KBC_open.class);
                     startActivity(in);
 
                 }
                 if(position == 1)
                 {
-                    Intent in = new Intent(getApplicationContext(), SurvivalBattle_open.class);
+                    Intent in = new Intent(getApplicationContext(),SurvivalBattle_open.class);
                     startActivity(in);
                 }
 
