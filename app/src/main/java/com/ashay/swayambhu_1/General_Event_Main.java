@@ -185,7 +185,7 @@ public class General_Event_Main extends AppCompatActivity {
         GeneralEvent1List.add(new General_Event_1("Mr. and Ms. Techy", "https://previews.123rf.com/images/yupiramos/yupiramos1809/yupiramos180913407/110155288-business-couple-with-social-media-marketing-icons-vector-illustration.jpg"));
         GeneralEvent1List.add(new General_Event_1("Best from Waste", "https://img.sheroes.in/tr:w-790/img/uploads/sheroespage/logoes/1517993979cardboard-tube-monster.jpg?tr=w-790"));
         GeneralEvent1List.add(new General_Event_1("Business Idea Competition", "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRBWQviIWVULy9Svnq7culhyrZ1tt_r4A5Ax7IwqFTEVU-L47KP"));
-        GeneralEvent1List.add(new General_Event_1("Proyekto", "http://beta.radiusmedia.com/wp-content/uploads/2018/07/management.png"));
+        GeneralEvent1List.add(new General_Event_1("Proyekto", " http://beta.radiusmedia.com/wp-content/uploads/2018/07/management.png"));
         GeneralEvent1List.add(new General_Event_1("Ideathon", "http://millenniumupdate.in/img/competiton/paper.jpg"));
         GeneralEvent1List.add(new General_Event_1("Speak-up", "http://varsitysportssa.com/wp-content/uploads/2018/01/SpeakUpLogoOnWhite.png"));
         GeneralEvent1List.add(new General_Event_1("Innovate to implement", "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTzc9t9xnKXxspjmlh43S0laxDj_WusbFKEs0CpF3FN0Txnxl-w"));
