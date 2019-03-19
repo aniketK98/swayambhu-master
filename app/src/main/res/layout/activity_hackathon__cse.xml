@@ -236,7 +236,7 @@
                         android:layout_gravity="left"
                         android:fontFamily="sans-serif"
                         android:padding="15dp"
-                        android:text="ENTRY FEE : 300/-"
+                        android:text="ENTRY FEE : 200/-"
                         android:textColor="@color/back"
                         android:textSize="20dp"
                         android:textStyle="bold" />

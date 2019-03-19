@@ -136,7 +136,7 @@ public class Fun_Event_Main extends AppCompatActivity {
 
                     String email = StudentInfo.getEmail();
                     String subject = "Greetings from JNEC-SWAYAMBHU";
-                    String message = "Thank you " + StudentInfo.getname() + " for registering in How to Start a Start-up. Kindly show this message/email on payment desk to confirm your booking. This email is valid until bookings are full.";
+                    String message = "Thank you " + StudentInfo.getname() + " for registering in HOW TO START A START-UP. Kindly show this message/email on payment desk to confirm your booking. This email is valid until bookings are full.";
 
                     //Toast.makeText(getApplicationContext(),email+" ",Toast.LENGTH_LONG).show();
 
@@ -156,7 +156,7 @@ public class Fun_Event_Main extends AppCompatActivity {
         try {
             // Construct data
             String apiKey = "apikey=" + "PfSxPJ45xcg-L8TsFC7O5t3neTPGlscwlgetIMSf4L";
-            String message = "&message=" + "Thank you " + StudentInfo.getname() + " for registering in How to Start a Start-up. Kindly show this message/email on payment desk to confirm your booking.";
+            String message = "&message=" + "Greetings from team JNEC-SWAYAMBHU, Thank you " + StudentInfo.getname() + " for registering in HOW TO START A START-UP. Kindly show this message/email on payment desk to confirm your booking.";
             String sender = "&sender=" + "";//mtxtsender.getText().toString();
             String numbers = "&numbers=" + StudentInfo.getContact();
 

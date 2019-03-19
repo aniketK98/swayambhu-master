@@ -263,7 +263,7 @@
 
                         android:fontFamily="sans-serif"
                         android:padding="15dp"
-                        android:text="TEAM MEMBERS:\n1 or 2\n
+                        android:text="TEAM MEMBERS:\nSingle\n
 ENTRY FEE: 50/-"
                         android:textColor="@color/back"
                         android:textSize="20dp"

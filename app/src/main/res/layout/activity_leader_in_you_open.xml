@@ -40,7 +40,7 @@
                         android:layout_gravity="center|center_horizontal"
                         android:fontFamily="monospace"
                         android:padding="5dp"
-                        android:text="LEADER IN YOU"
+                        android:text="LEADER IN YOU!"
                         android:textColor="@color/back"
 
                         android:textSize="30dp"
@@ -408,7 +408,7 @@ Rules: The last decision will be finalize by judges, any excuses will not entert
                         android:layout_gravity="left"
                         android:fontFamily="sans-serif"
                         android:padding="15dp"
-                        android:text="TEAM MEMBER : \nSingle or 2 or 3\n\nENTRY FEE :\n\nSingle: 30/-\nTeam: 50/-"
+                        android:text="TEAM MEMBER : \nSingle or 2 or 3\n\nENTRY FEE :\n\nSingle: 30/-\nTeam: 60/-"
                         android:textColor="@color/back"
                         android:textSize="20dp"
                         android:textStyle="bold" />

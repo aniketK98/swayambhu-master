@@ -263,7 +263,7 @@
 
                         android:fontFamily="sans-serif"
                         android:padding="15dp"
-                        android:text="TEAM MEMBERS:-\n Single or 2 or group\n\nENTRY FEE:-\n\nSingle or double entry 30/-\n for group 50/-"
+                        android:text="TEAM MEMBERS:-\n Single or Team of 2 or 3 or 4\n\nENTRY FEE:-\n\nSingle or Team of 2: 30/-\n Team of 3 or 4: 50/-"
                         android:textColor="@color/back"
                         android:textSize="20dp"
                         android:textStyle="bold" />

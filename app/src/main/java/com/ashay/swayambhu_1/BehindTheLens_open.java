@@ -49,6 +49,7 @@ public class BehindTheLens_open extends AppCompatActivity {
         CardView v3 = (CardView) findViewById(R.id.c3_Mech);
         CardView v4 = (CardView) findViewById(R.id.c4_Mech);
         CardView v5 = (CardView) findViewById(R.id.c5_Mech);
+        CardView v6 = (CardView) findViewById(R.id.c6_Mech);
 
 
         v1.startAnimation(a);
@@ -56,6 +57,7 @@ public class BehindTheLens_open extends AppCompatActivity {
         v3.startAnimation(a);
         v4.startAnimation(a);
         v5.startAnimation(a);
+        v6.startAnimation(a);
 
         mAuth = FirebaseAuth.getInstance();
 

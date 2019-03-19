@@ -57,7 +57,7 @@ public class Codingo2_CSE extends AppCompatActivity {
 
         mAuth = FirebaseAuth.getInstance();
 
-        mbook = (Button) findViewById(R.id.button_event_4_cse);
+        mbook = (Button) findViewById(R.id.button_cse);
 
         mbook.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -79,7 +79,7 @@ public class Codingo2_CSE extends AppCompatActivity {
         FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
         String email = user.getEmail();
         String uid = user.getUid();
-        DatabaseReference dr = FirebaseDatabase.getInstance().getReference().child("CSE").child("Codingo2.0").child(uid);
+        DatabaseReference dr = FirebaseDatabase.getInstance().getReference().child("CSE").child("Codingo2").child(uid);
 
 
         dr.addValueEventListener(new ValueEventListener() {
@@ -114,7 +114,7 @@ public class Codingo2_CSE extends AppCompatActivity {
         //Toast.makeText(getApplicationContext(),""+email, Toast.LENGTH_SHORT).show();
 
 
-        DatabaseReference mDatabase = FirebaseDatabase.getInstance().getReference().child("CSE").child("Codingo2.0").child(uid);
+        DatabaseReference mDatabase = FirebaseDatabase.getInstance().getReference().child("CSE").child("Codingo2").child(uid);
 
         Map<String, String> data = new HashMap<String, String>();
         data.put("Email", email);
@@ -126,6 +126,18 @@ public class Codingo2_CSE extends AppCompatActivity {
                 if (task.isSuccessful()) {
                     Toast.makeText(getApplicationContext(), "Registered ", Toast.LENGTH_SHORT).show();
                     smsApiCall();
+
+                    String email = StudentInfo.getEmail();
+                    String subject = "Greetings from JNEC-SWAYAMBHU";
+                    String message = "Thank you " + StudentInfo.getname() + " for registering in CODINGO 2.0. Kindly show this message/email on payment desk to confirm your booking. This email is valid until bookings are full.";
+
+                    //Toast.makeText(getApplicationContext(),email+" ",Toast.LENGTH_LONG).show();
+
+                    SendMail sm = new SendMail(Codingo2_CSE.this, email, subject, message);
+
+                    //Executing sendmail to send email
+                    sm.execute();
+
                 } else {
                     Toast.makeText(getApplicationContext(), "Error ", Toast.LENGTH_LONG).show();
                 }
@@ -138,7 +150,7 @@ public class Codingo2_CSE extends AppCompatActivity {
         try {
             // Construct data
             String apiKey = "apikey=" + "PfSxPJ45xcg-L8TsFC7O5t3neTPGlscwlgetIMSf4L";
-            String message = "&message=" + "Greetings from team TechFest, Thank you for registering in Codingo2.0" + StudentInfo.getname() + ".";
+            String message = "&message=" + "Greetings from team JNEC-SWAYAMBHU, Thank you " + StudentInfo.getname() + " for registering in CODINGO 2.0. Kindly show this message/email on payment desk to confirm your booking.";
             String sender = "&sender=" + "";//mtxtsender.getText().toString();
             String numbers = "&numbers=" + StudentInfo.getContact();
 

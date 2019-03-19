@@ -304,7 +304,7 @@
                         android:layout_gravity="left"
                         android:fontFamily="sans-serif"
                         android:padding="15dp"
-                        android:text="TEAM MEMBER : 2\n\nENTRY FEE : 50/-"
+                        android:text="TEAM MEMBER :\nSingle or Team of 2\n\nENTRY FEE :\n\nSingle: 30/-\nTeam of 2: 50/-"
                         android:textColor="@color/back"
                         android:textSize="20dp"
                         android:textStyle="bold" />

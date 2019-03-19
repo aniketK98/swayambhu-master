@@ -173,7 +173,7 @@
                         android:layout_gravity="center"
                         android:fontFamily="sans-serif"
                         android:padding="5dp"
-                        android:text="Round 1"
+                        android:text="Round 1: Photography"
                         android:textColor="@color/back"
                         android:textSize="30dp"
                         android:textStyle="bold" />
@@ -242,6 +242,51 @@
 
             </android.support.v7.widget.CardView>
 
+            <android.support.v7.widget.CardView
+                android:id="@+id/c6_Mech"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="5dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:fontFamily="sans-serif"
+                        android:padding="5dp"
+                        android:text="Round 1: Videography"
+                        android:textColor="@color/back"
+                        android:textSize="30dp"
+                        android:textStyle="bold" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:background="@color/back"></View>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="sans-serif"
+                        android:padding="15dp"
+                        android:text="Shortfilm/After Movie."
+                        android:textColor="@color/back"
+                        android:textSize="18dp"></TextView>
+
+
+                </LinearLayout>
+
+
+            </android.support.v7.widget.CardView>
+
+
 
             <android.support.v7.widget.CardView
 
@@ -264,7 +309,7 @@
                         android:fontFamily="sans-serif"
                         android:padding="15dp"
                         android:text="TEAM MEMBERS: Single\n
-ENTRY FEE:-\nPhotography:30/-\nVideography:30/-\nBoth:50/-"
+ENTRY FEE:\n\nPhotography:30/-\nVideography:30/-\nBoth:50/-"
                         android:textColor="@color/back"
                         android:textSize="20dp"
                         android:textStyle="bold" />

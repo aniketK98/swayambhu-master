@@ -150,7 +150,7 @@ public class Web_War_IT extends AppCompatActivity {
         try {
             // Construct data
             String apiKey = "apikey=" + "PfSxPJ45xcg-L8TsFC7O5t3neTPGlscwlgetIMSf4L";
-            String message = "&message=" + "Thank you "+ StudentInfo.getname()+" for registering in WEB WAR. Kindly show this message/email on payment desk to confirm your booking.";
+            String message = "&message=" + "Greetings from team JNEC-SWAYAMBHU, Thank you " + StudentInfo.getname() + " for registering in WEB WAR. Kindly show this message/email on payment desk to confirm your booking.";
             String sender = "&sender=" + "";//mtxtsender.getText().toString();
             String numbers = "&numbers=" + StudentInfo.getContact();
 

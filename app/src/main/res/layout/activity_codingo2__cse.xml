@@ -5,7 +5,7 @@
     android:layout_height="match_parent"
     android:background="@color/back"
     android:orientation="vertical"
-    tools:context="com.jnec.techfest.swayambhu.Codingo2_CSE">
+    tools:context="com.ashay.swayambhu_1.Codingo2_CSE">
 
     <ScrollView
         android:layout_width="wrap_content"
@@ -258,7 +258,7 @@
                         android:layout_gravity="left"
                         android:fontFamily="sans-serif"
                         android:padding="15dp"
-                        android:text="TEAM MEMBERS:\nSingle or Group of 4\n\nENTRY FEE :\n\nSingle: 30/-\nTeam: 120/-"
+                        android:text="TEAM MEMBERS:\nSingle or Group of 4\n\nENTRY FEE :\n\nSingle: 30/-\nTeam: 100/-"
                         android:textColor="@color/back"
                         android:textSize="20dp"
                         android:textStyle="bold" />
@@ -316,7 +316,7 @@
 
 
             <Button
-                android:id="@+id/button_event_4_cse"
+                android:id="@+id/button_cse"
                 android:layout_width="180dp"
                 android:layout_height="50dp"
                 android:layout_gravity="center_horizontal"
