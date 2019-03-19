@@ -91,7 +91,7 @@ public class Aakar_civil extends AppCompatActivity {
                     //Toast.makeText(getApplicationContext(), "in data", Toast.LENGTH_LONG).show();
                     String email = dataSnapshot.child("Email").getValue().toString();
                     if (count >= 0) {
-                        Toast.makeText(getApplicationContext(), "Already Registered with this " + email, Toast.LENGTH_LONG).show();
+                        Toast.makeText(getApplicationContext(), " Already Registered with this " + email, Toast.LENGTH_LONG).show();
 
                     }
                     count++;
