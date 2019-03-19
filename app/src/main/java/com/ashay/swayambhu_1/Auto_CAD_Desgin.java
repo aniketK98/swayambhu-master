@@ -139,7 +139,7 @@ public class Auto_CAD_Desgin extends AppCompatActivity {
 
                     String email=StudentInfo.getEmail();
                     String subject="Greetings from JNEC-SWAYAMBHU";
-                    String message="Thank you "+ StudentInfo.getname()+" for registering in Auto CAD Design. Kindly show this message/email on payment desk to confirm your booking. This email is valid until bookings are full.";
+                    String message="Thank you "+ StudentInfo.getname()+" for registering in AUTO-CAD DESIGN. Kindly show this message/email on payment desk to confirm your booking. This email is valid until bookings are full.";
 
                     //Toast.makeText(getApplicationContext(),email+" ",Toast.LENGTH_LONG).show();
 
@@ -162,7 +162,7 @@ public class Auto_CAD_Desgin extends AppCompatActivity {
         try {
             // Construct data
             String apiKey = "apikey=" + "PfSxPJ45xcg-L8TsFC7O5t3neTPGlscwlgetIMSf4L";
-            String message = "&message=" + "Greetings from team TechFest, Thank you for registering in AUTO CAD DESIGN " + StudentInfo.getname()+ ".";
+            String message = "&message=" + "Greetings from team JNEC-SWAYAMBHU, Thank you " + StudentInfo.getname() + "for registering in AUTO-CAD DESIGN. Kindly show this message/email on payment desk to confirm your booking.";
             String sender = "&sender=" + "";//mtxtsender.getText().toString();
             String numbers = "&numbers=" + StudentInfo.getContact();
 
