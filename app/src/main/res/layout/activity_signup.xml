@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     tools:context="com.jnec.techfest.swayambhu.Signup"
     android:id="@+id/signup_layout"
-    android:background="@drawable/swa3">
+    android:background="@drawable/swa4">
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent">
