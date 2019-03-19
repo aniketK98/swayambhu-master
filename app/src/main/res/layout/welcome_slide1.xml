@@ -27,10 +27,10 @@
             android:textStyle="bold" />
 
         <ImageView
-            android:layout_width="@dimen/img_width_height"
-            android:layout_height="@dimen/img_width_height"
-            android:src="@drawable/swayambhulogo"
-            tools:layout_width="match_parent" />
+            android:layout_width="250dp"
+            android:layout_height="250dp"
+            android:src="@drawable/swayambhulogo1"
+            tools:layout_width="wrap_content" />
 
         <TextView
             android:layout_width="wrap_content"
