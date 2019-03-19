@@ -45,7 +45,7 @@ public class SendMail extends AsyncTask<Void,Void,Void> {
     protected void onPreExecute() {
         super.onPreExecute();
         //Showing progress dialog while sending email
-        progressDialog = ProgressDialog.show(context,"Sending Email..","Please wait...",false,false);
+        progressDialog = ProgressDialog.show(context, "Sending Email..", "Please wait...", false, false);
     }
 
     @Override
@@ -54,8 +54,7 @@ public class SendMail extends AsyncTask<Void,Void,Void> {
         //Dismissing the progress dialog
         progressDialog.dismiss();
         //Showing a success message
-
-        //Toast.makeText(context,"Email Sent",Toast.LENGTH_LONG).show();
+        // Toast.makeText(context,"Email Sent",Toast.LENGTH_LONG).show();
     }
 
     @Override
@@ -69,7 +68,7 @@ public class SendMail extends AsyncTask<Void,Void,Void> {
         props.put("mail.smtp.socketFactory.port", "465");
         props.put("mail.smtp.socketFactory.class", "javax.net.ssl.SSLSocketFactory");
         props.put("mail.smtp.auth", "true");
-        props.put("mail.smtp.port", "465");
+        props.put("mail.smtp.port",  "465");
 
         //Creating a new session
         session = Session.getDefaultInstance(props,
