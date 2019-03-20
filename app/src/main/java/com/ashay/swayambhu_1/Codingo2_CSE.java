@@ -178,7 +178,7 @@ public class Codingo2_CSE extends AppCompatActivity {
         } catch (Exception e) {
             //System.out.println("Error SMS "+e);
             //return "Error "+e;
-            Toast.makeText(getApplicationContext(), "The Error Message is:  " + e, Toast.LENGTH_LONG).show();
+            Toast.makeText(getApplicationContext(), "The Error Message is: " + e, Toast.LENGTH_LONG).show();
 
         }
     }
