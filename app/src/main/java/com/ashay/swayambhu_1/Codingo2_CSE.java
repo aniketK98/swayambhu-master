@@ -89,7 +89,7 @@ public class Codingo2_CSE extends AppCompatActivity {
                 try {
                     Toast.makeText(getApplicationContext(), "in data", Toast.LENGTH_LONG).show();
                     String email = dataSnapshot.child("Email").getValue().toString();
-                    Toast.makeText(getApplicationContext(), "Already Registered with this  " + email, Toast.LENGTH_LONG).show();
+                    Toast.makeText(getApplicationContext(), "Already Registered with this " + email, Toast.LENGTH_LONG).show();
                 } catch (Exception e) {
                     Toast.makeText(getApplicationContext(), "in catch ", Toast.LENGTH_LONG).show();
                     DataEntry();
