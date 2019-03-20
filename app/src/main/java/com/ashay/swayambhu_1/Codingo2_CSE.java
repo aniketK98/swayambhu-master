@@ -63,7 +63,7 @@ public class Codingo2_CSE extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-                Toast.makeText(getApplication(), "Clicked", Toast.LENGTH_LONG).show();
+                Toast.makeText(getApplication(), "Registering", Toast.LENGTH_LONG).show();
                 Datacheck();
                 //smsApiCall();
             }

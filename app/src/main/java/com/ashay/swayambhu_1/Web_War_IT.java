@@ -55,7 +55,7 @@ public class Web_War_IT extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-                Toast.makeText(getApplicationContext(),"Clicked", Toast.LENGTH_SHORT).show();
+                Toast.makeText(getApplicationContext(),"Registering", Toast.LENGTH_SHORT).show();
                 Datacheck();
             }
         });

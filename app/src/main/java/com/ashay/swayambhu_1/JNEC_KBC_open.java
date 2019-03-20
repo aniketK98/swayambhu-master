@@ -66,7 +66,7 @@ public class JNEC_KBC_open extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-                Toast.makeText(getApplication(), "Clicked", Toast.LENGTH_SHORT).show();
+                Toast.makeText(getApplication(), "Registering", Toast.LENGTH_SHORT).show();
                 Datacheck();
                 //smsApiCall();
             }
