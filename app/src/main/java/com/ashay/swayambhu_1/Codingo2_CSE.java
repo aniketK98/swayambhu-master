@@ -33,6 +33,7 @@ public class Codingo2_CSE extends AppCompatActivity {
 
     Dialog mydialog;
     Button mbook;
+    int count = 0;
     private FirebaseAuth mAuth;
     private DatabaseReference mDatabase;
     private FirebaseUser user;
@@ -87,11 +88,16 @@ public class Codingo2_CSE extends AppCompatActivity {
             public void onDataChange(DataSnapshot dataSnapshot) {
 
                 try {
-                    Toast.makeText(getApplicationContext(), "in data", Toast.LENGTH_LONG).show();
+                   // Toast.makeText(getApplicationContext(), "in data", Toast.LENGTH_LONG).show();
                     String email = dataSnapshot.child("Email").getValue().toString();
-                    Toast.makeText(getApplicationContext(), "Already Registered with this " + email, Toast.LENGTH_LONG).show();
-                } catch (Exception e) {
-                    Toast.makeText(getApplicationContext(), "in catch ", Toast.LENGTH_LONG).show();
+                    if(count>=0)
+                    {
+                        Toast.makeText(getApplicationContext(), "Already Registered with this " + email, Toast.LENGTH_LONG).show();
+                    }
+                    count++;
+                    }
+                    catch (Exception e) {
+               //     Toast.makeText(getApplicationContext(), "in catch ", Toast.LENGTH_LONG).show();
                     DataEntry();
 
                 }
