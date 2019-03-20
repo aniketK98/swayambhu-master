@@ -169,7 +169,7 @@ public class Codingo2_CSE extends AppCompatActivity {
             String line;
             while ((line = rd.readLine()) != null) {
                 //stringBuffer.append(line);
-                Toast.makeText(getApplicationContext(), "The Message is: " + line, Toast.LENGTH_LONG).show();
+                Toast.makeText(getApplicationContext(), "The Message is:" + line, Toast.LENGTH_LONG).show();
             }
 
             rd.close();
