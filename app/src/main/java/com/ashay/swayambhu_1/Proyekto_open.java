@@ -81,7 +81,7 @@ public class Proyekto_open extends AppCompatActivity {
         FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
         String email = user.getEmail();
         String uid = user.getUid();
-        DatabaseReference dr = FirebaseDatabase.getInstance().getReference().child("Open").child("Proyekto").child(uid);
+        DatabaseReference dr = FirebaseDatabase.getInstance().getReference().child("Open").child("Proyecto").child(uid);
 
 
         dr.addValueEventListener(new ValueEventListener() {
@@ -121,7 +121,7 @@ public class Proyekto_open extends AppCompatActivity {
         //Toast.makeText(getApplicationContext(),""+email, Toast.LENGTH_SHORT).show();
 
 
-        DatabaseReference mDatabase = FirebaseDatabase.getInstance().getReference().child("Open").child("Proyekto").child(uid);
+        DatabaseReference mDatabase = FirebaseDatabase.getInstance().getReference().child("Open").child("Proyecto").child(uid);
 
         Map<String, String> data = new HashMap<String, String>();
         data.put("Email", email);
@@ -136,7 +136,7 @@ public class Proyekto_open extends AppCompatActivity {
 
                     String email = StudentInfo.getEmail();
                     String subject = "Greetings from JNEC-SWAYAMBHU";
-                    String message = "Thank you " + StudentInfo.getname() + " for registering in PROYEKTO. Kindly show this message/email on payment desk to confirm your booking. This email is valid until bookings are full.";
+                    String message = "Thank you " + StudentInfo.getname() + " for registering in PROYECTO. Kindly show this message/email on payment desk to confirm your booking. This email is valid until bookings are full.";
 
                     //Toast.makeText(getApplicationContext(),email+" ",Toast.LENGTH_LONG).show();
 
@@ -156,7 +156,7 @@ public class Proyekto_open extends AppCompatActivity {
         try {
             // Construct data
             String apiKey = "apikey=" + "PfSxPJ45xcg-L8TsFC7O5t3neTPGlscwlgetIMSf4L";
-            String message = "&message=" + "Greetings from team JNEC-SWAYAMBHU, Thank you " + StudentInfo.getname() + " for registering in PROYEKTO. Kindly show this message/email on payment desk to confirm your booking.";
+            String message = "&message=" + "Greetings from team JNEC-SWAYAMBHU, Thank you " + StudentInfo.getname() + " for registering in PROCEKTO. Kindly show this message/email on payment desk to confirm your booking.";
             String sender = "&sender=" + "";//mtxtsender.getText().toString();
             String numbers = "&numbers=" + StudentInfo.getContact();
 

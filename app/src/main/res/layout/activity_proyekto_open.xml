@@ -41,7 +41,7 @@
                         android:layout_gravity="center|center_horizontal"
                         android:fontFamily="monospace"
                         android:padding="5dp"
-                        android:text="PROYEKTO"
+                        android:text="PROYECTO"
                         android:textColor="@color/back"
 
                         android:textSize="30dp"

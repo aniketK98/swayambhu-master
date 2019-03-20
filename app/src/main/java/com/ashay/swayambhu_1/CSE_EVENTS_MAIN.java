@@ -135,7 +135,7 @@ public class CSE_EVENTS_MAIN extends AppCompatActivity {
 
 
         CSEEvent1List.add(new CSE_Event_1("C over Snakes", "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTe7kfP28dRoni-eCNq-t0sZdiELECGx0xBjvCKPbsIZ-8XQ90dfw"));
-        CSEEvent1List.add(new CSE_Event_1("Web War","https://image.freepik.com/free-vector/web-programming-background_1300-188.jpg"));
+        CSEEvent1List.add(new CSE_Event_1("Web War","https://www.eventmanagerblog.com/wp-content/uploads/2014/03/creating-perfect-event-websites.png"));
         CSEEvent1List.add(new CSE_Event_1("Code Wizards", "https://image.freepik.com/free-vector/web-programming-background_1300-188.jpg"));
         CSEEvent1List.add(new CSE_Event_1("Codingo2.0", "https://image.freepik.com/free-vector/web-design-background_1300-72.jpg"));
         CSEEvent1List.add(new CSE_Event_1("Fast and Furious", "https://pbs.twimg.com/profile_images/984492992751845376/WwQHuVFq_400x400.jpg"));
