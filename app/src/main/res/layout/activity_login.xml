@@ -5,7 +5,7 @@
     android:id="@+id/login_layout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/swa3"
+    android:background="@drawable/swa1"
     android:gravity="center"
     android:orientation="vertical"
     tools:context="com.ashay.swayambhu_1.Login">

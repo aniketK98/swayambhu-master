@@ -132,7 +132,7 @@ public class Proyekto_open extends AppCompatActivity {
 
                 if (task.isSuccessful()) {
                     Toast.makeText(getApplicationContext(), "Registered ", Toast.LENGTH_SHORT).show();
-                    smsApiCall();
+                   smsApiCall();
 
                     String email = StudentInfo.getEmail();
                     String subject = "Greetings from JNEC-SWAYAMBHU";

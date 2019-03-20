@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     tools:context="com.ashay.swayambhu_1.Signup"
     android:id="@+id/signup_layout"
-    android:background="@drawable/swa4">
+    android:background="@drawable/backgroundfinal">
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent">
