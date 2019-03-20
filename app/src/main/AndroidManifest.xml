@@ -128,7 +128,8 @@
         <activity android:name=".Our_Team" />
         <activity android:name=".Developers_activity" />
         <activity android:name=".About_event" />
-        <activity android:name=".MovieMaking_open"></activity>
+        <activity android:name=".MovieMaking_open" />
+        <activity android:name=".GreenCanvas_civil"></activity>
     </application>
 
 </manifest>

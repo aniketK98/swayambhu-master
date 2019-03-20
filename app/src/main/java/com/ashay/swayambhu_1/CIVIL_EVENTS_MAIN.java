@@ -111,6 +111,13 @@ public class CIVIL_EVENTS_MAIN extends AppCompatActivity {
                         Intent in = new Intent(getApplicationContext(), FunInSurvey_civil.class);
                         startActivity(in);
                     }
+
+                    if(position == 4)
+                    {
+                        Intent in = new Intent(getApplicationContext(), GreenCanvas_civil.class);
+                        startActivity(in);
+                    }
+
                 }
             });
 
@@ -126,6 +133,7 @@ public class CIVIL_EVENTS_MAIN extends AppCompatActivity {
         CivilEvent1List.add(new Civil_Event_1("CartoFest", "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSYPwI5-J5Gw2JEVnnHCyJIy9L6bvsQ7Bs2qFrZQZVz-em2TldY"));
         CivilEvent1List.add(new Civil_Event_1("Aakaar", "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTGqevVZhc2FC_ZeDMHWYx8QDEjacU1UBGOrievAZ0UqHGt6Br6"));
         CivilEvent1List.add(new Civil_Event_1("Fun in Survey", "https://image.freepik.com/free-vector/land-survey-and-civil-engineer-working_3446-431.jpg"));
+        CivilEvent1List.add(new Civil_Event_1("Green Canvas", "https://cdn-images-1.medium.com/max/2600/0*bSrEvlfaRdCvM9PM.jpg"));
 
     }
 
